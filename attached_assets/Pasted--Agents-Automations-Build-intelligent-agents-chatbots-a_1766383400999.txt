@@ -1,0 +1,198 @@
+# Agents & Automations
+
+> Build intelligent agents, chatbots, and automated workflows using Replit Agent. Create Slackbots, Telegram bots, scheduled automations, and more.
+
+export const AiPrompt = ({children}) => {
+  return <CodeBlock className="relative block font-sans whitespace-pre-wrap break-words">
+      <div className="pr-7">
+        {children}
+      </div>
+    </CodeBlock>;
+};
+
+<Frame>
+  <img src="https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=ec25b745f7f0e9d95e0af74d2dcb6515" alt="Replit homepage showing Agents & Automations selection with Beta label and prompt input area" data-og-width="3024" width="3024" data-og-height="1720" height="1720" data-path="images/replitai/agents-automations-homepage-2.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?w=280&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=5883ef5ebf084203769864895fcb8efe 280w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?w=560&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=ec76976d9e55ac89cd51034a3a6598c5 560w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?w=840&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=3fe988967420714ecf6580f755d828a1 840w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?w=1100&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=b8b4d52bb93b9d3e69b937bf9011fc72 1100w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?w=1650&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=acfca4c11edebf2c7e0b826345151cda 1650w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?w=2500&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=472b699cdbf333e64401d4437f3c0002 2500w" />
+</Frame>
+
+<Warning>
+  **Beta Feature**: Agents & Automations is currently in beta. Features and
+  functionality may change. Some limitations apply, and not all use cases are
+  fully supported yet.
+</Warning>
+
+## Features
+
+### Supported use cases
+
+**Currently available:**
+
+* **Slack Agent** - Create intelligent Slackbots that can answer questions, integrate with APIs, and automate tasks
+* **Telegram Agent** - Build Telegram bots for customer service, scheduling, entertainment, and more
+* **Timed Automation** - Set up scheduled workflows that run automatically at specified times
+
+**Coming soon:**
+
+* **Custom webhook triggers**: Respond to any external event or API call using a webhook URL
+* **Additional pre-built triggers**: Discord, WhatsApp, and more
+
+### Additional functionality
+
+* **Rich integrations**: Connect with Outlook, Spotify, Notion, Linear, GitHub, and more
+* **Testing environment**: Test your agents and visualize workflows before deployment
+* **Cloud deployment**: Automatically configured for 24/7 availability with Autoscale or Scheduled deployments
+
+## How to get started
+
+### Step 1: Select Agents & Automations
+
+From the Replit homepage after logging in, **select "Agents & Automations"** from the app type selector on the homepage.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=ec25b745f7f0e9d95e0af74d2dcb6515" alt="Replit homepage showing Agents & Automations selection with Beta label and prompt input area" data-og-width="3024" width="3024" data-og-height="1720" height="1720" data-path="images/replitai/agents-automations-homepage-2.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?w=280&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=5883ef5ebf084203769864895fcb8efe 280w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?w=560&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=ec76976d9e55ac89cd51034a3a6598c5 560w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?w=840&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=3fe988967420714ecf6580f755d828a1 840w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?w=1100&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=b8b4d52bb93b9d3e69b937bf9011fc72 1100w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?w=1650&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=acfca4c11edebf2c7e0b826345151cda 1650w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agents-automations-homepage-2.png?w=2500&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=472b699cdbf333e64401d4437f3c0002 2500w" />
+</Frame>
+
+### Step 2: Choose your trigger type
+
+Next, you'll see a trigger type selector. Choose from the supported options:
+
+* **Slack** - Create intelligent Slackbots that integrate with your workspace
+* **Telegram** - Build Telegram bots for various use cases
+* **Timed Automation** - Set up scheduled workflows that run automatically
+
+### Step 3: Enter your prompt
+
+**Enter your prompt** describing what you want your agent to do.
+
+### Step 4: Let Agent build your automation
+
+Agent will create your automation based on your prompt and selected trigger type, including all necessary integrations and deployment configuration.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agent-automations-testing-environment.png?fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=c76e6078156e5082096eebfa06b0efb6" alt="Agent testing environment showing a StockReporter automation with workflow visualization and testing interface" data-og-width="3456" width="3456" data-og-height="1984" height="1984" data-path="images/replitai/agent-automations-testing-environment.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agent-automations-testing-environment.png?w=280&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=ab64dbf5e577c837e3fabd57da8dc665 280w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agent-automations-testing-environment.png?w=560&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=99ac1bc9abe5ebdfc5b934ac07394db2 560w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agent-automations-testing-environment.png?w=840&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=94640e1ceaf4d32a67646793dacbdeae 840w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agent-automations-testing-environment.png?w=1100&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=238c00cf22f76e6b79c53f48fabe6e66 1100w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agent-automations-testing-environment.png?w=1650&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=122729864e175016071739db776cd195 1650w, https://mintcdn.com/replit/fq3p5W3K0mVwvlo1/images/replitai/agent-automations-testing-environment.png?w=2500&fit=max&auto=format&n=fq3p5W3K0mVwvlo1&q=85&s=25eb6b88c67d4691be2bfdc059433486 2500w" />
+</Frame>
+
+<Accordion title="Accessing the Agents & Automations pane">
+  Once your project is created, you'll find a dedicated **Agents & Automations pane** in your workspace:
+
+  * **Location**: Opens under the preview area in your workspace
+  * **Functions**:
+    * View and interact with your agent
+    * Test chatbot functionality before deployment
+    * Visualize automation workflows
+    * Monitor logs and debug issues
+  * **Testing**: Chat with your agent directly in the pane to test responses and behavior
+</Accordion>
+
+### Deployment Requirement
+
+<Warning>
+  **Deployment Required**: Your agent or automation must be deployed to function
+  with external triggers like Slack, Telegram, or scheduled automations. The
+  testing pane works for development and testing, but live triggers require
+  deployment.
+</Warning>
+
+Agent will automatically prompt you to deploy your project when it's ready. Choose the appropriate deployment type:
+
+* **Autoscale deployments** - For chatbots and event-driven workflows
+* **Scheduled deployments** - For time-based automations
+
+## Supported use cases and examples
+
+### Slack Agent examples
+
+**Research assistant with Perplexity integration**
+
+<AiPrompt>
+  Create an AI Slackbot assistant that can answer research questions using the
+  Perplexity API. When someone asks a question in the #research channel, it
+  should search for current information and provide comprehensive answers with
+  sources.
+</AiPrompt>
+
+**Codebase Q\&A with GitHub integration**
+
+<AiPrompt>
+  Create an AI Slackbot that can answer questions about my codebase using a
+  GitHub integration. It should be able to explain functions, find files, and
+  help with debugging by analyzing our repository.
+</AiPrompt>
+
+**Email assistant with Outlook integration**
+
+<AiPrompt>
+  Create an AI Slackbot that can answer questions about my Outlook emails. It
+  should help me find specific emails, summarize conversations, and provide
+  quick responses to common email queries.
+</AiPrompt>
+
+### Telegram Agent examples
+
+**Business assistant with calendar scheduling**
+
+<AiPrompt>
+  Create an AI business assistant that can schedule emails on my Outlook
+  calendar. Users should be able to request meeting times and the bot will find
+  available slots and send calendar invites.
+</AiPrompt>
+
+**Music recommendation bot with Spotify**
+
+<AiPrompt>
+  Make a fun AI chatbot that can return a Spotify song for any message I send
+  describing the vibe I want. It should understand mood descriptions and suggest
+  perfect tracks.
+</AiPrompt>
+
+**Fictional character bot**
+
+<AiPrompt>
+  Make an AI bot that is a fictional character - specifically Sherlock Holmes.
+  It should respond to messages in character, solve puzzles, and engage in
+  detective-style conversations.
+</AiPrompt>
+
+### Timed Automation examples
+
+**Daily Linear task summary**
+
+<AiPrompt>
+  Send me an email every morning summarizing my new tasks from Linear. Include
+  task priorities, due dates, and project context to help me plan my day.
+</AiPrompt>
+
+**Email digest automation**
+
+<AiPrompt>
+  Send me an email every 6hrs with a summary of all my emails. Group them by
+  importance and highlight any urgent messages that need immediate attention.
+</AiPrompt>
+
+**Weekly competitor analysis**
+
+<AiPrompt>
+  Every week at 8am on Monday, send me a summary of any news about my
+  competitors using web search. Focus on product updates, funding news, and
+  market developments.
+</AiPrompt>
+
+## Next steps
+
+**Quick start ideas:**
+
+* **Slack**: Build a research assistant or codebase Q\&A bot
+* **Telegram**: Create a scheduling assistant or entertainment bot
+* **Timed**: Set up daily summaries or weekly reports
+
+<Note>
+  Want to be notified when new triggers become available? Follow
+  [@Replit](https://twitter.com/replit) for the latest updates on Agents &
+  Automations.
+</Note>
+
+Learn more about [Replit Agent](/replitai/agent) and other [Agent 3 autonomous features](/replitai/agent#autonomous-features-new-in-agent-3), or explore additional [AI-powered features](/category/replit-ai).
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

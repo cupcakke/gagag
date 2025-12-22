@@ -1,0 +1,85 @@
+# Visual Editor
+
+> Replit's Visual Editor empowers you to make direct visual edits to your app's UI in the preview, with seamless source code updates.
+
+## Features
+
+The Visual Editor lets you:
+
+* Select elements in your app's preview for editing
+* Edit text directly from the preview if it's a string in your source code
+* Update images by swapping URLs or uploading your own files
+* Adjust styles using intuitive controls for properties like padding, text color, and background color
+* Instantly preview styling & changes
+* Save those changes by updating the source code instantly
+
+## Usage
+
+Activate the Visual Editor from the Agent chat.
+
+<img src="https://mintcdn.com/replit/jSmYU1wBTvl8UMyc/images/element-selector/icon.png?fit=max&auto=format&n=jSmYU1wBTvl8UMyc&q=85&s=c528bb05beebcd31c2c603a9fc56098d" alt="Element Selector Icon" data-og-width="128" width="128" data-og-height="54" height="54" data-path="images/element-selector/icon.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/jSmYU1wBTvl8UMyc/images/element-selector/icon.png?w=280&fit=max&auto=format&n=jSmYU1wBTvl8UMyc&q=85&s=d0280420f25bdd3cb08a17aff6a4f721 280w, https://mintcdn.com/replit/jSmYU1wBTvl8UMyc/images/element-selector/icon.png?w=560&fit=max&auto=format&n=jSmYU1wBTvl8UMyc&q=85&s=b64567a9b0b42b530f6cf9e36da89f19 560w, https://mintcdn.com/replit/jSmYU1wBTvl8UMyc/images/element-selector/icon.png?w=840&fit=max&auto=format&n=jSmYU1wBTvl8UMyc&q=85&s=b3f7288d84f3335a9e65f5e27f8974f8 840w, https://mintcdn.com/replit/jSmYU1wBTvl8UMyc/images/element-selector/icon.png?w=1100&fit=max&auto=format&n=jSmYU1wBTvl8UMyc&q=85&s=1c4377970ab40f7dd256fbb394ad3716 1100w, https://mintcdn.com/replit/jSmYU1wBTvl8UMyc/images/element-selector/icon.png?w=1650&fit=max&auto=format&n=jSmYU1wBTvl8UMyc&q=85&s=0a1008888f16c303e29ebf6e8e0985c2 1650w, https://mintcdn.com/replit/jSmYU1wBTvl8UMyc/images/element-selector/icon.png?w=2500&fit=max&auto=format&n=jSmYU1wBTvl8UMyc&q=85&s=555edd6a6dadbac2e6c76a96ce113645 2500w" />
+
+1. **Select an Element**: Click any element in your app's preview to start editing.
+2. **Edit Element**: Directly edit text if it's a string in your source code, right from the preview. Or use the editor pane in the chat to update more properties like padding, margin, color, etc.
+3. **Preview Changes**: Changes are previewed live in the preview.
+4. **Save**: Hit save to update the source code instantly. If it's a simple change, your edits will directly update the source code without consuming AI credits. If there's uncertainty or hidden complexity involved in the edit, Visual Editor seamlessly sends targeted metadata to Agent for accurate assistance.
+
+<Note>
+  The Visual Editor is currently available only on <strong>web browsers</strong>. It is not supported on mobile or desktop applications.
+</Note>
+
+## Example Use Cases
+
+The Visual Editor is useful for a variety of UI modifications:
+
+* **Text Edits in Preview**: Click, type, done. Edit text directly in the Preview tool.
+  <Frame>
+    <video autoPlay muted loop playsInline src="https://storage.googleapis.com/replit-cdn/sanity/v2-text-edits.mp4" />
+  </Frame>
+
+* **Perfect Color Updates**: Use the color picker to adjust text and backgrounds.
+  <Frame>
+    <video autoPlay muted loop playsInline src="https://storage.googleapis.com/replit-cdn/sanity/v2-color-picker-and-eyedropper.mp4" />
+  </Frame>
+  <Tip>
+    Try alternative input methods, such as typing a color name like 'purple' in the input field, or the eyedropper to pick a color from anywhere on your screen.
+  </Tip>
+
+* **Style Changes Across Elements**: Adjust padding, margins, and more.
+  <Frame>
+    <video autoPlay muted loop playsInline src="https://storage.googleapis.com/replit-cdn/sanity/v2-related-elements.mp4" />
+  </Frame>
+
+* **Image Updates**: Select images to swap URLs or upload your own with instant previews.
+  <Frame>
+    <video autoPlay muted loop playsInline src="https://storage.googleapis.com/replit-cdn/sanity/v2-image-edits.mp4" />
+  </Frame>
+
+## Tips & guidelines for effective use
+
+* Select the most precise element possible for your intended change
+* Selecting an element rendered in a loop or used in multiple places will highlight and update all instances of it
+* Updating text of composite elements which are made up of multiple sub elements is disabled in Visual Editor, but you can ask Agent to make changes like this in chat
+* Clicking on the top left label will take you to the element in the source code
+* Escape key can be used to dismiss the Visual Editor when inside the preview
+
+### Upgrading from Element Selector to Visual Editor
+
+When you open an app that has Element Selector available, you'll see an automatic upgrade prompt to switch to the new Visual Editor.
+
+<Frame>
+  <video autoPlay muted loop playsInline src="https://storage.googleapis.com/replit-cdn/sanity/visual-editor-upgrade-flow.mp4" />
+</Frame>
+
+If you want to upgrade manually, you can do so in any Agent-created JavaScript App by opening the Shell pane and running the following command:
+
+```bash  theme={null}
+npm i @replit/vite-plugin-cartographer@latest
+```
+
+Once you've installed the plugin, you can restart your app to start using the new Visual Editor.
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

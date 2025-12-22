@@ -1,0 +1,235 @@
+# Replit Assistant
+
+> Replit Assistant uses AI to help you create and polish your app quickly. Type what you want in everyday language, and it can add new features or fix problems for you. Assistant can also analyze your code to explain what it does and suggest the next lines as you type.
+
+export const AssistantAdvanced = 'Advanced AI Model';
+
+export const AssistantBasic = 'Standard AI Model';
+
+export const TeamsCredits = '$40';
+
+export const CoreCredits = '$25';
+
+export const AssistantCheckpointCost = '$0.05';
+
+<Warning>
+  **Assistant will be removed in December 2025.** To make quick, targeted edits, use [Fast in Agent](/replitai/fast-mode). To ask questions and discuss your work, use [Plan with Agent](/replitai/plan-mode).
+</Warning>
+
+Assistant uses powerful AI technology to understand your Replit App and help you code more efficiently. Whether you need quick explanations or complex code modifications, Assistant adapts to your needs with two flexible modes.
+
+<Frame>
+  <iframe src="https://www.youtube.com/embed/1FBv1PhrCaA?si=qkbNp8KNOCK_h0V-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
+</Frame>
+
+## Features
+
+Assistant offers **Basic** and **Advanced** modes to support different development needs and budgets.
+
+<Info>
+  Assistant uses the following industry-leading AI models:
+
+  * <Icon icon="bolt" /> **Basic**: {AssistantBasic}
+  * <Icon icon="sparkle" /> **Advanced**: {AssistantAdvanced}
+</Info>
+
+### Basic mode
+
+Get instant help with your development questions:
+
+* **Code explanations**: Understand what any piece of code does
+* **Intelligent autocomplete**: Receive smart suggestions as you type
+* **Best practices**: Get recommendations to improve your code quality
+* **Debugging help**: Identify potential issues and get guidance on fixes
+
+Perfect for learning, understanding existing code, and getting development guidance.
+
+### Advanced mode ({AssistantCheckpointCost} per edit request)
+
+Take your development to the next level with Assistant's ability to directly modify your code:
+
+* **Automatic code updates**: Add features and fix bugs with approved changes
+* **Package management**: Install and configure dependencies automatically
+* **Database modifications**: Update your database structure safely
+* **Workflow updates**: Create and modify automated workflows
+* **One-click rollbacks**: Undo any changes that don't work as expected, including workspace contents; database modifications can also be restored when selected
+
+<Info>
+  For security, Assistant cannot access or modify data stored in Replit's Secrets manager.
+</Info>
+
+## Usage
+
+You can use Assistant in any Replit App from your workspace. Access Assistant's features through the dedicated tool or directly from the file editor.
+
+### Assistant tool
+
+<Accordion title="How to access the Assistant tool">
+  <img src="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-dock.avif?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=6cc93948d1307d326a84689feca6a4c6" alt="animation showing selection of Assistant in the tools dock" data-path="images/replitai/assistant-dock.avif" />
+
+  **From the Tools dock:**
+
+  1. Select <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5b2c72713cc17ac272098bcbfd624d84" alt="All tools icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/workspace-all-tools-button.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=284639f38f8e91da05d14611e44a9ae6 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=d0e802a9c50a81e5c825cf1ddce00a64 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=b5c4e38a7cf923221d2412e904bbdc94 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=3b43a87adf314fbb300376b404ab8a22 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a11f8a405c4156ff625219a372c2ceca 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=7c86d2f1bfa4611aeca168daf29d08ff 2500w" /> **All tools** in the dock on the left
+  2. Select the <img class="icon-svg" src="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-icon.svg?fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=90e9aa80fd98fa6b782d93c32f2374ee" alt="Assistant icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/assistant-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-icon.svg?w=280&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=0ddb9aa0aef207ada4bb13876cac2a4f 280w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-icon.svg?w=560&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=e8da86461734b2d89667669c65d2dc9d 560w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-icon.svg?w=840&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=dfa336dcccf3841d0796bfd05ed0e6cd 840w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-icon.svg?w=1100&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=44ff1b3e93f74535388a8dabb0e2942f 1100w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-icon.svg?w=1650&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=302491205d037efd2b007f1392deba93 1650w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-icon.svg?w=2500&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=deb18c1e92e6991b6401f4549f2718ae 2500w" /> **Assistant** icon
+
+  **From the Search bar:**
+
+  1. Select the <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=4a0eb8f6b17ff6761d53167334a68b30" alt="magnifying glass icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/workspace-search-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=baa20919b2c8e7db2fad2562c732edd0 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5fcfa3935da89ed6c1c6f893998c4f4a 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=2a24f3fcc4dd990d9062598eab165cff 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a3258e068d5ead6bacadcbe6e5785575 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=d08ebecb3063ed18a657beb563ac9c3c 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=e63dd2009929a4b375b86e44ed6d7732 2500w" /> magnifying glass at the top to open the search tool
+  2. Type "Assistant" to locate the Assistant tool and select it from the results
+
+  You should see a screen that resembles the following screenshot:
+
+  <Frame>
+    <img src="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-tab.png?fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=284d74d168a7dc85f6105a57161625c7" alt="image of the Assistant tool in a tab" data-og-width="2924" width="2924" data-og-height="1550" height="1550" data-path="images/replitai/assistant-tab.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-tab.png?w=280&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=604634c26e1d7185b6f5bc423f48f115 280w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-tab.png?w=560&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=ba87960d325403e0d37164ae78c835d6 560w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-tab.png?w=840&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=1a6a7700269008ae498e28c0918e9939 840w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-tab.png?w=1100&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=f9a5a6e09396264c52c16fb332ce3b8c 1100w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-tab.png?w=1650&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=75a316c75b5cde1cd63a018b53318713 1650w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-tab.png?w=2500&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=d4528a61d1a940e015034d88e4914a7e 2500w" />
+  </Frame>
+</Accordion>
+
+From the Assistant tool, you can perform the following actions:
+
+* **Chat**: Type your instructions or questions in the text area or select pre-created prompts
+* **Switch modes**: Toggle between **Basic** and **Advanced** ({AssistantCheckpointCost} per edit) modes
+* **Manage conversations**: Start new chats or resume previous conversations
+* **Track usage**: Monitor your Advanced mode spending and edit request history
+* **Customize settings**: Configure Assistant behavior and preferences
+* **Review changes**: Preview and approve code modifications before they're applied
+
+To switch between modes, select the <Icon icon="angle-down" /> dropdown arrow and choose your preferred mode:
+
+<img src="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-mode-select.png?fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=2c3c3193c594929b228e5e2c91bff909" alt="Assistant mode selection dialog" data-og-width="1759" width="1759" data-og-height="667" height="667" data-path="images/replitai/assistant-mode-select.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-mode-select.png?w=280&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=d4ff728fca323d245ef105c638972f07 280w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-mode-select.png?w=560&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=fcc858df5d1212c1b92736459fb4a9c0 560w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-mode-select.png?w=840&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=95131127c636d0e53909c153d7aed01d 840w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-mode-select.png?w=1100&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=fbb5a790332113d254fd62c77fe66bc8 1100w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-mode-select.png?w=1650&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=7388c31ec3b8a1d9a30ae2813eb7e617 1650w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-mode-select.png?w=2500&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=7dc203abc942ba29b798db81cd0f26e2 2500w" />
+
+#### Chat prompts
+
+<Frame>
+  <img src="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-text-area.png?fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=4973c8e95aafd9bf0db09472204aafd0" alt="Assistant tool text area" data-og-width="1838" width="1838" data-og-height="340" height="340" data-path="images/replitai/assistant-text-area.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-text-area.png?w=280&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=db7269f31a346ddcc7370ebe3ee60de4 280w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-text-area.png?w=560&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=7f33af846af0a1444c769dc155958c75 560w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-text-area.png?w=840&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=7f29e6713b4746b37542632e346f7de8 840w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-text-area.png?w=1100&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=d13bbf20c786ec92025974cf1687991d 1100w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-text-area.png?w=1650&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=effb6c876091ecbbf309ca5e8f420b50 1650w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-text-area.png?w=2500&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=1cdf924e5d472cd25c130c120c60b6fa 2500w" />
+</Frame>
+
+To communicate with Assistant, enter a **prompt** in the text area describing what you need.
+Assistant analyzes your Replit App and creates contextually appropriate responses.
+
+Enhance your prompts with additional context:
+
+* **File attachments**: Drag files into the text area or select the <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/paperclip-icon.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=45949f269700584b5abce83018948efd" alt="Paperclip icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/paperclip-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/paperclip-icon.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=20637e43d92832822bac672894536c45 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/paperclip-icon.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=48afdd5748452937f68d924dadba078c 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/paperclip-icon.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=6f6c0cb9f5f50ab2b0d6ec1e9103c981 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/paperclip-icon.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=41dd59447d7a8d7370a13243f28b3936 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/paperclip-icon.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=c457d89082fe14f8d91c206c5e0a981a 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/paperclip-icon.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=97e8124e2a60e38994e0536971d52f67 2500w" />  paperclip icon
+* **Specific file context**: Select **Add file context** to reference particular files related to your request
+
+<Tip>
+  While Assistant intelligently determines relevant files, specifying them helps create more accurate solutions.
+</Tip>
+
+#### Edit requests (Advanced mode only)
+
+<Frame>
+  <img src="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-edit-request.png?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=4a5dbc84cab9df8433bfb23fbd491046" alt="Assistant edit request" data-og-width="3539" width="3539" data-og-height="1035" height="1035" data-path="images/replitai/assistant-edit-request.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-edit-request.png?w=280&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=e5ff620f8af695ef8e9dd62dd7c566de 280w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-edit-request.png?w=560&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=7207b04c5c846cba66bd5459782da4c9 560w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-edit-request.png?w=840&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=5e2ecb563d90fe409b3061787c7fef32 840w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-edit-request.png?w=1100&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=84ff46a7016e788f295c622a94908938 1100w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-edit-request.png?w=1650&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=8a2b59e492e62c384a68dfc4fa54c9ee 1650w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-edit-request.png?w=2500&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=21cf7123fb693064983b42e0d5e0b44d 2500w" />
+</Frame>
+
+In Advanced mode, Assistant creates **edit requests** when proposing code changes.
+These requests provide transparency and control over modifications to your app:
+
+* **Preview changes**: See exactly what Assistant plans to modify before approval
+* **Selective approval**: Choose which changes to apply and which to skip
+* **Automatic checkpoints**: Comprehensive snapshots capture workspace contents, AI context, and database states for approved changes
+* **Easy rollbacks**: Undo changes or restore to previous states across your entire development environment (databases are restored when selected)
+
+When Assistant suggests changes:
+
+1. Select <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/preview-code-changes.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=24e515ae44c335a08833b511a5cea9ef" alt="Preview code changes icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/preview-code-changes.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/preview-code-changes.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=6d2b2221bc6c972349fbfb4524e5dc34 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/preview-code-changes.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=846439a3fac23c1805ba15d97d3a123e 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/preview-code-changes.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5e6c69283bdcd945b9e1e2f6c7e2b121 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/preview-code-changes.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=33e77b3c19e6b12f267de84ec5c9c243 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/preview-code-changes.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=9180751904731c2fd1ff2e9c9fd5ba76 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/preview-code-changes.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=e9c9f2fae3186f4c5f9aa6b638c028da 2500w" /> **Preview code changes** to review
+2. Select **Apply all** to implement the changes
+3. Use **Undo these changes** if you need to reverse the modifications
+
+<Info>
+  For detailed information about checkpoints, rollback capabilities, and what gets restored, see [Checkpoints and Rollbacks](/replitai/checkpoints-and-rollbacks).
+</Info>
+
+### File editor integration
+
+<Accordion title="How to access Assistant from the file editor">
+  **From any open file:**
+
+  1. Select <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5b2c72713cc17ac272098bcbfd624d84" alt="All tools icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/workspace-all-tools-button.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=284639f38f8e91da05d14611e44a9ae6 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=d0e802a9c50a81e5c825cf1ddce00a64 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=b5c4e38a7cf923221d2412e904bbdc94 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=3b43a87adf314fbb300376b404ab8a22 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a11f8a405c4156ff625219a372c2ceca 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=7c86d2f1bfa4611aeca168daf29d08ff 2500w" /> **All tools** in the dock on the left
+  2. Select <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-folder-icon.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=2c51a3b99d139fce533c2839d3139d6e" alt="Open files icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/files-folder-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-folder-icon.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=717565c15f2900d64f389f26e0e6d77c 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-folder-icon.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=cdddecf884eada01aa06dda46810e041 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-folder-icon.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=26c395c0f2229e9996fffa87b1558829 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-folder-icon.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=079e2c975e674317d283ce25a118a2a6 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-folder-icon.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=4e1d707f796d43d511770863b66660f1 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-folder-icon.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a6ce500063ec6a2f1481488e79b085c6 2500w" /> **Open files**
+  3. Open a file to view its contents in the editor
+  4. Select the code you want help with
+  5. Right-click the selected text or use the icons that appear above the selection
+
+  The following image shows the **Explain with Assistant** and **Modify with Assistant** options:
+
+  <Frame>
+    <img src="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-explain.jpg?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=991c660ade0eae015313b49aee31a2d3" alt="Explain with Assistant menu item" data-og-width="1920" width="1920" data-og-height="1080" height="1080" data-path="images/replitai/assistant-explain.jpg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-explain.jpg?w=280&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=aa411658b32d9f7c2c01277819db6617 280w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-explain.jpg?w=560&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=a503a277f834f354bb6bf8ca3d96f6ee 560w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-explain.jpg?w=840&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=40648cfa846175cdf888171522d39ceb 840w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-explain.jpg?w=1100&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=0b34bb87ce58e44a095bc4bcd9c280f5 1100w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-explain.jpg?w=1650&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=6ed4053dfb3f8fc654280e20d046f5ec 1650w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/assistant-explain.jpg?w=2500&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=e80ee6c1ab228246e5b988a0dcb6b0e9 2500w" />
+  </Frame>
+
+  The following animation shows using the **Modify with Assistant** function:
+
+  <Frame>
+    <img src="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-select-modify.avif?fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=031205d66b637d70554b66978d7ec19d" alt="animation that shows usage of the Modify with Assistant function" data-path="images/replitai/assistant-select-modify.avif" />
+  </Frame>
+</Accordion>
+
+When working in the file editor, you can access these Assistant-powered features:
+
+* **Code explanations**: Highlight code and select the <img class="icon-svg" src="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-explain-icon.svg?fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=6687f86aa69ffeca00d3b2832d10b4e5" alt="Assistant explain icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/assistant-explain-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-explain-icon.svg?w=280&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=118223f3955f31565d6725b65e78ed63 280w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-explain-icon.svg?w=560&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=8fe71fc1280f76058be86ba740deb742 560w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-explain-icon.svg?w=840&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=472c3a761904472f1a1b5c2aebc25152 840w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-explain-icon.svg?w=1100&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=87c6f1bac48008ef4c8f3ac6d42cec14 1100w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-explain-icon.svg?w=1650&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=5b4cacd6a079a7ace674d7ef4756323f 1650w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-explain-icon.svg?w=2500&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=c51496abf82f3e6fc26283f25cad987d 2500w" /> explain icon for detailed breakdowns
+* **Code improvements**: Highlight code and select the <img class="icon-svg" src="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-modify-icon.svg?fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=1910874a8558598927c82b741456f49d" alt="Assistant modify icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/assistant-modify-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-modify-icon.svg?w=280&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=900039b4b222ea018bc486145524e9af 280w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-modify-icon.svg?w=560&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=d8c9a18b460cba94770ceb8e4ecd01c7 560w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-modify-icon.svg?w=840&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=a51c353f8c9231a1f2329f9ac9b8bcd7 840w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-modify-icon.svg?w=1100&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=b7b804fd402881a8bac84fb6b3c11f76 1100w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-modify-icon.svg?w=1650&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=514cb25fa49c57276efa159021056f9c 1650w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-modify-icon.svg?w=2500&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=142153ce2760fdf9d9aab89a4e72f2ab 2500w" /> modify icon to request changes (Advanced mode)
+* **Error debugging**: Hover over underlined errors and select "Debug with AI" for fix suggestions
+
+### Assistant settings
+
+<Frame>
+  <iframe src="https://www.youtube.com/embed/1qxOcsj1TAg?si=hNuLKAhGQuwpgnTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
+</Frame>
+
+<Accordion title="How to access Assistant settings">
+  Select the <img class="icon-svg" src="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-gear-icon.svg?fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=3618ef99b3459badebf0c6c95e2afaa4" alt="gear icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/assistant-gear-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-gear-icon.svg?w=280&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=7e8c1a49a2801f279410d4bb5cc0a86f 280w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-gear-icon.svg?w=560&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=89af40f56d140db7f8d0fa1706c8d556 560w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-gear-icon.svg?w=840&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=d2e7171c5e6ab781dafd1bc2840d125e 840w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-gear-icon.svg?w=1100&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=22c5855615aec843accd511f29a5b399 1100w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-gear-icon.svg?w=1650&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=fa7577ae26beda05d0cfbb8276aa49b4 1650w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/assistant-gear-icon.svg?w=2500&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=8e3afff368999fefd05f1129d3300234 2500w" /> gear icon in the **Assistant** tab.
+
+  You should see a screen that resembles the following screenshot:
+
+  <Frame>
+    <img src="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-settings.png?fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=1099d3c355d8569dab693ce3e5f279fc" alt="Assistant settings dialog" data-og-width="1784" width="1784" data-og-height="995" height="995" data-path="images/replitai/assistant-settings.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-settings.png?w=280&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=0e0f55277db4ab69e97cdc2f6134cb99 280w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-settings.png?w=560&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=989537f15483f0529a1b2bb5abde684f 560w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-settings.png?w=840&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=3e3c739509996d73d94469292b37e4d6 840w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-settings.png?w=1100&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=af7632243610e073efafb289918b4c1c 1100w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-settings.png?w=1650&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=f08eca0f7ab588c11e74027778d84dcb 1650w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/assistant-settings.png?w=2500&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=6179331c338a9dfebfc2d75451c2451d 2500w" />
+  </Frame>
+</Accordion>
+
+Customize Assistant behavior with these settings:
+
+* **Append instructions**: Add instructions automatically included in all prompts
+* **AI model selection**: Choose specific models for processing your requests
+* **Streamlined workflow**: Skip confirmation steps for faster edit request approval
+* **Workflow management**: Control whether Assistant code changes restart workflows automatically
+
+## Getting the most from Assistant
+
+### Choosing the right mode
+
+**Use Basic mode when:**
+
+* Learning how code works
+* Getting explanations and documentation
+* Receiving coding suggestions and best practices
+* Debugging issues without making changes
+
+**Use Advanced mode when:**
+
+* Implementing new features
+* Fixing bugs automatically
+* Updating database schemas
+* Installing and configuring packages
+
+### Best practices
+
+* **Start with Basic**: Use explanations to understand code before requesting modifications
+* **Be specific**: Clearly describe what you want changed or improved
+* **Review carefully**: Always preview edit requests before applying them
+* **Use file context**: Reference specific files to get more accurate suggestions
+* **Set spending limits**: Configure [usage alerts](/billing/managing-spend) to control Advanced mode costs
+
+## Next steps
+
+Ready to enhance your development workflow with Assistant?
+
+1. **Try Basic mode**: Start with code explanations and suggestions
+2. **Explore Advanced features**: Use edit requests to test code modifications
+3. **Configure settings**: Customize Assistant behavior for your workflow
+4. **Set up billing controls**: Manage Advanced mode spending with [usage alerts](/billing/managing-spend)
+
+Learn more about [Assistant pricing](/billing/ai-billing#assistant-billing) or explore [Agent](/replitai/agent) for building complete applications.
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

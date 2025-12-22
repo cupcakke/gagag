@@ -1,0 +1,99 @@
+# Shell
+
+> Shell is a command-line tool that lets you run commands in your Replit App's workspace.
+
+Shell lets you perform tasks on the operating system in your workspace such as managing files,
+installing packages, and running scripts. It provides a powerful text-based interface to
+interact with your Replit environment.
+
+You can use Shell to run the following tasks in your workspace:
+
+* Execute scripts and programs
+* Install and run popular Linux tools and packages
+* Upload and download files from the internet
+* Manage workspace files and directories
+
+<Tip>
+  For better workflow management, prefer the **Run** button instead of running your app from
+  the Shell. The workflow started by the **Run** button sends output to the Console tool,
+  which provides a structured way to review the logs.
+</Tip>
+
+<Frame>
+  <img src="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-tool.png?fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=3e6ae6b32685e040779c0336be7b16ac" alt="screenshot of the Shell workspace tool" data-og-width="2722" width="2722" data-og-height="1522" height="1522" data-path="images/workspace/shell-tool.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-tool.png?w=280&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=c5e03461de2100e00e62b5c61e1f28d5 280w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-tool.png?w=560&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=b54613706fb382614178e4c2f3d589fa 560w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-tool.png?w=840&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=6908a44fccb5b4f9f9f9ac670d1a8df5 840w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-tool.png?w=1100&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=314ec7c976cfa0fee37a932096a3cf4d 1100w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-tool.png?w=1650&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=7124fc3c6d856d7df82c0bef02a52d53 1650w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-tool.png?w=2500&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=88d54d9416f7feb33662ad57b0908539 2500w" />
+</Frame>
+
+## Features
+
+Shell provides the following capabilities:
+
+* **Run multiple shells**: Open multiple shell instances to work on different tasks simultaneously
+* **Search for text**: Find specific text in the shell output
+* **Generate commands using AI**: Use Assistant to help create commands from natural language descriptions
+
+## Usage
+
+<Accordion title="How to access Shell">
+  From the left **Tool dock**:
+
+  1. Select <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5b2c72713cc17ac272098bcbfd624d84" alt="All tools icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/workspace-all-tools-button.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=284639f38f8e91da05d14611e44a9ae6 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=d0e802a9c50a81e5c825cf1ddce00a64 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=b5c4e38a7cf923221d2412e904bbdc94 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=3b43a87adf314fbb300376b404ab8a22 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a11f8a405c4156ff625219a372c2ceca 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=7c86d2f1bfa4611aeca168daf29d08ff 2500w" /> **All tools** to see a list of workspace tools.
+  2. Select <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/shell.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=ab5e9d6c6250d108a291a694d127b428" alt="Shell icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/shell.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/shell.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=7990bfd3eb97b5cfe87f8eb88cf39983 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/shell.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=4e726268e08df775a9968bbf011486d6 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/shell.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5a8d45fe468099341fd2e25a5020166b 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/shell.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=b2522e4e0f3446db50b7af21c4457ea1 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/shell.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=0e0dac9049462edadd55d78d5acfa5be 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/shell.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=03f99fac9e87769da2734551479787fc 2500w" /> **Shell**.
+
+  From the **Search bar**:
+
+  1. Select the <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=4a0eb8f6b17ff6761d53167334a68b30" alt="magnifying glass icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/workspace-search-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=baa20919b2c8e7db2fad2562c732edd0 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5fcfa3935da89ed6c1c6f893998c4f4a 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=2a24f3fcc4dd990d9062598eab165cff 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a3258e068d5ead6bacadcbe6e5785575 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=d08ebecb3063ed18a657beb563ac9c3c 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=e63dd2009929a4b375b86e44ed6d7732 2500w" /> magnifying glass at the top to open the search tool
+  2. Type "Shell" to locate the tool and select it from the results.
+</Accordion>
+
+### Text search
+
+The following steps describe how to access and use the text search tool:
+
+1. Select the <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=4a0eb8f6b17ff6761d53167334a68b30" alt="magnifying glass icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/workspace-search-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=baa20919b2c8e7db2fad2562c732edd0 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5fcfa3935da89ed6c1c6f893998c4f4a 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=2a24f3fcc4dd990d9062598eab165cff 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a3258e068d5ead6bacadcbe6e5785575 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=d08ebecb3063ed18a657beb563ac9c3c 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=e63dd2009929a4b375b86e44ed6d7732 2500w" /> magnifying glass at the top right of the Shell tab to open the search dialog.
+2. Enter a search term and select **Next** to navigate through the matches.
+3. Use **Previous** to go back to prior matches.
+4. Select **Exit** or click outside the dialog to exit the text search.
+
+### AI suggestions
+
+To get assistance composing your command from Assistant, follow the steps below:
+
+1. Right-click anywhere in the Shell and select **Generate command** from the contextual menu.
+2. Describe the task you want to accomplish in plain language and press `Enter` to submit your request.
+3. Assistant generates a command and shows a preview in gray text.
+4. Select **Accept** to run it or **Reject** to cancel.
+
+For example, if you enter "list all files in the current directory," Assistant might suggest the `ls` command.
+
+To request help with resolving an issue reported in the output, follow the steps below:
+
+1. Select the relevant text and right-click on the selection.
+2. Select **Ask Assistant** in the contextual menu.
+3. The **Assistant** tab automatically opens and submits the selected text to Assistant for analysis.
+
+### Multiple shells
+
+To create a new shell, select the menu at the top left of the **Shell** tab arrow and select **New Shell** as shown below:
+
+<Frame>
+  <img src="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-new.png?fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=3ae8dcb04a1a953fdb4769bd8fe3db34" alt="New Shell menu selection" data-og-width="1278" width="1278" data-og-height="356" height="356" data-path="images/workspace/shell-new.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-new.png?w=280&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=d2b2c3ef959f7152d3167b73b63ac8a2 280w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-new.png?w=560&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=a91011d3e92a9391ea3e52bf7c6a296e 560w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-new.png?w=840&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=91bb2748985474308e4c6685a678ded6 840w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-new.png?w=1100&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=5d8c7edf7f0f1a78cb4dce9fb251dfd3 1100w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-new.png?w=1650&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=1d30bb329bfad6c52a81f6328932762e 1650w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/shell-new.png?w=2500&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=552376cfeee7c492ba5f76bd024d1f7f 2500w" />
+</Frame>
+
+Use the same menu to switch between shells. The workspace labels each shell with the last command executed to help you identify them.
+
+<Warning>
+  When you open more than one shell, Replit automatically closes idle shell instances.
+  An idle shell is unselected and not running any user processes.
+</Warning>
+
+## Next steps
+
+To learn more about related Workspace tools see the following resources:
+
+* [Console](/replit-workspace/workspace-features/console/): Learn how to use Console to monitor your Replit App workflows.
+* [Assistant](/replitai/assistant/): Learn about Assistant for code help and error resolution
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

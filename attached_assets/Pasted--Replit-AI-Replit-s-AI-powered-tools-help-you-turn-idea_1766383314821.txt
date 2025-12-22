@@ -1,0 +1,140 @@
+# Replit AI
+
+> Replit's AI-powered tools help you turn ideas into production-ready apps.
+
+export const YouTubeEmbed = ({videoId, title = "YouTube video", startAt}) => {
+  if (!videoId) {
+    return null;
+  }
+  let url = "https://www.youtube.com/embed/" + videoId;
+  if (startAt) {
+    url = url + "?start=" + startAt;
+  }
+  return <Frame>
+      <iframe src={url} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+    </Frame>;
+};
+
+Replit AI transforms how you build software with Agent, our AI-powered development assistant. Agent allows you to build entire applications in minutes, without knowing how to code.
+
+<Tip>
+  **New with Agent 3** - Extended autonomous builds with minimal supervision,
+  App Testing for self-validation, Fast and Full build modes, and Agents & Automations
+  for building your own autonomous systems.
+</Tip>
+
+## What you can build
+
+With Agent, you can:
+
+* **Transform ideas into apps:** Describe your vision in plain language and watch Agent build a complete application
+* **Accelerate development:** Get instant code explanations, intelligent autocomplete, and contextual help
+* **Debug efficiently:** Identify and fix issues with AI-powered analysis and suggestions
+* **Learn as you build:** Receive detailed explanations and best practice recommendations
+
+Learn more about Agent in the following video:
+
+<YouTubeEmbed videoId="4FxNXFOdt6w" title="Replit Agent 3 First Look" />
+
+## Getting started
+
+The fastest way to experience Replit AI is to create your first app with Agent:
+
+1. **Start with Agent**: Follow the [Create with AI](/getting-started/quickstarts/ask-ai/) quickstart to build an app from scratch
+2. **Choose your build mode**: Select Fast for lightweight apps or prototypes (\~3-5 mins) or use the default full build for a thorough implementation of your request (\~10+ mins)
+3. **Experience Agent 3's autonomy**: Customize Agent's **[Autonomy Level](/replitai/autonomy-level)** while it tests itself with **App Testing**
+4. **Set up billing**: Configure [usage alerts and budgets](/billing/managing-spend) to control your AI spending
+
+<Warning>
+  Agent and Advanced Assistant are premium features that charge your Replit account
+  based on usage. For pricing information and billing policies, see [Replit AI Billing](/billing/ai-billing/).
+</Warning>
+
+### Accessing Agent
+
+You can access Agent from any Replit App:
+
+* **Tools dock**: Find Agent in the left sidebar of your Workspace
+* **Create new app**: Start with Agent directly from the "Create a new App" screen
+
+<Note>
+  Agent is now available on all projects. Use [General Agent](/replitai/general-agent) to work with any framework or project type, including existing apps and Developer Framework templates.
+</Note>
+
+### Key capabilities
+
+Agent offers powerful features that revolutionize your development workflow:
+
+**Complete app generation**
+
+* Natural language descriptions become functional applications
+* Intelligent architecture decisions and best practices
+* Automatic environment setup and dependency management
+* Seamless integration of databases, file storage, and third-party services
+
+**Interactive development**
+
+* Chat-based interface for complex requests
+* File attachments and web content integration
+* Rollback capabilities for safe experimentation
+* Real-time progress tracking and feedback
+
+**Autonomous development (New in Agent 3)**
+
+* **App Testing**: Automated computer use testing for the Agent to spin up a browser and test its own work, just like a real user
+* **Autonomy Level**: Customize how independently Agent works and reviews code, from hands-on control to extended autonomous development
+* **Agents & Automations**: for building your own autonomous systems
+
+## Use cases
+
+### Build a complete app with Agent
+
+Describe your app idea in natural language and let Agent handle the implementation:
+
+<Frame>
+  <img src="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-start-building.avif?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=132104b9caa4c832a48387532886f51e" alt="Agent creating an app from a text description" data-path="images/replitai/agent-start-building.avif" />
+</Frame>
+
+### Add complex integrations
+
+Integrate payment processing, APIs, or advanced features using natural language:
+
+<YouTubeEmbed videoId="TW8xaPERcRU" title="Agent Complex Integrations" />
+
+## Pricing and billing
+
+Agent uses transparent, effort-based pricing designed to provide value at every level:
+
+**Agent**: Effort-based pricing that charges based on the complexity and scope of your requests
+
+* Simple changes cost less than complex builds
+* One meaningful checkpoint per request
+* Extended autonomous builds with less supervision and self-testing capabilities
+* Advanced capabilities for complex builds
+* Agent 3 features: App Testing, build modes, and Agents & Automations
+
+Learn more about [AI billing](/billing/ai-billing) and how to [manage your spend](/billing/managing-spend).
+
+## Next steps
+
+Ready to start building with Agent? Choose your path:
+
+<CardGroup cols={2}>
+  <Card title="Try Agent" href="/replitai/agent" icon="robot">
+    Experience Agent 3's autonomous development with extended builds and less
+    supervision
+  </Card>
+
+  <Card title="View Pricing" href="/billing/ai-billing" icon="credit-card">
+    Understand costs and set up billing controls
+  </Card>
+
+  <Card title="Quick Start" href="/getting-started/quickstarts/ask-ai" icon="rocket">
+    Build your first autonomous AI-powered app in minutes
+  </Card>
+</CardGroup>
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

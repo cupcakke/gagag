@@ -1,0 +1,181 @@
+# Workspace Features
+
+> The Replit workspace features are a comprehensive set of tools that power your app creation experience.
+
+The workspace includes layout management and integrated tools that power your app-building experience.
+These workspace features specialize in handling specific aspects of the development process, letting you
+focus on creating instead of configuring.
+
+## Customizable workspace layout
+
+The workspace layout management tools let you customize the components of the development environment.
+It consists of the following user interface element types:
+
+| Element     | Description                                                                    | Capabilities                                                                                                                                                    | Use Cases                                                                                                              |
+| ----------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Windows** | Browser tabs that contain one or more panes                                    | <ul><li>Can be organized across multiple screens</li></ul>                                                                                                      | <ul><li>Organizing your workspace across multiple screens</li><li> Work on different projects simultaneously</li></ul> |
+| **Panes**   | Sections of a window that contain one or more tabs                             | <ul><li>Support horizontal and vertical splitting</li><li>Can be resized and rearranged</li><li>Can be converted to a floating pane within the window</li></ul> | <ul><li>View code and preview side-by-side</li><li>Create custom layouts for different development tasks</li></ul>     |
+| **Tabs**    | Contain exactly one workspace tool, such as the file editor, Preview, or Agent | <ul><li>Can be moved between panes and reordered within them</li><li>Can switch between different files or tools with a single click</li></ul>                  | <ul><li>Open different tools or files when you need them</li></ul>                                                     |
+
+The following video identifies each workspace layout element:
+
+<Frame>
+  <iframe src="https://www.loom.com/embed/495838f6de3a42a890461572615ad48e?sid=df5d78b9-6d2e-4396-8853-4e3fa2b81db4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen width="100%" height="420px" />
+</Frame>
+
+## File tree
+
+The file tree lists all the files and directories in your Replit App's workspace.
+
+<Accordion title="How to access the file tree">
+  Select the <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-icon.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=dcf170c63430088fc4e28058849eec4f" alt="folder with arrows icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/files-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-icon.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=b72e6d298af9f96117a8a5492b9d8a42 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-icon.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=af6a952cc85e5f742968c8a91b1e5137 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-icon.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=7f13cd1bcab1279e81e042c7a80d3033 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-icon.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=c4b325c9fc5e0e80d3e98b68715f2aa1 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-icon.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=dcefa4a3a120cf6be1af51a67430632f 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/files-icon.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=78a61e721c9d71f1d41541aea469befc 2500w" /> folder icon on the left to toggle
+  the file tree's visibility.
+</Accordion>
+
+You can perform the following actions in the file tree:
+
+* Select a folder to display its contents
+* Select a file or drag it to a pane to open it in a file editor
+* Perform file operations such as duplicating, renaming, moving, downloading, or deleting
+
+The following video shows several file tree actions:
+
+<Frame>
+  <iframe src="https://www.loom.com/embed/84129671e4fd4346b426b726609a7cae?sid=ea104265-b5ac-4f93-bf50-6136258de174" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen width="100%" height="420px" />
+</Frame>
+
+## Tools dock
+
+The tools dock lets you search for and open workspace tools in new tabs.
+
+<Accordion title="How to access the tools dock">
+  Select from commonly used tools or select the <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5b2c72713cc17ac272098bcbfd624d84" alt="All tools icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/workspace-all-tools-button.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=284639f38f8e91da05d14611e44a9ae6 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=d0e802a9c50a81e5c825cf1ddce00a64 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=b5c4e38a7cf923221d2412e904bbdc94 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=3b43a87adf314fbb300376b404ab8a22 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a11f8a405c4156ff625219a372c2ceca 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=7c86d2f1bfa4611aeca168daf29d08ff 2500w" /> **All tools**
+  icon to open the tools search popup menu.
+</Accordion>
+
+The following screenshot shows the open **All tools** popup menu in the tool dock:
+
+<Frame>
+  <img src="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/tools-dock.png?fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=7a48f62509f3cb7aaab01c8aa7f8ba24" alt="screenshot of the tool dock" height="50" data-og-width="2626" data-og-height="878" data-path="images/workspace/tools-dock.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/tools-dock.png?w=280&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=4f6f0a51d0af6ca11f38ca2233e31d37 280w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/tools-dock.png?w=560&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=c00c4245884990a54a66a0b4ae083770 560w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/tools-dock.png?w=840&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=13120cdeae392b44502b2f85a4253a97 840w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/tools-dock.png?w=1100&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=637463cc01a7ee1c94a314b60a853027 1100w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/tools-dock.png?w=1650&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=6b4ce1a99a3cc73789bbc024187311c4 1650w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/tools-dock.png?w=2500&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=5accf5cfe74b9f3162fa34b3b49f210f 2500w" />
+</Frame>
+
+## Run button
+
+The **Run** button executes the Replit App's selected workflow.
+
+<Accordion title="How to access the run button">
+  The **Run** button is located at the top of the workspace screen. Select the button to run the workflow.
+
+  When your Replit App is running, the button label is replaced by **Stop**. Select the button to stop the app.
+</Accordion>
+
+To learn how to select, view, and manage workflows, see [Workflows](/replit-workspace/workflows/).
+
+The following video shows how to view and run a workflow:
+
+<Frame>
+  <iframe src="https://www.loom.com/embed/086c8447bf234ca290ad11f0bbb2e13e?sid=1e8597e5-a3c4-4b36-b42e-f3ad97533334" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen width="100%" height="420px" />
+</Frame>
+
+## Spotlight page
+
+The spotlight page lets you view and modify your Replit App cover page and access sharing options.
+
+<Accordion title="How to access the spotlight page">
+  Select your project name in the top left of the workspace to toggle the spotlight page.
+</Accordion>
+
+The following video shows how to access the spotlight page:
+
+<Frame>
+  <iframe src="https://www.loom.com/embed/568fa9603a5546919e97b06695ea1da5?sid=cbc2a2f4-ae3f-4a96-85ef-45941f587d35" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen width="100%" height="420px" />
+</Frame>
+
+## Options menu
+
+The options menu lets you perform the following types of layout actions:
+
+* **Window management**: Open a workspace for the Replit App in a new window
+* **Pane management**: Add panes, move a pane, maximize a pane, and toggle between floating and fixed positions
+* **Tab management**: Open or select other tabs, move a tab to another pane, and close a tab
+
+<Accordion title="How to access the options menu">
+  Select the <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/vertical-dots.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=d6ac2757eaf25e61d31ce51316ec91ad" alt="vertical dots icon" height="16" width="16" data-og-width="24" data-og-height="24" data-path="images/icons/vertical-dots.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/vertical-dots.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=cf215ef22f55bf163c0037f923584e37 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/vertical-dots.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=9659b713156cc159f2b9107450cc0fbd 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/vertical-dots.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=73cb1af8587233823aba8f0aec72d1d9 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/vertical-dots.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5d633ba6d10d1d6d6d179b3086869257 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/vertical-dots.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5255815ba3d626d74ede11e23698ccbd 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/vertical-dots.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=15dffd4252b85614141c73a628671cf1 2500w" /> three vertical dots
+  located in the top right corner of the active tab to open the options menu.
+</Accordion>
+
+The following screenshot shows the options popup menu in the left pane:
+
+<Frame>
+  <img src="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/workspace-options-menu.png?fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=5d8892fb1057bfc37de6aff5af278295" alt="screenshot showing the workspace options menu" data-og-width="1968" width="1968" data-og-height="1136" height="1136" data-path="images/workspace/workspace-options-menu.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/workspace-options-menu.png?w=280&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=fc2772c0e6f3f5e2c9905e2456995a53 280w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/workspace-options-menu.png?w=560&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=42ddec8aa1be4ec99e5383c4cdf242fd 560w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/workspace-options-menu.png?w=840&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=99462d0e0cf1f57ce0d2e520321ae7ca 840w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/workspace-options-menu.png?w=1100&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=d1ceefb5f019e783ed52db71f733129e 1100w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/workspace-options-menu.png?w=1650&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=e30b5081e7ca64917d46ac850994d561 1650w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/workspace-options-menu.png?w=2500&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=450072ddedee8fe3cab5bc9e8b785359 2500w" />
+</Frame>
+
+## Search bar
+
+The search bar lets you find files, text, or tools within your workspace.
+
+<Accordion title="How to access the search bar">
+  1. To open the search bar, select the <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=4a0eb8f6b17ff6761d53167334a68b30" alt="magnifying glass icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/workspace-search-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=baa20919b2c8e7db2fad2562c732edd0 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5fcfa3935da89ed6c1c6f893998c4f4a 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=2a24f3fcc4dd990d9062598eab165cff 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a3258e068d5ead6bacadcbe6e5785575 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=d08ebecb3063ed18a657beb563ac9c3c 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=e63dd2009929a4b375b86e44ed6d7732 2500w" /> magnifying glass icon at the top.
+  2. Enter your search text and select from the auto-complete suggestions.
+</Accordion>
+
+The following screenshot shows the search popup menu:
+
+<Frame>
+  <img src="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/search-menu.png?fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=205cdb6244d368c4b7e57215f1328e42" alt="screenshot showing the workspace search menu" data-og-width="1732" width="1732" data-og-height="1224" height="1224" data-path="images/workspace/search-menu.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/search-menu.png?w=280&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=dd15c4871e8ec055cc5cbb592f4598fb 280w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/search-menu.png?w=560&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=1825c80df94d30f662ebad03179260ea 560w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/search-menu.png?w=840&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=72d4b7dd104d61d50f40ba37cfc70997 840w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/search-menu.png?w=1100&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=1bf8236087da2cc603d62f23c10d4744 1100w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/search-menu.png?w=1650&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=05d1af16831681c84bbc36b637e721b1 1650w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/search-menu.png?w=2500&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=7c886c9ec8901a07d7aacd58e68c6e06 2500w" />
+</Frame>
+
+## Resources panel
+
+The resources panel displays your development environment's computing resources and usage, including RAM, CPU, and storage.
+This information can help you estimate and optimize your Replit App's publishing requirements.
+
+<Accordion title="How to access the resources panel">
+  1. Select the <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/resources.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=507357a8379c837a358dc93ceb498a65" alt="stacked computers icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/resources.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/resources.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=be5c6b9f8fe4d8216da9400726da2db2 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/resources.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5db0d5ead12c8b689a6f66292fc2fd0d 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/resources.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5bf121527bb3672e56e49593c9877991 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/resources.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=f3eabb8fdf7bf05967941e98da4ad55a 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/resources.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=105bb239cd97cba6ae4c2955d6da596c 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/resources.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=be617b5dfd58940c90b6bb5fb2150233 2500w" /> resources icon located next to your app's name to toggle the panel.
+  2. Hover over the **Compute** or **Storage** line items for more detail.
+</Accordion>
+
+The following screenshot shows the resources panel:
+
+<Frame>
+  <img src="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/resources-panel.png?fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=63449b197613dc36bf9dcd1f9c17e7c7" alt="screenshot showing the workspace resources panel" data-og-width="1214" width="1214" data-og-height="652" height="652" data-path="images/workspace/resources-panel.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/resources-panel.png?w=280&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=f8a355c9f5a22b7212eafbd741f65252 280w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/resources-panel.png?w=560&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=cf08173214d7e27b905eb01c6ad83e3a 560w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/resources-panel.png?w=840&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=62f0646397210c571e8ad599c08c7381 840w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/resources-panel.png?w=1100&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=50c6b9cd7b114f3770c770dfe415fc58 1100w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/resources-panel.png?w=1650&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=51772d5c099a2f50b91b6e0317ae2d2a 1650w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/resources-panel.png?w=2500&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=b68fbaefdfbc0ccdc78bdaf7d5bcf3e8 2500w" />
+</Frame>
+
+## Tools
+
+To learn more about other Replit workspace tools, select from the following list:
+
+<CardGroup cols={3}>
+  <Card title="Secrets" icon="key" iconType="solid" href="/replit-workspace/workspace-features/secrets" horizontal={true}>
+    Safeguard your app's API keys, credentials, and passwords.
+  </Card>
+
+  <Card title="File History" icon="clock-rotate-left" iconType="solid" href="/replit-workspace/workspace-features/file-history" horizontal={true}>
+    Rewind time to recover lost edits with Replit's version tracking feature.
+  </Card>
+
+  <Card title="Multiplayer" icon="users" iconType="solid" href="/replit-workspace/workspace-features/multiplayer" horizontal={true}>
+    Code together in real-time with two or more users.
+  </Card>
+
+  <Card title="User Settings" icon="gear" iconType="solid" href="/replit-workspace/workspace-features/user-settings" horizontal={true}>
+    Customize your coding experience through the Settings tool.
+  </Card>
+
+  <Card title="Console" icon="terminal" iconType="solid" href="/replit-workspace/workspace-features/console" horizontal={true}>
+    View your Replit App's output
+  </Card>
+
+  <Card title="Shell" icon="terminal" iconType="solid" href="/replit-workspace/workspace-features/shell" horizontal={true}>
+    Interact with your workspace using a command-line interface.
+  </Card>
+
+  <Card title="Preview" icon="laptop" iconType="solid" href="/replit-workspace/workspace-features/preview" horizontal={true}>
+    Preview and debug your web application.
+  </Card>
+</CardGroup>
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

@@ -1,0 +1,198 @@
+# Create with AI
+
+> Learn how to create a Replit App using AI-powered tools.
+
+export const AiPrompt = ({children}) => {
+  return <CodeBlock className="relative block font-sans whitespace-pre-wrap break-words">
+      <div className="pr-7">
+        {children}
+      </div>
+    </CodeBlock>;
+};
+
+## Create your app using AI
+
+⏰ *Estimated time: 7 minutes*
+
+Learn how to create your Replit App using the **Agent** and **Assistant** AI tools in this guide.
+
+<CardGroup cols={2}>
+  <Card title="Agent" icon="robot">
+    Specializes in generating new projects and building complex features.
+  </Card>
+
+  <Card title="Assistant" icon="wand-magic-sparkles">
+    Specializes in describing your code, making quick fixes, and adding new features.
+  </Card>
+</CardGroup>
+
+Follow the steps below to build a polished business website. Use Replit's
+AI features to create an app, and refine it until it matches your desired design.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_complete.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=c9f8c70074726fcaa44932037d722af6" width="500" alt="image of the Completed App" data-og-width="768" data-og-height="525" data-path="images/getting-started/quickstart_ai_complete.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_complete.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=2d9e1c79c775c2e02e8bc4c4d4b1de6e 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_complete.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=ab822e9fcb92dc7c6308cedd5ae68a36 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_complete.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=392e9033727e4679dd1df2ce3ecfa9d8 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_complete.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=5be58a7f01703a8d7e201cc6d554c9c4 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_complete.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=3a8973fa47ba7f085548dad9fdc38e45 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_complete.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=c8b10d174fc0c263ebf0569e2135ebb5 2500w" />
+</Frame>
+
+<Steps>
+  <Step title="Create an App">
+    Navigate to the Home screen and select **Create App**:
+
+    <img src="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/shared/buttons/create_app.png?fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=705d40879ca0ed04e8cc315c1e34649d" width="250" alt="image of the Create App button" data-og-width="448" data-og-height="66" data-path="images/shared/buttons/create_app.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/shared/buttons/create_app.png?w=280&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=5bcc3b3ab117756f9eb1f3689e805b28 280w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/shared/buttons/create_app.png?w=560&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=16c6ebca5e404c320629982c94b0b7b0 560w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/shared/buttons/create_app.png?w=840&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=91c5acdfbe73b75b10bc0b187cae01e5 840w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/shared/buttons/create_app.png?w=1100&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=8a98e12c8c472ce59126459419e8653f 1100w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/shared/buttons/create_app.png?w=1650&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=aa9af47d3deb715adc7ea76997991841 1650w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/shared/buttons/create_app.png?w=2500&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=2c93fdb671fbcf3d6291d84f19819d30 2500w" />
+
+    Select the **Create with Replit Agent** tab as shown in the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_tab.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=2a090cd16e6106b66d7d1d99cff7c2e5" alt="image of the Create with Replit Agent tab" data-og-width="593" width="593" data-og-height="290" height="290" data-path="images/getting-started/quickstart_ai_agent_tab.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_tab.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=f94588d4e35cdd8fa29f5d9682ee536d 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_tab.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=c5fc185a25d44275c591833ecaebd49b 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_tab.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=1eb897115040ae9b02cfe511657b8185 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_tab.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=cb094b1cf650bf9f1fa71be8c2122b25 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_tab.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=b5f1afd199d576bae30c4b9f28135ee6 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_tab.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=f2bd31622c31f662f1c3b3efd3d4db13 2500w" />
+    </Frame>
+  </Step>
+
+  <Step title="Craft your prompt">
+    To ask Agent to create your Replit App, enter your **prompt** in the text area.
+    A prompt is a description of the task you want AI to perform.
+
+    You can include text and file attachments in your prompt. Follow these steps to submit both in your prompt:
+
+    1. Copy the following image:
+       <Frame>
+         <img src="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/saas_website.png?fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=2067b8c5135a6721522ae743de44000c" alt="image of a SaaS business website" data-og-width="2466" width="2466" data-og-height="1482" height="1482" data-path="images/getting-started/saas_website.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/saas_website.png?w=280&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=ad8d46c262cf535875f0321fe9ca1734 280w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/saas_website.png?w=560&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=b36180ace49d7c0da958799b7e6b811a 560w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/saas_website.png?w=840&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=4b055c0827ed387ac7a0e0e1cc55b95f 840w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/saas_website.png?w=1100&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=be99cdf4897bc649b3e3f97ba613fdfc 1100w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/saas_website.png?w=1650&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=a8ae5bb9fb2ac3d3c575a62ad048eb15 1650w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/saas_website.png?w=2500&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=dd80df9d5f9f9b11ae9a266d114da714 2500w" />
+       </Frame>
+    2. Paste the image into Agent text area.
+    3. Enter the following prompt in the text area:
+       <AiPrompt>
+         Build a website for a SaaS B2B website that looks like the attached file.
+       </AiPrompt>
+    4. Select **Start building**.
+  </Step>
+
+  <Step title="Review and approve Agent's plan">
+    After you submit your prompt, Agent sets up your Replit App and provides updates on its status in real time.
+    You can monitor and view the history in the **Progress** tab.
+
+    When Agent finishes setup, it prompts you with what it intends to build and options to include additional features as shown in the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_approve.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=e0e12411ed9022c097f53675f38cf08b" alt="image of Agent's approve dialog" data-og-width="566" width="566" data-og-height="360" height="360" data-path="images/getting-started/quickstart_ai_agent_approve.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_approve.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=2dbe7e3c85bfd3f66b2035e6fe32fcaf 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_approve.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=a32d797cca0bdd4bbbfeb07d3f5bff7d 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_approve.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=b89b8c97b50dfb2c78e3f3f472a16a0b 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_approve.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=7542ea7f3919310aafc2daf71f7411aa 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_approve.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=5724aa246549a9266eb8687724830c06 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_approve.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=9c534d6330106dc83b46075af6b82ebb 2500w" />
+    </Frame>
+
+    Leave the additional options unchecked and select **Approve plan & start**.
+  </Step>
+
+  <Step title="Test the app">
+    After Agent builds your app, navigate to the **Preview** tab, where you can interact with the website.
+    The website should resemble the following image:
+
+    <Note>The generated website might differ since Agent can return different results for the same prompt.</Note>
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_generated_page.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=a43537d5d2f2fd7de129ad7d89832bd6" alt="image of the Preview tool showing the website created by Agent" data-og-width="850" width="850" data-og-height="861" height="861" data-path="images/getting-started/quickstart_ai_agent_generated_page.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_generated_page.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=d8e31458f5ce3d036ef117fe4e05aac5 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_generated_page.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=92e6f7c86b9b399379ff4935cbc05ceb 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_generated_page.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=b9fc2750ed6a19bf20618c703dcf5f79 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_generated_page.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=910a14b12a65320e49033d73c47cccac 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_generated_page.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=690c04f3ede8132b9db0e5c8d3978bb1 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_generated_page.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=507c2b8ab056a5130778466d25ff5b32 2500w" />
+    </Frame>
+
+    Since the prompt only includes information about the landing page, Agent might omit content creation for the links on the page.
+
+    The next step demonstrates how to use Assistant to add those pages.
+  </Step>
+
+  <Step title="Improve the app using the Assistant">
+    Navigate to the **Assistant** tab, which should resemble the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_new.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=1cff00bfb352263664b4a2ecf5a5c8bb" alt="image of the Assistant tab" data-og-width="522" width="522" data-og-height="664" height="664" data-path="images/getting-started/quickstart_ai_assistant_new.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_new.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=f894896d7e260e1722888770810bca88 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_new.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=501d1f532ed03e5fe0c2d47a8f680e85 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_new.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=5691689aeecac0f6c0f840a9948aa3eb 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_new.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=39fa58d0cc324cab2957ca88b611e8c6 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_new.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=2a8d1ed962680558721f893838f1d0da 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_new.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=2f5934835636997f5ebbdc76dfb2af8c 2500w" />
+    </Frame>
+
+    Enter the following prompt in the text area and submit it:
+
+    <AiPrompt>
+      Create pages for each of the links in the navigation bar.
+    </AiPrompt>
+
+    You can select **Preview code changes** to view the Assistant's planned changes.
+
+    Select **Apply All** and confirm your selection if prompted.
+
+    <Note>
+      Assistant and Agent, which rely on popular AI models, occasionally produce results that don't fulfill your request.
+      If you encounter issues, follow up with a prompt that describes the error messages or the incorrect behavior.
+      Alternatively, you can use the Rollback feature to restore your Replit App to a previously known working state.
+    </Note>
+
+    At this point, you should have a navigable website that includes sample text and functional links.
+  </Step>
+</Steps>
+
+## Explore
+
+Try the tasks in the following sections to build your knowledge of Replit.
+
+### Undo an Agent change
+
+Agent lets you perform a rollback, a feature that reverts your app to a previous checkpoint, discarding all changes made after that point.
+Follow these steps to revert the app to a specific checkpoint:
+
+<Warning>
+  When you use the rollback feature, you restore the Replit App to a previous state. This action removes all changes made after that point. This includes edits by you or AI-powered features and AI conversation context. Database data can also be restored if you select "Restore databases" under "Additional rollback options." The rollback affects your entire development environment.
+</Warning>
+
+For detailed information about checkpoints and rollbacks, see [Checkpoints and Rollbacks](/replitai/checkpoints-and-rollbacks).
+
+<Steps>
+  <Step title="Locate the checkpoint">
+    Navigate to the **Agent** tab and locate the checkpoint you want to restore.
+
+    Select **Rollback to here** to undo all changes after that point as shown in the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_rollback.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=f13073a05de87b7898a5b14b5a03e51f" alt="image of Rollback to here button in the Agent tab" data-og-width="539" width="539" data-og-height="110" height="110" data-path="images/getting-started/quickstart_ai_agent_rollback.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_rollback.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=3a41d3ffa64d399cfc9547e68e62ee06 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_rollback.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=1577e2dfafda016ab654ad8d0ae43168 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_rollback.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=b8ed596c7d844a7abfb3e21bd43ac045 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_rollback.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=1aa5af329fa8fd153717404ee5dea20f 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_rollback.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=fb0fd28b491ec1d1f27067801a747f62 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_agent_rollback.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=022131732e113df9f62b26c300d76741 2500w" />
+    </Frame>
+  </Step>
+
+  <Step title="Verify the rollback">
+    After Agent completes your request, check that the **Agent** tab displays "Rollback completed".
+
+    Confirm that your app functionality matches its state before the checkpoint.
+  </Step>
+</Steps>
+
+### Undo an Assistant change
+
+Assistant lets you perform a rollback, a feature that reverts your app to a previous checkpoint, discarding all changes made after that point.
+Follow these steps to revert the app to a specific checkpoint:
+
+<Warning>
+  When you use the rollback feature, you restore the Replit App to a previous state. This action removes all changes made after that point. This includes edits by you or AI-powered features and AI conversation context. Database data can also be restored if you select "Restore databases" under "Additional rollback options." The rollback affects your entire development environment.
+</Warning>
+
+<Steps>
+  <Step title="Locate the checkpoint">
+    Navigate to the **Assistant** tab and locate the checkpoint you want to restore.
+
+    Select **Undo these changes**\* to revert all changes from the checkpoint after that point in time as shown in the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_rollback.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=3c2572c20df0c108d45a4cdbfbf7dd06" alt="image of Undo these changes button in the Assistant tab" data-og-width="490" width="490" data-og-height="99" height="99" data-path="images/getting-started/quickstart_ai_assistant_rollback.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_rollback.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=f5747e68266869e32d93a34cb845c91a 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_rollback.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=e1ea9058c05a84dc92edb2e80de73835 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_rollback.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=7a694298484fa76ecbe0d399c9f99e17 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_rollback.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=a97fe57000d75204a8a575873c6ec914 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_rollback.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=39c7ba2e6cc3a90296e679447ce531a3 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_ai_assistant_rollback.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=72c3c124ace3d1884eaf59dc5bcf2dc7 2500w" />
+    </Frame>
+  </Step>
+
+  <Step title="Verify the rollback">
+    After Assistant completes your request, the **Undo these changes** button label should be replaced with **Restore checkpoint**.
+
+    Confirm that your app functionality matches its state before the checkpoint.
+  </Step>
+</Steps>
+
+## Continue your journey
+
+Now that you've completed this tutorial, you're ready to explore more possibilities with your Replit App.
+Try the following next steps to enhance your skills:
+
+* Use Agent to create a new Replit App using your own prompt. If your prompt needs more direction or details, select the pen icon labeled **Improve prompt**.
+* Add features to your app using Assistant. Navigate to the **Assistant** tab and try one of the recommended prompts.
+* Publish your Replit App to make it publicly available. Learn more about publishing options and billing from [About Deployments](/category/replit-deployments/).
+* Learn more about the AI-powered Replit features from the following guides:
+
+  * [Replit Agent](/replitai/agent/)
+  * [Replit Assistant](/replitai/agent/)
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

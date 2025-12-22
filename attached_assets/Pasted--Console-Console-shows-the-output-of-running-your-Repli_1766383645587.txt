@@ -1,0 +1,109 @@
+# Console
+
+> Console shows the output of running your Replit App code, informing you of activity and errors.
+
+Console lets you monitor and review logs printed by your running Replit App in real time.
+You can use information from current and past runs to understand your app's behavior,
+troubleshoot errors, and optimize performance.
+
+<Tip>
+  When debugging using Agent, include console logs in your prompt to provide context.
+</Tip>
+
+<Frame>
+  <img src="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-tool.png?fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=10bc7c8f00d946be9fb0588bbfbcec8f" alt="screenshot of the Console workspace tool" data-og-width="2568" width="2568" data-og-height="702" height="702" data-path="images/workspace/console-tool.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-tool.png?w=280&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=2b121b7813bce11fbdd56e4efed230dd 280w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-tool.png?w=560&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=20f399200c13d9b390ac285437b2d18a 560w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-tool.png?w=840&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=50fe0f387c68563b6ab8b311bd6012ac 840w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-tool.png?w=1100&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=bbf0f1f0fd614bb5f69f07b2de49c0ef 1100w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-tool.png?w=1650&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=8f952efd10930ce13267cdb5d65f6dfd 1650w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-tool.png?w=2500&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=72ca47c54d95292d8eb6ecb4386348f3 2500w" />
+</Frame>
+
+## Features
+
+Console provides the following tools to help you understand your app's behavior:
+
+* **Real time logging**: View your app's output as it happens
+* **AI assistance**: Receive suggestions to fix errors reported in the logs
+* **Run history**: Show logs from prior runs to track changes
+
+## Usage
+
+You can access the Console tool directly in your Replit App workspace.
+
+<Accordion title="How to access Console">
+  From the left **Tool dock**:
+
+  1. Select <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5b2c72713cc17ac272098bcbfd624d84" alt="All tools icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/workspace-all-tools-button.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=284639f38f8e91da05d14611e44a9ae6 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=d0e802a9c50a81e5c825cf1ddce00a64 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=b5c4e38a7cf923221d2412e904bbdc94 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=3b43a87adf314fbb300376b404ab8a22 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a11f8a405c4156ff625219a372c2ceca 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-all-tools-button.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=7c86d2f1bfa4611aeca168daf29d08ff 2500w" /> **All tools** to see a list of workspace tools.
+  2. Select <img class="icon-svg" src="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/console.svg?fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=cf63f5fc254207bb250c1b9c17cfc610" alt="Console icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/console.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/console.svg?w=280&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=3965ee294a976645d4045db19fc2727b 280w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/console.svg?w=560&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=ba9491910e8c84ea487e7ad5ee96289e 560w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/console.svg?w=840&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=fb9738faa0ee39d91e5ed826185d4934 840w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/console.svg?w=1100&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=31f5b24f7a4740fc097459dd7669104f 1100w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/console.svg?w=1650&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=4beb93bae690a3901f9c30470794d720 1650w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/console.svg?w=2500&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=cb81be8742e5a56c8c69268db75949cf 2500w" /> **Console**.
+
+  From the **Search bar**:
+
+  1. Select the <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=4a0eb8f6b17ff6761d53167334a68b30" alt="magnifying glass icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/workspace-search-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=baa20919b2c8e7db2fad2562c732edd0 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=5fcfa3935da89ed6c1c6f893998c4f4a 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=2a24f3fcc4dd990d9062598eab165cff 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a3258e068d5ead6bacadcbe6e5785575 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=d08ebecb3063ed18a657beb563ac9c3c 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/workspace-search-icon.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=e63dd2009929a4b375b86e44ed6d7732 2500w" /> magnifying glass at the top to open the search tool
+  2. Type "Console" to locate the tool and select it from the results.
+</Accordion>
+
+Each time you use the **Run** button in your Replit App, Console displays a new entry that includes the following information:
+
+* The Command that executed your code
+* Timestamp information
+* Standard output and error logs
+
+The following screenshot shows the `npm run dev` command used to start the app and log messages from the run:
+
+<Frame>
+  <img src="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-log-entry.png?fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=f9204aaf25d9650565f50271f74f41c9" alt="Console log entry showing the command run" data-og-width="1948" width="1948" data-og-height="870" height="870" data-path="images/workspace/console-log-entry.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-log-entry.png?w=280&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=bc5874b3ca7531f8c11cdb392eb5cdb4 280w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-log-entry.png?w=560&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=c3f6ad574c9f3523fa9b7678fc5dc606 560w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-log-entry.png?w=840&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=a3fa13a6576f422bb306f48648ad6bb8 840w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-log-entry.png?w=1100&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=7cec5ad5b57320b4805de615fbd701b1 1100w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-log-entry.png?w=1650&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=fb4df177d5d9fc91829b0c017ef192bc 1650w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/console-log-entry.png?w=2500&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=78f8731a5cbdf7520589fa3d57d7e829 2500w" />
+</Frame>
+
+<Note>
+  Client-side logs, such as those generated from HTML, CSS, and JS code, appear only in the Developer tools in the [Preview](/replit-workspace/workspace-features/preview) tool.
+</Note>
+
+### AI-powered debugging
+
+When you encounter errors or other information in the logs that you want to understand, select the
+**Ask Assistant** button at the top of the entry. This automatically opens the **Assistant** tab and
+submits the log content to Assistant for analysis.
+
+### Log entry commands
+
+Console provides the following tools to manage your logs:
+
+* **Show Only Latest**: Toggle this control to the **on** position to display only the most recent run.
+* **Collapse entry**: Select the <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/down-arrow.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=cda1e2da19bc79cb4e832592c96c3bdf" alt="downward arrow icon" height="16" width="16" data-og-width="24" data-og-height="24" data-path="images/icons/down-arrow.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/down-arrow.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=62ddc04b846ee06699c6ce118cfaad3e 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/down-arrow.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=cc63a615d9b5c0aca70af342806c8bcc 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/down-arrow.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=d8c541cd3578bba5632204eab8a32219 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/down-arrow.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=c02d59c84d0c568b815f9ee85c77d95c 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/down-arrow.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=14950be5d32edd6f1d6bc7660edb8567 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/down-arrow.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=855905530b6693c6d22d9733eef5c3ae 2500w" /> downward arrow to the left of the command name to hide the logs.
+* **Clear past runs**: Select this to delete logs of prior runs. This action is irreversible.
+
+### Network availability
+
+You can control the development version of your app's availability online.
+
+To stop serving requests to the development URL, select the <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-off.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=89bf19ef3b9cf39c3e087a3bd1b95d5d" alt="network off icon" height="16" width="16" data-og-width="24" data-og-height="24" data-path="images/icons/network-off.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-off.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=c1463fe70ec260ab5b5b9e311665fe9b 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-off.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=7a15cecbd6cda0ba6c8be73cc185af75 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-off.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=9068c970710456b46b93d3eecb52ea55 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-off.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=f86859543fccf41833daba599cb450ea 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-off.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=8a65989c1f721642d5c2755c7fb52910 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-off.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=11d3eebf19ba0c37b1d203fc067ef886 2500w" /> globe with slash icon
+on the right side of the network information line.
+
+To enable it, select the <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-on.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=1841a0121ea6ce26fa6e0fcb06d67a9e" alt="network on icon" height="16" width="16" data-og-width="24" data-og-height="24" data-path="images/icons/network-on.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-on.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=2f38d879e139d8f30c25d0fb9b1012ca 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-on.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a714c1f9c843567e27f05a734ecfadd0 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-on.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=25329bf7f93397ff1a6e70c3b21aba0e 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-on.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=f5b4d3c8eb3e718191f6979a47df734b 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-on.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=80f2ded8193440773babf058800d76f5 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/network-on.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=37084cce460eddde37b9de8f8d667814 2500w" /> globe icon.
+
+To view your development URL, select the `{...}.replit.dev` text in the location bar.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/preview-dev-url.png?fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=d7009e0a58f9d0e36cefa654664231b1" alt="Preview development URL location" data-og-width="1222" width="1222" data-og-height="824" height="824" data-path="images/workspace/preview-dev-url.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/preview-dev-url.png?w=280&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=a5b56aff6ce467e2faee3444f172a5c2 280w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/preview-dev-url.png?w=560&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=f9037d545b2a693cd7ddb90eecc24608 560w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/preview-dev-url.png?w=840&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=572e6cf2a798a8471204d25ef5e60480 840w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/preview-dev-url.png?w=1100&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=1718e09f85e2a0c5c60dcfe013ac755d 1100w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/preview-dev-url.png?w=1650&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=ea184d6b4753e9b1877640c3e8f31891 1650w, https://mintcdn.com/replit/9NKf1XREDj9JhKJb/images/workspace/preview-dev-url.png?w=2500&fit=max&auto=format&n=9NKf1XREDj9JhKJb&q=85&s=f3cee4e456feb56ce6a58dd45083cfcc 2500w" />
+</Frame>
+
+<Note>
+  Your app remains accessible in the Preview tool even when set to stop serving requests to the development URL.
+</Note>
+
+### Stop a workflow command
+
+You can stop a running workflow command from the Console workspace tool.
+
+Select the square button on the right side of the line that contains your Replit App run command to terminate it.
+
+To restart your app, use the workflow **Run** button at the top of your workspace.
+
+## Next steps
+
+To learn more about related Workspace tools see the following resources:
+
+* [Preview](/replit-workspace/workspace-features/preview/): Explore the Preview tool for testing your application and viewing console output
+* [Assistant](/replitai/assistant/): Learn about Assistant for code help and error resolution
+* [Shell](/replit-workspace/workspace-features/shell/): Learn how to use the command-line interface in your workspace.
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

@@ -1,0 +1,60 @@
+# MCP Servers Overview
+
+> Learn how to connect Replit Agent to external tools with the Model Context Protocol.
+
+Replit Agent can connect to hundreds of external tools and data sources through the <a href="https://modelcontextprotocol.io" target="_blank">Model Context Protocol (MCP)</a>, an open standard for integrations between AI tooling providers. MCP servers let Agent leverage context and tools from external services, databases, and APIs.
+
+Use the **MCP servers** section in the Integrations pane to connect any remote MCP server. Once connected, Agent automatically loads the tools each server makes available and will use them when appropriate.
+
+## MCP servers section
+
+<Steps>
+  <Step title="Open the MCP servers section">
+    Go to <a href="https://replit.com/integrations">Integrations Page</a>, then scroll down to <strong>MCP Servers for Replit Agent</strong> to view existing servers or add a new one.
+  </Step>
+
+  <Step title="Add an MCP server">
+    Click <strong>Add MCP server</strong> and provide a recognizable name so Agent can reference the server in chat logs.
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/add-mcp-button.png?fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=b32cee6cab4dbbc96139810003f90d5d" alt="showing the MCP servers section in the integrations pane" data-og-width="4360" width="4360" data-og-height="1482" height="1482" data-path="images/replitai/custom-mcp/add-mcp-button.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/add-mcp-button.png?w=280&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=91a211950888ba6e7654deb87789015c 280w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/add-mcp-button.png?w=560&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=2d0656a3fbc39ecea11acf574e2d1c91 560w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/add-mcp-button.png?w=840&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=9065233bb7869bf464aad403e88aa2c4 840w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/add-mcp-button.png?w=1100&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=acd16fbc182da493f8e44872057aecf8 1100w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/add-mcp-button.png?w=1650&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=e1dee95a59d13340106fbeb5d850c9be 1650w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/add-mcp-button.png?w=2500&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=48193547cdc8e92420657379df23dc06 2500w" />
+    </Frame>
+  </Step>
+
+  <Step title="Test & Save">
+    Enter the server URL and authentication details, then select **Test & Save**. This will attempt to connect to the server and guide you through the authentication flow if required.
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/test-and-save.png?fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=c3348dff2cfecd29d0d6bce6d630fc16" alt="showing the MCP server setup" data-og-width="1050" width="1050" data-og-height="1298" height="1298" data-path="images/replitai/custom-mcp/test-and-save.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/test-and-save.png?w=280&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=9baeff876d3541d5fc0c54fe0878e855 280w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/test-and-save.png?w=560&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=cd4194614a22bdd24194498b5cc50d68 560w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/test-and-save.png?w=840&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=9e8b26e54e273608ee563114e242e040 840w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/test-and-save.png?w=1100&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=c51c6d0e3e55f8447ac919c3e146a511 1100w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/test-and-save.png?w=1650&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=019fee94f4f600438a6609b553ccab97 1650w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/test-and-save.png?w=2500&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=e921c71bd81296c5d4634f11e64973a5 2500w" />
+    </Frame>
+  </Step>
+</Steps>
+
+Once saved, the connection appears under <strong>MCP servers</strong> with its connection status. You can remove it at any time from the same pane by clicking the "Manage" button.
+
+## Use MCP tools in Agent
+
+After a connection is active, Agent automatically fetches the server's tool list and makes its capabilities available in chat for all your projects. To get started, just ask the agent to use the MCP server by mentioning the display name you configured during setup.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/tool-call.png?fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=66724b66f8599496fe22847a17503cea" alt="showing the MCP server being used" data-og-width="571" width="571" data-og-height="817" height="817" data-path="images/replitai/custom-mcp/tool-call.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/tool-call.png?w=280&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=91a520b265be2f710064cdfebebbde2e 280w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/tool-call.png?w=560&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=03dc1c70dbca575a415cf5baa93ee8c3 560w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/tool-call.png?w=840&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=bc4fb03429751c875e7e43e26713cedb 840w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/tool-call.png?w=1100&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=bd997f74ee716c93e32f014666e7006b 1100w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/tool-call.png?w=1650&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=88ce0e44242e007fb869e29306759634 1650w, https://mintcdn.com/replit/TGnQMe8czfYDHq7u/images/replitai/custom-mcp/tool-call.png?w=2500&fit=max&auto=format&n=TGnQMe8czfYDHq7u&q=85&s=1627bbe088b39e2d1b27ca153e352042 2500w" />
+</Frame>
+
+## Security protections
+
+All custom MCP traffic passes through Replit's security scanner. The scanner evaluates tool definitions and planned executions, blocking suspicious or unsafe tools before they run. If a tool is rejected, Agent will inform you about it.
+
+## Authentication options
+
+* **OAuth dynamic client registration**: If the server supports OAuth DCR, Replit automatically detects and registers the client for you.
+* **Custom headers**: Define one or more header name and value pairs (for example, `X-API-Key`). Replit includes these headers in every MCP request so your server can verify the caller.
+
+## Explore MCP resources
+
+* [Browse the MCP directory](/replitai/mcp/directory) for featured server integrations.
+* [Grab install links](/replitai/mcp/install-links) to quickly share tested MCP server connections.
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

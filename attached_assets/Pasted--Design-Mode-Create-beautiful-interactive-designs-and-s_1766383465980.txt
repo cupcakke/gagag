@@ -1,0 +1,221 @@
+# Design Mode
+
+> Create beautiful interactive designs and static websites in under 2 minutes with better visual quality than ever.
+
+Design Mode creates interactive front-end designs and websites in under 2 minutes. Powered by Gemini 3, it delivers better design quality than ever before on Replit, and in less time.
+
+<Tip>
+  **New: Powered by Gemini 3** - Design Mode uses Google's latest Gemini 3 model, delivering superior visual quality and faster results than ever before on Replit. Experience the best-looking designs we've ever produced.
+</Tip>
+
+## What is Design Mode?
+
+Design Mode is built for two primary use cases:
+
+### 1. Visual design & rapid prototyping
+
+**Perfect for:** PMs, designers, and product teams
+
+Create beautiful interactive front-end prototypes to speed up product development and improve handoff between product, design, and engineering. Show stakeholders clickable demos instead of static mockups or lengthy PRDs.
+
+### 2. Simple websites & landing pages
+
+**Perfect for:** Entrepreneurs, local businesses, professionals who need a personal site
+
+Build beautiful, professional websites in under 2 minutes. Deploy on a custom domain and iterate quickly without technical complexity.
+
+## Why Design Mode?
+
+Design Mode addresses key pain points that made Replit too slow or not good enough for rapid visual work:
+
+* **Faster first results**: Get to your first visual checkpoint in under 2 minutes (previously \~10 minutes for full apps)
+* **Faster iteration**: Make visual changes instantly without rebuilding backend logic
+* **Better design quality**: Built with Gemini 3 for superior visual output—better looking than previous Replit designs and competitive with dedicated design tools
+* **Purpose-built for visuals**: No backend overhead means rapid prototyping that was previously too slow on Replit
+
+## Key capabilities
+
+* **Under 2 minutes**: Go from prompt to live interactive design
+* **Powered by Gemini 3**: Optimized for speed and superior visual quality
+* **Instant deployment**: Publish as a static site with zero build time
+* **Quick iteration**: Make visual changes without backend complexity
+* **One-click conversion**: Upgrade to a full app when you need backend functionality
+
+<Info>
+  Design Mode creates front-end only designs—no backend, databases, or integrations. If you request functionality (like login), Agent will mock up the visuals without building the backend, keeping you focused on fast design iteration.
+</Info>
+
+## Getting started
+
+<Steps>
+  <Step title="Start from the homepage">
+    Navigate to the Replit homepage and select the **Design** tab.
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/design-entry-point-design-mode.png?fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=3e3138bf963010ca3b7ae5ff598ec3c2" alt="Replit homepage showing App and Design tabs with text input for creating designs" data-og-width="1740" width="1740" data-og-height="924" height="924" data-path="images/replitai/design-entry-point-design-mode.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/design-entry-point-design-mode.png?w=280&fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=84e8d85f09fecf47507c1b47d7368403 280w, https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/design-entry-point-design-mode.png?w=560&fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=7691d641f6c8e8b29ed1452f3b9bad2e 560w, https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/design-entry-point-design-mode.png?w=840&fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=a115ac607ac53faf0650e4d5e129efcd 840w, https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/design-entry-point-design-mode.png?w=1100&fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=0366cf38a9b15a5320c983b3e76e9e20 1100w, https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/design-entry-point-design-mode.png?w=1650&fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=e5caccb7811a0c23fabe37284df4a31e 1650w, https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/design-entry-point-design-mode.png?w=2500&fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=b3b4bd2c3bd23ab4b4cf771deac197e3 2500w" />
+    </Frame>
+  </Step>
+
+  <Step title="Describe your design">
+    Enter a description of what you want to create. Be specific about visual style, layout, and content.
+
+    Example prompts:
+
+    * "Create a modern landing page for a fitness app with a hero section, features, and pricing"
+    * "Design a portfolio site with a project gallery and contact form"
+    * "Build a personal website for a local bakery with menu and contact info"
+  </Step>
+
+  <Step title="Agent builds your design">
+    Agent creates your interactive design in under 2 minutes, focusing on visual quality and user experience. No backend functionality is built—just beautiful front-end design.
+  </Step>
+
+  <Step title="Review and iterate quickly">
+    Make visual changes instantly by chatting with Agent or using Visual Editor. Refine colors, layouts, content, and styles without backend rebuild delays.
+  </Step>
+
+  <Step title="Optional: Convert to full app">
+    If you request functionality (like login or a database), Agent will mock up the visuals and show a **"Convert to App"** button. Click it to add backend capabilities to your design in the same Repl. You can also start converting your app by pressing the "Design" text that appears on the top of the Agent pane.
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/convert-to-app-design-mode.png?fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=29da37b77ad19de9eadd14e845d40bd5" alt="Convert to App button shown by Agent when functionality is requested" data-og-width="1352" width="1352" data-og-height="396" height="396" data-path="images/replitai/convert-to-app-design-mode.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/convert-to-app-design-mode.png?w=280&fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=bbda0d21478063e3c2da1fdcc6084519 280w, https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/convert-to-app-design-mode.png?w=560&fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=e8ce73342564646b203130a41ad24440 560w, https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/convert-to-app-design-mode.png?w=840&fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=9af04d49b4e6931f468e79ea8c55fb02 840w, https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/convert-to-app-design-mode.png?w=1100&fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=f8d1bbe1c2b6589a82e0b4d180640f4f 1100w, https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/convert-to-app-design-mode.png?w=1650&fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=22019b3fdab7781fd832a55e0d1d37a4 1650w, https://mintcdn.com/replit/qoj91drixtt2JjNS/images/replitai/convert-to-app-design-mode.png?w=2500&fit=max&auto=format&n=qoj91drixtt2JjNS&q=85&s=f1abf84b3400b92d7cc1564416f7614f 2500w" />
+    </Frame>
+
+    <Note>
+      **Core and Teams only**: Converting a Design to a full app (graduating from Design to Build) requires a Core or Teams subscription. Starter users can create and deploy Designs but cannot convert them to full apps with backend functionality.
+    </Note>
+  </Step>
+</Steps>
+
+### What's included vs. not included in Design Mode
+
+**Included:**
+
+* Beautiful, responsive UI components (JavaScript, HTML, CSS)
+* Professional styling and visual polish
+* Fast-loading static pages
+* Mock visuals for any feature (e.g., login screens without actual authentication)
+
+**Not included (front-end only):**
+
+* Backend logic, APIs, or server-side processing
+* Databases or data storage
+* Functional user authentication
+* Server-side functionality
+
+<Tip>
+  When you ask for functionality, Agent will mock up the visuals (e.g., a login screen) and show a **"Convert to App"** button to upgrade when you're ready.
+</Tip>
+
+## Sharing and deploying designs
+
+### Deploying and sharing
+
+Deploy your design instantly as a static site:
+
+1. Click **Deploy** in your workspace
+2. Your design deploys in seconds
+3. Share the URL with stakeholders, users, or on social media
+
+<Info>
+  Designs use [static deployments](/cloud-services/deployments/static-deployments)—extremely fast and cost-effective. If you convert to a full app with backend features, you'll need to switch to autoscale deployments.
+</Info>
+
+Perfect for user testing, stakeholder presentations, and gathering feedback before investing in full development.
+
+## Common use cases
+
+**For PMs and designers (rapid prototyping)**
+
+* Create clickable prototypes to speed up product development and handoff
+* Replace lengthy PRDs with interactive demos that align teams faster
+* Test concepts with users before committing to backend development
+* Build live, code-based prototypes for user testing
+
+**For entrepreneurs and businesses (simple websites)**
+
+* Launch personal websites, portfolios, and business sites in under 2 minutes
+* Create landing pages for products, campaigns, and launches
+* Build beautiful, professional sites with superior design quality
+* Deploy on custom domains without technical complexity
+
+## Tips for best results
+
+**Effective prompting**
+
+* Be specific about visual style, colors, and layout
+* Mention the type of site (landing page, portfolio, dashboard, etc.)
+* Attach design references, Figma files, or screenshots to your prompt
+
+**Iterating quickly**
+
+* Use [Visual Editor](/replitai/visual-editor) for instant visual edits (colors, spacing, text)
+* Chat with Agent for layout or content changes—no backend rebuild needed
+* Iterate rapidly without waiting for backend processing
+
+**Starting from existing designs**
+
+* Import from Figma, Lovable, or Bolt using [Replit Import](/replit-app/import-to-replit)
+* Attach screenshots to recreate existing designs
+* Reference design systems or component libraries in your prompts
+
+## Design Mode vs. App Mode
+
+Design Mode and App Mode serve different purposes:
+
+<Accordion title="Design Mode vs. App Mode">
+  **Design Mode (Design tab):**
+
+  * Selected from the homepage as "Design"
+  * Creates front-end only designs in under 2 minutes
+  * No backend infrastructure—visuals only
+  * Built with Gemini 3 for superior design quality
+  * Purpose-built for rapid prototyping and simple websites
+  * Uses static deployments only until converted to an App
+
+  **App Mode (App tab):**
+
+  * Selected from the homepage as "App"
+  * Builds full-stack applications with frontend and backend
+  * Includes access to databases, APIs, and integrations
+  * Choose between Fast (\~3-5 mins) or full build (10+ mins)
+  * Complete application development workflow
+
+  Choose Design Mode when you want the fastest path to beautiful visuals without backend complexity. Choose App Mode when you need backend functionality, databases, or server-side logic.
+</Accordion>
+
+## FAQ
+
+<AccordionGroup>
+  <Accordion title="When should I use Design Mode vs. building a full app?">
+    Use Design Mode (Design tab) when you want to:
+
+    * Create quick visual prototypes or clickable demos in under 2 minutes
+    * Build simple static websites (landing pages, portfolios, business sites)
+    * Share designs for feedback before backend development
+    * Iterate rapidly on visuals without backend delays
+
+    Build a full app (App tab) when you know you need:
+
+    * Backend logic and APIs from the start
+    * Database storage
+    * User authentication
+    * Server-side functionality
+  </Accordion>
+</AccordionGroup>
+
+## Next steps
+
+Ready to start creating beautiful designs in under 2 minutes? Here's how to begin:
+
+1. **Create your first design**: Visit the [Replit homepage](https://replit.com) and select the **Design** tab
+2. **Learn effective prompting**: Follow our [vibe coding guide](/tutorials/how-to-vibe-code) for best results
+3. **Deploy and share**: Use [static deployments](/cloud-services/deployments/static-deployments) to publish instantly
+4. **Convert when ready**: Click "Convert to App" when you need backend functionality
+
+Learn more about [Agent](/replitai/agent) and other [Replit AI tools](/category/replit-ai).
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

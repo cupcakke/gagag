@@ -1,0 +1,107 @@
+# MCP directory
+
+> Browse featured Model Context Protocol servers that connect Replit Agent to your tools.
+
+Use this directory to explore servers that expose specialized tools, data sources, or workflows through the Model Context Protocol (MCP). Every listing includes a short summary and a Replit badge so you can decide which servers to wire up for your builders.
+
+This is not an exhaustive list, you can [add any remote MCP server](/replitai/mcp/overview#add-an-mcp-server) and use it with the Replit Agent.
+
+<Info>
+  Click the **Add to Replit** badge to install any server. You'll be prompted to authorize the connection in your Replit workspace.
+</Info>
+
+## Featured servers
+
+<table>
+  <thead>
+    <tr>
+      <th>Server</th>
+      <th>Description</th>
+      <th>Install</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://atlassian.com&size=32" alt="" style={{display: 'inline', verticalAlign: 'middle', marginRight: '8px', width: '20px', height: '20px', background: '#fff', borderRadius: '4px', padding: '2px'}} />Atlassian</td>
+      <td>Project management and team collaboration tools.</td>
+
+      <td>
+        <a href="https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6IkF0bGFzc2lhbiIsImJhc2VVcmwiOiJodHRwczovL21jcC5hdGxhc3NpYW4uY29tL3YxL3NzZSJ9" target="_blank">
+          <img src="https://replit.com/badge?caption=Add%20to%20Replit&variant=small" alt="Add to Replit" noZoom />
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://amplitude.com&size=32" alt="" style={{display: 'inline', verticalAlign: 'middle', marginRight: '8px', width: '20px', height: '20px', background: '#fff', borderRadius: '4px', padding: '2px'}} />Amplitude</td>
+      <td>Product analytics and user behavior insights.</td>
+
+      <td>
+        <a href="https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6IkFtcGxpdHVkZSIsImJhc2VVcmwiOiJodHRwczovL21jcC5hbXBsaXR1ZGUuY29tL21jcCJ9" target="_blank">
+          <img alt="Add to Replit" src="https://replit.com/badge?caption=Add%20to%20Replit&variant=small" noZoom />
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://linear.app&size=32" alt="" style={{display: 'inline', verticalAlign: 'middle', marginRight: '8px', width: '20px', height: '20px', background: '#fff', borderRadius: '4px', padding: '2px'}} />Linear</td>
+      <td>Create and update issues directly from Agent.</td>
+
+      <td>
+        <a href="https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6IkxpbmVhciIsImJhc2VVcmwiOiJodHRwczovL21jcC5saW5lYXIuYXBwL3NzZSJ9" target="_blank">
+          <img src="https://replit.com/badge?caption=Add%20to%20Replit&variant=small" alt="Add to Replit" noZoom />
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://miro.com&size=32" alt="" style={{display: 'inline', verticalAlign: 'middle', marginRight: '8px', width: '20px', height: '20px', background: '#fff', borderRadius: '4px', padding: '2px'}} />Miro</td>
+      <td>Collaborative AI-powered visual platform for planning and design.</td>
+
+      <td>
+        <a href="https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6Ik1pcm8iLCJiYXNlVXJsIjoiaHR0cHM6Ly9tY3AubWlyby5jb20vIiwiaGVhZGVycyI6W119" target="_blank">
+          <img src="https://replit.com/badge?caption=Add%20to%20Replit&variant=small" alt="Add to Replit" noZoom />
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.notion.so&size=32" alt="" style={{display: 'inline', verticalAlign: 'middle', marginRight: '8px', width: '20px', height: '20px', background: '#fff', borderRadius: '4px', padding: '2px'}} />Notion</td>
+      <td>Sync docs, notes, and project trackers into Agent context.</td>
+
+      <td>
+        <a href="https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6Ik5vdGlvbiIsImJhc2VVcmwiOiJodHRwczovL21jcC5ub3Rpb24uY29tL21jcCJ9" target="_blank">
+          <img src="https://replit.com/badge?caption=Add%20to%20Replit&variant=small" alt="Add to Replit" noZoom />
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://sentry.io&size=32" alt="" style={{display: 'inline', verticalAlign: 'middle', marginRight: '8px', width: '20px', height: '20px', background: '#fff', borderRadius: '4px', padding: '2px'}} />Sentry</td>
+      <td>Error tracking and performance monitoring.</td>
+
+      <td>
+        <a href="https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6IlNlbnRyeSIsImJhc2VVcmwiOiJodHRwczovL21jcC5zZW50cnkuZGV2L21jcCJ9" target="_blank">
+          <img src="https://replit.com/badge?caption=Add%20to%20Replit&variant=small" alt="Add to Replit" noZoom />
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://stripe.com&size=32" alt="" style={{display: 'inline', verticalAlign: 'middle', marginRight: '8px', width: '20px', height: '20px', background: '#fff', borderRadius: '4px', padding: '2px'}} />Stripe</td>
+      <td>Payment processing and financial infrastructure.</td>
+
+      <td>
+        <a href="https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6IlN0cmlwZSIsImJhc2VVcmwiOiJodHRwczovL21jcC5zdHJpcGUuY29tIn0=" target="_blank">
+          <img src="https://replit.com/badge?caption=Add%20to%20Replit&variant=small" alt="Add to Replit" noZoom />
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

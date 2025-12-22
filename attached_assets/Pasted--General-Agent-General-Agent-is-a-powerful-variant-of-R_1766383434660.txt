@@ -1,0 +1,97 @@
+# General Agent
+
+> General Agent is a powerful variant of Replit Agent designed to work with any project type or framework, offering enhanced flexibility and broader workflow support
+
+export const YouTubeEmbed = ({videoId, title = "YouTube video", startAt}) => {
+  if (!videoId) {
+    return null;
+  }
+  let url = "https://www.youtube.com/embed/" + videoId;
+  if (startAt) {
+    url = url + "?start=" + startAt;
+  }
+  return <Frame>
+      <iframe src={url} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+    </Frame>;
+};
+
+<Frame>
+  <img src="https://mintcdn.com/replit/1KNLLtS073bEHM-0/images/replitai/general-agent.png?fit=max&auto=format&n=1KNLLtS073bEHM-0&q=85&s=2facc4c029b86df1fa70948fb92a23c1" alt="General Agent hero illustration" data-og-width="1040" width="1040" data-og-height="572" height="572" data-path="images/replitai/general-agent.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/1KNLLtS073bEHM-0/images/replitai/general-agent.png?w=280&fit=max&auto=format&n=1KNLLtS073bEHM-0&q=85&s=70331776ff5f99dfc987f4bb33faab55 280w, https://mintcdn.com/replit/1KNLLtS073bEHM-0/images/replitai/general-agent.png?w=560&fit=max&auto=format&n=1KNLLtS073bEHM-0&q=85&s=f30f72f51b5f6b63d364b45895fb6d93 560w, https://mintcdn.com/replit/1KNLLtS073bEHM-0/images/replitai/general-agent.png?w=840&fit=max&auto=format&n=1KNLLtS073bEHM-0&q=85&s=586643b392b692ce6004291e7d085586 840w, https://mintcdn.com/replit/1KNLLtS073bEHM-0/images/replitai/general-agent.png?w=1100&fit=max&auto=format&n=1KNLLtS073bEHM-0&q=85&s=3259fcc629835824db72ec90f7280bb4 1100w, https://mintcdn.com/replit/1KNLLtS073bEHM-0/images/replitai/general-agent.png?w=1650&fit=max&auto=format&n=1KNLLtS073bEHM-0&q=85&s=b4afa09cc507988ef1f0bc0b4331d393 1650w, https://mintcdn.com/replit/1KNLLtS073bEHM-0/images/replitai/general-agent.png?w=2500&fit=max&auto=format&n=1KNLLtS073bEHM-0&q=85&s=4985e71c63a66aa4a58b697ddb6ebf38 2500w" />
+</Frame>
+
+General Agent is an advanced feature that allows you to use *any* framework with Replit Agent. That means you can build with your favorite projects or workflows. This comes with some risk: not all projects will work on the first try, but it means that you can now use Agent on any new or existing project that runs on Replit.
+
+## How to access General Agent
+
+You can get General Agent for your project in three ways:
+
+1. **Select "General" before writing a prompt** on the Replit main page
+2. **Choose any [Developer Framework](https://replit.com/templates)** - All Developer Frameworks now automatically include General Agent (including historical Apps made from Developer Frameworks)
+3. **[Import](/replit-app/import-to-replit) from GitHub** - Projects imported from GitHub that aren't previous Replit, Lovable, or Figma projects automatically get General Agent (including historical GitHub imports)
+
+## What makes General Agent different
+
+<YouTubeEmbed videoId="0CIaqDQt2Ik" />
+
+General Agent has three key differences from the standard Replit Agent:
+
+### Flexible guardrails
+
+General Agent doesn't have the specialized technology rules that act as guardrails on standard Agent behavior. When you ask for something, General Agent makes its best effort to fulfill your request.
+
+### Enhanced toolset
+
+General Agent has access to more tools for configuring your Replit environment and project setup, allowing it to handle:
+
+* Complex workflows
+* Custom run configurations
+* Environment setup
+* Dependency management
+* And much more
+
+### Manual publishing configuration
+
+<Note>
+  Unlike the regular Replit Agent with pre-configured environment, publishing, and run commands:  General Agent will setup its own environment and run commands based on your request and it will require you to ask it to configure publishing. While more powerful, this means your experience may vary.
+</Note>
+
+## Supported workflows
+
+General Agent can handle a wide variety of workflows, including:
+
+* **Alternative web frameworks** like Angular or Vue
+* **Different programming languages** like Rust, C#, or Go
+* **Alternative databases** (Note: Database rollbacks for non-Replit Databases are not supported, so proceed carefully)
+* **Command-line tools** including Rust CLIs or terminal-based user interfaces (TUIs)
+* **Desktop applications** using Python tkinter or Godot games
+
+## Getting started
+
+<Steps>
+  <Step title="Create or import your project">
+    Use one of the three methods above to get a project with General Agent
+  </Step>
+
+  <Step title="Describe what you want to build">
+    Tell General Agent about your project goals in natural language
+  </Step>
+
+  <Step title="Iterate and refine">
+    Work with General Agent to configure your environment and setup exactly how you want it
+  </Step>
+</Steps>
+
+## What to expect
+
+The setup process with General Agent varies depending on your project's tech stack, complexity, and requirements:
+
+* **Single-shot setup**: Sometimes General Agent configures everything in one go
+* **Iterative collaboration**: You may need to work with General Agent through multiple rounds to get the setup exactly right
+* **Technology limitations**: Under the hood, Replit uses Nix for managing packages. Some technologies may not be supported in the Nix environment or may be difficult to work with modern LLM agents.
+
+Your milage may vary, but you have the power to try out whatever you like!  General Agent offers significantly more power and flexibility, making it ideal for builders who want to work with diverse technologies and complex project requirements, and are comfortable with occasional debugging.
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

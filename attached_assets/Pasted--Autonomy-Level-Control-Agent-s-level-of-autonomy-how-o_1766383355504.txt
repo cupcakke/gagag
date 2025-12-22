@@ -1,0 +1,111 @@
+# Autonomy Level
+
+> Control Agent's level of autonomy (how often it reviews its code & makes changes without intervention).
+
+export const YouTubeEmbed = ({videoId, title = "YouTube video", startAt}) => {
+  if (!videoId) {
+    return null;
+  }
+  let url = "https://www.youtube.com/embed/" + videoId;
+  if (startAt) {
+    url = url + "?start=" + startAt;
+  }
+  return <Frame>
+      <iframe src={url} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+    </Frame>;
+};
+
+Autonomy Level lets you customize how independently Agent works on your project and how frequently it reviews its own code. Available in Agent Tools, this setting helps you balance speed, accuracy, and control based on your specific needs and project type.
+
+<Tip>
+  **New with Agent 3** - Autonomy Level gives you granular control over Agent's
+  autonomy level, from hands-on guidance to extended autonomous development with
+  comprehensive code review.
+</Tip>
+
+<Frame>
+  <img src="https://mintcdn.com/replit/0EtCx2GL8sOBMpi6/images/replitai/autonomy-level-high-setting.png?fit=max&auto=format&n=0EtCx2GL8sOBMpi6&q=85&s=64f1fe47c3361e0235c639cf8a1730ca" alt="Autonomy Level settings in Agent Tools showing four levels: Low, Med, High, and Max Autonomy" data-og-width="788" width="788" data-og-height="772" height="772" data-path="images/replitai/autonomy-level-high-setting.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/0EtCx2GL8sOBMpi6/images/replitai/autonomy-level-high-setting.png?w=280&fit=max&auto=format&n=0EtCx2GL8sOBMpi6&q=85&s=47eb96e5f6e29f82d7050b350baa8c61 280w, https://mintcdn.com/replit/0EtCx2GL8sOBMpi6/images/replitai/autonomy-level-high-setting.png?w=560&fit=max&auto=format&n=0EtCx2GL8sOBMpi6&q=85&s=8a72eafb862516d8d89329f1e000810f 560w, https://mintcdn.com/replit/0EtCx2GL8sOBMpi6/images/replitai/autonomy-level-high-setting.png?w=840&fit=max&auto=format&n=0EtCx2GL8sOBMpi6&q=85&s=3471ebfa3a108f632923ac75d69d94f5 840w, https://mintcdn.com/replit/0EtCx2GL8sOBMpi6/images/replitai/autonomy-level-high-setting.png?w=1100&fit=max&auto=format&n=0EtCx2GL8sOBMpi6&q=85&s=22d784961ed74db7544702ad7fec26c1 1100w, https://mintcdn.com/replit/0EtCx2GL8sOBMpi6/images/replitai/autonomy-level-high-setting.png?w=1650&fit=max&auto=format&n=0EtCx2GL8sOBMpi6&q=85&s=611076678fa65bac023b2b6313fc483b 1650w, https://mintcdn.com/replit/0EtCx2GL8sOBMpi6/images/replitai/autonomy-level-high-setting.png?w=2500&fit=max&auto=format&n=0EtCx2GL8sOBMpi6&q=85&s=21fd3742add5ecd87ad1e29c79d21efc 2500w" />
+</Frame>
+
+## Features
+
+Autonomy Level offers four distinct levels of Agent behavior, each designed for different use cases and workflows:
+
+* **Low autonomy**: Minimal code review with hands-on control, similar to Agent v2
+* **Medium autonomy**: Targeted code review on Agent's recent changes with improved accuracy (recommended for legacy projects & imports)
+* **High autonomy**: Comprehensive code review on every change with broader context analysis (recommended for all new projects)
+* **Max autonomy**: (Beta) Extended autonomous development with detailed task planning and execution
+
+## Usage
+
+Access Autonomy Level setting through Agent's tools interface when working on any project. The setting applies to your current conversation and affects how Agent approaches subsequent tasks.
+
+<Accordion title="How to access Autonomy Level">
+  1. Open Agent in your project workspace
+  2. Look for the Agent tools dropdown in the bottom right of the input box
+  3. Locate Autonomy Level control
+  4. Select your preferred autonomy level
+</Accordion>
+
+### Autonomy Levels
+
+<YouTubeEmbed videoId="dAWTJmRjfrQ" title="Autonomy Levels overview" />
+
+#### Low
+
+**Best for**: Simple prompts and when you want maximum control over changes.
+
+* No AI code review on Agent's work
+* Most hands-on experience requiring your guidance
+* Fastest execution for straightforward tasks
+* Most similar to the Agent v2 experience
+
+#### Medium (Default for existing projects)
+
+**Best for**: Balanced workflows where you want some quality assurance without extended wait times.
+
+* AI code review on specific changes Agent just made
+* Helps improve code accuracy and catch common mistakes
+* Moderate execution time with quality improvements
+* Good balance of speed and reliability
+
+#### High (Default for new projects)
+
+**Best for**: Complex projects where code quality is critical and you want thorough analysis.
+
+* AI code review on every change Agent makes
+* Reviews adjacent files to find interconnected issues
+* Longer execution time but higher code quality
+* Works best on projects created with Agent v3
+* May not work as well for imported existing projects or pre-Agent v3 projects with technical debt
+
+#### Max Autonomy (Beta)
+
+**Best for**: Extremely detailed prompts where you want Agent to work extensively with minimal supervision.
+
+* Same code review frequency as High autonomy
+* Agent creates more detailed task lists autonomously
+* Finds and executes adjacent tasks without user input
+* Can work for extended periods (up to 200 minutes)
+
+### Choosing the Right Level
+
+Consider these factors when selecting your autonomy level:
+
+* **Project history**: New Agent v3 projects work better with higher autonomy than imported legacy projects
+* **Time constraints**: Lower autonomy provides faster results for simple changes
+* **Code quality**: Higher autonomy offers more thorough review and error detection
+
+### Tips for Effective Use
+
+* **Start conservative**: Begin with **Medium** or **High** autonomy and adjust based on results
+* **Match complexity**: Use **High/Max autonomy** for complex prompts, **Low/Medium** for quick fixes
+* **Consider project age**: Older projects typically work better with **Medium** autonomy
+* **Adjust as needed**: You can change autonomy levels prompt-to-prompt based on task requirements
+
+Learn more about other [Agent features](/replitai/agent) and [App Testing](/replitai/app-testing).
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

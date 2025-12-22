@@ -1,0 +1,269 @@
+# Checkpoints and Rollbacks
+
+> Learn how checkpoints automatically save your work and how rollbacks let you undo changes.
+
+With Replit, you never have to worry about losing your work.
+
+Replit's checkpoint and rollback system provides comprehensive version control and state management for your entire development environment.
+
+When you use Replit Agent or Assistant, checkpoints automatically capture your complete project state. This includes not just your code changes, but workspace contents, AI conversation context, and connected databases.
+
+## What are checkpoints?
+
+A **checkpoint** is a complete snapshot of your Replit App state created automatically by Agent and Assistant at key development milestones. Unlike traditional version control that only tracks code changes, Replit checkpoints capture your entire development context.
+
+Think of checkpoints as save points in a video game - you can always go back to a working version of your app.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-checkpoint.png?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=326ff336a67eeadb4cc05543d39603ac" alt="Agent checkpoint interface showing rollback options" data-og-width="1554" width="1554" data-og-height="876" height="876" data-path="images/replitai/agent-checkpoint.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-checkpoint.png?w=280&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=a66832055bcd87b652a7e4a05e311fcc 280w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-checkpoint.png?w=560&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=6cf586fbb0f8efac49955adf94dd3b2c 560w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-checkpoint.png?w=840&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=f52ce5070fe64064b99896d2521d77d5 840w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-checkpoint.png?w=1100&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=67b9cf6fd6fe21f8c3ed1c4ccd031426 1100w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-checkpoint.png?w=1650&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=684667ee38076a578b0537d0431f6780 1650w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-checkpoint.png?w=2500&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=26a30fc04b7f6276d52c9801d0704eb3 2500w" />
+</Frame>
+
+### Complete state capture
+
+Each checkpoint preserves:
+
+* **Workspace contents**: All files, directories, installed packages, and project configuration
+* **AI conversation context**: The complete conversation history and context that led to current state
+* **Environment configuration**: Runtime settings and publishing configurations
+* **Agent memory**: The AI's understanding of your project architecture, preferences, and patterns
+* **Database contents**: The data and schema of your database at the time of checkpoint creation
+
+This comprehensive approach means you can confidently experiment with changes, knowing you can restore not just your code, but your entire development context.
+
+## How rollbacks work
+
+**Rollback** functionality allows you to restore your Replit App to any previous checkpoint state with a single click. This is far more powerful than traditional Git revert operations.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/checkpoint-rollback.png?fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=f9594eb28458309b2759e8698b8535ce" alt="Checkpoint rollback interface showing rollback options" data-og-width="3154" width="3154" data-og-height="2366" height="2366" data-path="images/replitai/checkpoint-rollback.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/checkpoint-rollback.png?w=280&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=112089f863c2158c488149819567b671 280w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/checkpoint-rollback.png?w=560&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=a71d2a32088a71dcfeadb3efb580ace3 560w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/checkpoint-rollback.png?w=840&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=919aea71632283d5991940a4915a0e13 840w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/checkpoint-rollback.png?w=1100&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=3f8a002c4b552d8676a3c6689f4b4db2 1100w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/checkpoint-rollback.png?w=1650&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=82ed52eecc051fb414eeab474e5da5f1 1650w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/checkpoint-rollback.png?w=2500&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=8ea66e449ef9f90db03a323c8741caab 2500w" />
+</Frame>
+
+Rollbacks are designed to be safe and predictable:
+
+* **Non-destructive preview**: Some interfaces allow you to preview checkpoint states before rolling back
+* **Clear boundaries**: Each checkpoint represents a logical development milestone
+* **Conversation continuity**: AI context is preserved, so you can continue building from the restored state
+* **Immediate effect**: Rollbacks apply instantly across your entire development environment
+
+### Rolling back
+
+When you roll back to a previous checkpoint, your project returns to that earlier state, including:
+
+1. **Complete workspace state**: All files in your workspace return to their exact state at the selected checkpoint
+2. **AI conversation context**: Agent and Assistant conversations are restored to the point of the checkpoint, maintaining context continuity
+3. **Project configuration**: Dependencies, packages, and runtime configurations
+4. **Development environment**: Tool configurations and workspace settings
+5. **Database contents (optional)**: When selected, your database will be restored to the state it was at the time of the checkpoint
+
+<Info>
+  By default, rollbacks do not change your database. To include your development database in a rollback, select "Database" in "Additional rollback options."
+
+  Note that restoring your **[production database](/cloud-services/storage-and-databases/production-databases)** is not performed automatically through this rollback feature.
+  To learn how to restore your production database to an earlier moment in time, see [the documentation for how to perform a point-in-time restore](/cloud-services/storage-and-databases/production-databases/#point-in-time-restore).
+</Info>
+
+<Warning>
+  When you use the rollback feature, you restore the Replit App to a previous state. This removes all changes made after that point, including code edits. Database changes are also reverted if you choose to restore your database.
+</Warning>
+
+### Rolling forward
+
+Checkpoints in Replit work bidirectionally—you can move both backward and forward through your project's history.
+This gives you complete flexibility to navigate your development timeline without fear of losing work.
+
+If you've rolled back too far or want to recover changes from a later checkpoint, you can **roll forward** to move ahead in your checkpoint history. This allows you to navigate freely through your project's timeline without losing work.
+
+To roll forward, access the history view in the Agent tab by clicking the history icon <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=48f22b875d3dfe16868e29551b5c00ac" alt="history icon" data-og-width="24" width="24" data-og-height="24" height="24" data-path="images/icons/history.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=78e9f101060ebf0693ccdedb3a61af2b 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=b7d553d174aceee2d60c6c499a1bbd18 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=e49455b46bac055953dfb04420b2b4c1 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=3f7ba44c69870762f71ba5b35c374858 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=3865353bf0f8b21ac48fe3eab484aa18 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a2fff6e5085ec4a6d72f8847acac2d02 2500w" />, then select a checkpoint that occurs after your current position.
+
+<Info>
+  Rolling forward is only possible if you have checkpoints ahead of your current position in the timeline. Once you make new changes after a rollback, those future checkpoints become part of an alternate branch of history.
+</Info>
+
+This bidirectional navigation gives you complete control over your project's timeline, ensuring your work is always recoverable.
+
+## Checkpoint creation
+
+Checkpoints are created automatically by Replit's AI tools at strategic moments during development.
+
+### Agent checkpoints
+
+[Replit Agent](/replitai/agent) creates checkpoints when:
+
+* **Feature completion**: After successfully implementing a requested feature or functionality
+* **Major milestones**: When significant progress is made on complex tasks
+* **Stable states**: After testing and validation of implemented changes
+* **Error recovery**: Before attempting fixes for critical issues
+
+### Assistant checkpoints
+
+[Replit Assistant](/replitai/assistant) creates checkpoints when:
+
+* **Edit requests**: After applying approved changes to your codebase
+* **Multi-file modifications**: When changes span multiple files or components
+* **Package updates**: After installing or updating dependencies
+* **Configuration changes**: When modifying project settings or structure
+
+### Checkpoint characteristics
+
+Every checkpoint includes:
+
+* **AI-generated descriptions**: Clear, descriptive summaries of what was accomplished
+* **Timestamp information**: Precise creation time for easy identification
+* **Change scope**: Indication of files, features, or systems modified
+* **Billing information**: For Agent, transparent cost tracking per checkpoint
+
+## Using checkpoints and rollbacks
+
+### Finding checkpoints
+
+Checkpoints appear in multiple locations throughout your Replit workspace:
+
+**Agent tab**: View all Agent-created checkpoints with descriptions and rollback options
+**Assistant tab**: Access Assistant-generated checkpoints and undo/restore functionality
+**Git pane**: See checkpoints as Git commits with full version control integration
+**History view**: In Agent chat, click the history icon <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=48f22b875d3dfe16868e29551b5c00ac" alt="history icon" data-og-width="24" width="24" data-og-height="24" height="24" data-path="images/icons/history.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=78e9f101060ebf0693ccdedb3a61af2b 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=b7d553d174aceee2d60c6c499a1bbd18 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=e49455b46bac055953dfb04420b2b4c1 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=3f7ba44c69870762f71ba5b35c374858 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=3865353bf0f8b21ac48fe3eab484aa18 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/history.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=a2fff6e5085ec4a6d72f8847acac2d02 2500w" /> to access a complete timeline of all checkpoints and their progression
+
+### Performing rollbacks
+
+The rollback process varies slightly depending on where you initiate it:
+
+#### From Agent tab
+
+<Steps>
+  <Step title="Navigate to Agent">
+    Open the **Agent** tab in your workspace to view all Agent-created checkpoints.
+  </Step>
+
+  <Step title="Select checkpoint">
+    Locate the checkpoint you want to restore and select **Rollback to here**.
+  </Step>
+
+  <Step title="Confirm rollback">
+    Review the rollback warning and confirm to restore your app to the selected state.
+  </Step>
+
+  <Step title="Verify restoration">
+    Check that your workspace, database, and AI context match the restored checkpoint state.
+  </Step>
+</Steps>
+
+#### From Assistant tab
+
+<Steps>
+  <Step title="Navigate to Assistant">
+    Open the **Assistant** tab to view Assistant-created checkpoints and edit history.
+  </Step>
+
+  <Step title="Undo changes">
+    Select **Undo these changes** to revert the most recent Assistant modifications.
+  </Step>
+
+  <Step title="Restore checkpoint">
+    Use **Restore checkpoint** to return to a specific Assistant-generated state.
+  </Step>
+
+  <Step title="Verify restoration">
+    Confirm your app matches the expected state before continuing development.
+  </Step>
+</Steps>
+
+### Best practices
+
+**Use checkpoints strategically**:
+
+* Test your app after each major checkpoint to ensure stability
+* Create manual Git commits for long-term version tracking alongside automatic checkpoints
+* Review checkpoint descriptions to understand what changed
+
+**Rollback considerations**:
+
+* Always verify the scope of changes before rolling back
+* Consider the impact on your database and external integrations
+* Communicate rollbacks to collaborators to maintain team awareness
+
+**Iterative development**:
+
+* Build incrementally to take advantage of frequent checkpoints
+* Use rollbacks to explore different implementation approaches safely
+* Leverage AI context preservation to continue conversations after rollbacks
+
+## Integration with version control
+
+Checkpoints work seamlessly with Replit's broader version control ecosystem:
+
+### Git integration
+
+* **Git commit generation**: Each checkpoint creates a corresponding Git commit
+* **Branch compatibility**: Checkpoints respect branch structure and merging workflows
+* **Remote sync**: GitHub integration maintains checkpoint synchronization
+* **Command line access**: Full Git functionality remains available alongside checkpoints
+
+### Collaboration features
+
+* **Team visibility**: Checkpoints are visible to all project collaborators
+* **Merge conflict prevention**: Checkpoint timing reduces likelihood of conflicts
+* **Shared context**: AI conversation context helps team members understand changes
+* **Real-time updates**: Collaborators see checkpoint creation in real-time
+
+## Advanced features
+
+### Checkpoint previews
+
+Some interfaces support checkpoint preview functionality:
+
+* **Visual comparison**: See your app's appearance at different checkpoint states
+* **Non-destructive exploration**: Preview without actually rolling back
+* **Progress tracking**: Understand how your app evolved over time
+* **Iteration comparison**: Compare different implementation approaches
+
+### Cross-session rollbacks
+
+For advanced builders and team administrators:
+
+* **Extended history**: Access checkpoints across multiple development sessions
+* **Administrative control**: Team admins can perform rollbacks across user sessions
+* **Audit trails**: Complete history of checkpoint creation and rollback actions
+
+## Use cases
+
+### Experimental development
+
+Checkpoints enable fearless experimentation:
+
+* Try new features knowing you can easily revert
+* Test different architectural approaches
+* Explore alternative UI designs or user flows
+* Implement complex integrations with safety nets
+
+### Debugging and recovery
+
+When issues arise, checkpoints provide reliable recovery:
+
+* Roll back to working states when bugs are introduced
+* Isolate problems by comparing checkpoint states
+* Restore database integrity after data corruption
+* Recover from accidental deletions or modifications
+
+### Learning and iteration
+
+Checkpoints support educational development:
+
+* Compare different implementation strategies
+* Learn from AI decision-making process through checkpoint progression
+* Build understanding by exploring how features evolved
+* Practice new techniques with rollback safety
+
+## Next steps
+
+To learn more about related Replit features, explore:
+
+* [Replit Agent](/replitai/agent): Learn about AI-powered app development and checkpoint creation
+* [Replit Assistant](/replitai/assistant): Discover targeted editing capabilities and Assistant checkpoints
+* [Version Control](/replit-workspace/workspace-features/version-control): Understand Git integration and broader version control options
+* [File History](/replit-workspace/workspace-features/file-history): Explore granular file-level change tracking
+* [Effective Prompting](/tutorials/effective-prompting): Master techniques for checkpoint-driven development
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

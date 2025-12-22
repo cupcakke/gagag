@@ -1,0 +1,56 @@
+# Developer Frameworks
+
+> If your Replit App can be used as a good starting point for other project, you might want to submit it as a developer framework! Let's learn what a Replit developer framework is and how to make a good one.
+
+## What is a developer framework?
+
+Developer frameworks are published Replit Apps that can be used to build upon. The official developer frameworks, made by Replit, have a checkbox next to the name of the framework:
+
+<Frame>
+  <img src="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-official.png?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=2781a5222dd76507327381fe7177a58e" alt="Official Replit developer frameworks" data-og-width="1051" width="1051" data-og-height="246" height="246" data-path="images/programming-ide/creating-a-template/template-official.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-official.png?w=280&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=20b83d214659b269e7615075e1d00988 280w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-official.png?w=560&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=26278a59c72baff8d40bf7951ece751c 560w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-official.png?w=840&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=8e2e3f8cfa289206ec4ccf322d5ee8e0 840w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-official.png?w=1100&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=a5fbc6d172a022184e32a90e3ca5658a 1100w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-official.png?w=1650&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=0c1acdee6cd9b2c26c6c4719dfdd0605 1650w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-official.png?w=2500&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=25ab1b79ce097c5b543a093f97201f89 2500w" />
+</Frame>
+
+The [HTML, CSS, JS framework](https://replit.com/@replit/HTML-CSS-JS?v=1#index.html) framework is very popular and can be used as a starting point for creating a vanilla JavaScript project. You can fork the framework to use it.
+
+Other developer frameworks have been created by community members, like this one:
+
+<Frame>
+  <img src="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-community.png?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=ce3fb02512bcab21e2ec3bc545efaa40" alt="Community developer frameworks" data-og-width="792" width="792" data-og-height="574" height="574" data-path="images/programming-ide/creating-a-template/template-community.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-community.png?w=280&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=604274a6965d7b664317d6208a4fb8bf 280w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-community.png?w=560&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=84bab33f33285b63a5b4ab6c56bf65fc 560w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-community.png?w=840&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=b1e5e695e1aa2a9be204cd16baf637fe 840w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-community.png?w=1100&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=1ab08869abb6d780cddca80927561b11 1100w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-community.png?w=1650&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=de13bc0d4134fdb854ab4c1db54efe35 1650w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/template-community.png?w=2500&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=14786251403d3a9c1eb56c130062fbe7 2500w" />
+</Frame>
+
+## Creating a developer framework
+
+Public Replit Apps can be published by checking the "Publish as Developer Framework" box in the last step of the Publish this Replit Apps flow.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/publish-button.png?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=a93b28902cbd72a8bbd11c5d0403f5be" alt="Publish button" data-og-width="3026" width="3026" data-og-height="1338" height="1338" data-path="images/programming-ide/creating-a-template/publish-button.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/publish-button.png?w=280&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=abbb19bf34c279439e7c3c74bffe141e 280w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/publish-button.png?w=560&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=a6a19cb47c9575387e825947084f6679 560w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/publish-button.png?w=840&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=779af4417524b67539a1e3a97db60320 840w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/publish-button.png?w=1100&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=33bcb666d40dcca2fd99574817ffad8d 1100w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/publish-button.png?w=1650&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=9061c762448453c031cfad75a46afb79 1650w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/programming-ide/creating-a-template/publish-button.png?w=2500&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=cdf081ebef1b9e78b18103a9a5eabebb 2500w" />
+</Frame>
+
+Before you publish your developer framework, make sure it's as easy to use as possible. It should include all the boiler plate code that is needed to get a project started, and it should work right away when the "Run" button is pressed.
+
+A good developer framework should always include well-commented code, easily editable variables, and a README file. It's always important to comment your code, but it's even more important when others will be using your code for their own projects. In the `README.md` file, add descriptive details about your developer framework, and information about the variables that the user can change. READMEs help users understand how your developer framework works, and if there are any requirements, licensing, or other factors they should be aware of.
+
+The `.md` in `README.md` stands for Markdown, which is a basic text language. READMEs can be written in any text format, but we'll use Markdown as it's the best practice.
+
+Here's an example outline for a README - feel free to use this for your own developer frameworks!
+
+```md  theme={null}
+# Developer Framework Name
+
+Choose a self-descriptive name, you can also add a simple description about your developer framework.
+
+# Usage
+
+Explain how you can install / use this developer framework. Make sure to provide a detailed explanation and make it easy for people to read. Also, add any code snippets if needed.
+
+# License
+
+This will define how people can use your developer framework. You can visit https://opensource.org/licenses to choose a license.
+```
+
+You can also edit your submitted developer framework and share update messages to show how your project has changed over time.
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

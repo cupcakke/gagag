@@ -1,0 +1,86 @@
+# Building Mobile Apps with Agent
+
+> Create Expo React Native mobile applications for iOS and Android with Agent.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=a9d9fcd56125ed53ee74cb841a2f3923" alt="Replit homepage showing Mobile app selection option" data-og-width="1554" width="1554" data-og-height="466" height="466" data-path="images/replitai/mobile-app-type.avif" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?w=280&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=80560004242ff27f6ef82c58c259701c 280w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?w=560&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=a53fd7ed63faea581212b684d8eace65 560w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?w=840&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=0f156b823808b92fcfa35772f79f6fe0 840w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?w=1100&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=257d51b2a98d3ec41a9dacae325b7a03 1100w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?w=1650&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=3b1a50bb27e1114b4299b506cfc2a716 1650w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?w=2500&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=313e55c80e486713f455e697417317d6 2500w" />
+</Frame>
+
+<Warning>
+  **Beta Feature**: Mobile app development with Agent is currently in beta.
+  Features and functionality may change as we continue development.
+</Warning>
+
+## Overview
+
+Build mobile applications using Agent by selecting the "Mobile app" option on the Replit home screen. Agent creates Expo React Native apps that run on iOS and Android, with access to powerful native functionality.
+
+## Getting started
+
+Create a mobile app in three quick steps:
+
+### Select Mobile app
+
+From the Replit homepage after logging in, select **"Mobile app"** from the app type selector.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=a9d9fcd56125ed53ee74cb841a2f3923" alt="Selecting Mobile app option from the home screen creation input" data-og-width="1554" width="1554" data-og-height="466" height="466" data-path="images/replitai/mobile-app-type.avif" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?w=280&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=80560004242ff27f6ef82c58c259701c 280w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?w=560&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=a53fd7ed63faea581212b684d8eace65 560w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?w=840&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=0f156b823808b92fcfa35772f79f6fe0 840w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?w=1100&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=257d51b2a98d3ec41a9dacae325b7a03 1100w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?w=1650&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=3b1a50bb27e1114b4299b506cfc2a716 1650w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-app-type.avif?w=2500&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=313e55c80e486713f455e697417317d6 2500w" />
+</Frame>
+
+### Enter your prompt
+
+Describe the mobile app you want to build. Agent will create an Expo React Native application based on your description.
+
+### Install Expo Go
+
+To test the app on a physical device, install Expo Go from [expo.dev/go](https://expo.dev/go) on an iOS or Android device.
+
+## Testing on device
+
+### From desktop workspace
+
+Click the **"Preview on mobile device"** button below the preview in the workspace to display a QR code.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/preview-on-mobile-device.avif?fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=1b4df925226b02d2b50baca1d2dfffb7" alt="Preview on mobile device button showing QR code scanner option" data-og-width="1122" width="1122" data-og-height="1022" height="1022" data-path="images/replitai/preview-on-mobile-device.avif" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/preview-on-mobile-device.avif?w=280&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=a0e6ef507d545115ad7434f4b92a0f52 280w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/preview-on-mobile-device.avif?w=560&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=3e3e982b5efff2463f1780faf2e68b77 560w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/preview-on-mobile-device.avif?w=840&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=953e55e55208b3ab0bd3d9eef646d62c 840w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/preview-on-mobile-device.avif?w=1100&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=2c7b580278e4431f61275ecbbc22882d 1100w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/preview-on-mobile-device.avif?w=1650&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=4624242ffb8f2e9e0af9a5bf3746894d 1650w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/preview-on-mobile-device.avif?w=2500&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=1ff0850fd74f85fea0ad96119676d22e 2500w" />
+</Frame>
+
+Scan the QR code with Expo Go to run the app natively on the device.
+
+### From Replit mobile app
+
+When using the Replit mobile app to develop, click **"Open in Expo Go"** from the workspace header to launch your app directly in Expo Go.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-open-in-expo-go.avif?fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=c3951c8d2e29c75ca1ef8a35c7a1c44b" alt="Open in Expo Go button in the Replit mobile app workspace header" data-og-width="1179" width="1179" data-og-height="2347" height="2347" data-path="images/replitai/mobile-open-in-expo-go.avif" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-open-in-expo-go.avif?w=280&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=21d9d128bc12fbcd8fe0d00ebafac7e9 280w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-open-in-expo-go.avif?w=560&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=5205b85a815c17e47b4c8d25ae2694c6 560w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-open-in-expo-go.avif?w=840&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=6c79e44567e017ff3339f3a7ad70b5cc 840w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-open-in-expo-go.avif?w=1100&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=83b7ea421bfa730cd2ee868a8fd7cf01 1100w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-open-in-expo-go.avif?w=1650&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=d462de6de2a095e617071222d1230473 1650w, https://mintcdn.com/replit/nNplrxt9WS4dqSQV/images/replitai/mobile-open-in-expo-go.avif?w=2500&fit=max&auto=format&n=nNplrxt9WS4dqSQV&q=85&s=929ee0c1f2b7d6c7acab5031a194b757 2500w" />
+</Frame>
+
+<Note>
+  **Preview differences**: The workspace preview uses React Native Web, while
+  Expo Go runs the fully native version. Test in Expo Go for the most
+  accurate representation of the app's functionality and appearance.
+</Note>
+
+The app has access to device features like camera, location services, sensors, and more through Expo Go's native modules. Agent can help integrate these features and can see errors from the device through system logs to assist with debugging.
+
+## Current capabilities
+
+* **Agent integrations**: Build apps with [AI](/replitai/replit-ai-integrations), [Replit Database](/cloud-services/storage-and-databases/sql-database), and [more](/replitai/integrations)
+  * Replit Auth is not yet supported
+* **Native modules**: Access device features like camera, location, and sensors
+* **Cross-platform**: Build for iOS and Android simultaneously
+* **Backend support**: Server functionality backed by [Autoscale Deployments](/cloud-services/deployments/autoscale-deployments)
+
+## Next steps
+
+**Ready to go deeper with mobile development?**
+
+* [Building Mobile Apps with Expo and Replit](/tutorials/expo-on-replit) - Complete tutorial covering Expo development and publishing to app stores
+* [Replit Mobile App](/platforms/mobile-app) - Build and test on your mobile device
+
+Learn more about [Agent](/replitai/agent) and explore other [AI-powered features](/category/replit-ai).
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

@@ -1,0 +1,85 @@
+# Message Queue
+
+> Schedule follow-up tasks for Replit Agent while it's working. Queue messages to be executed in order after each Agent work loop completion.
+
+The Message Queue is a new way of interacting with Replit Agent while it's working.
+Instead of interrupting ongoing work, you can schedule follow-up tasks that will be executed in
+order after every completion of an Agent work loop.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-overview.png?fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=c3d1d78f85905388d29361d9be1bceec" alt="Message Queue interface showing queued messages in the chat UI" data-og-width="1054" width="1054" data-og-height="504" height="504" data-path="images/replitai/message-queue-overview.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-overview.png?w=280&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=9afeffc185eca53d223377ddf318c1e2 280w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-overview.png?w=560&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=9d3edebf32f3b0de81e93d7903b7b5da 560w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-overview.png?w=840&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=65c60cb8dfc8d4806c5f56f0f975cee5 840w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-overview.png?w=1100&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=de2aca30e12afaa5cb6230af7d2051d5 1100w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-overview.png?w=1650&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=7e43f0b9883b3b4c164670419815eb15 1650w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-overview.png?w=2500&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=03dc576530a3451fd277cb97397408fa 2500w" />
+</Frame>
+
+## How it works
+
+When the Agent is actively handling a request, you can schedule a follow-up task by adding
+messages to the Queue. These tasks or requests will be processed in order after every completion of
+an Agent work loop. The queue is automatically cleared when Agent finishes all tasks.
+
+All message options are available with the Queue, such as [Visual Editor](/replitai/visual-editor)
+and file attachments.
+
+<Info>
+  Queued messages will only be processed automatically while you have an active
+  workspace connected to the Agent (either on desktop or mobile).
+</Info>
+
+## Using the Message Queue
+
+### When the Queue appears
+
+The Message Queue appears automatically as a drawer above the chat input when you submit a message
+while Agent is working. It closes once all queued messages are processed.
+
+### Managing queued messages
+
+When the queue drawer is open, you can:
+
+* **Edit messages**: Click the edit icon to modify a queued message before it's processed
+* **Delete messages**: Remove unwanted tasks from the queue
+* **Reorder items**: Drag and drop to change the execution order of queued messages
+* **Add more messages**: Continue adding new tasks to the queue via the chat input
+
+<Frame>
+  <img src="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-editing.png?fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=c5fe52983acf86bc8f6e163b4d231b66" alt="Message Queue edit interaction" data-og-width="1054" width="1054" data-og-height="500" height="500" data-path="images/replitai/message-queue-editing.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-editing.png?w=280&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=fc892243b7cf59eaaf2193afc1a1085f 280w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-editing.png?w=560&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=e88f7989fd7c231ee2efd1dee0e04860 560w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-editing.png?w=840&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=cdce99bedc0567dc8d337879f81a98f2 840w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-editing.png?w=1100&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=5a775c4a9821525fde5a7a50aaa95d5d 1100w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-editing.png?w=1650&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=9576f272517f6f151c52a74f765739fb 1650w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-editing.png?w=2500&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=a3ddcb85f6c2b29385f6890a0f27c4c9 2500w" />
+</Frame>
+
+<Frame>
+  <img src="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-reordering.png?fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=89f4115a01c3ea959830b76c1e2e1812" alt="Message Queue reordering interaction" data-og-width="1058" width="1058" data-og-height="598" height="598" data-path="images/replitai/message-queue-reordering.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-reordering.png?w=280&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=74522026890e26edbe5f593431c77ac7 280w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-reordering.png?w=560&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=ee375701f4f0d813e348b82e65c19037 560w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-reordering.png?w=840&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=49064bc8607a552ce190d20a7fde864e 840w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-reordering.png?w=1100&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=6aa70e37b487a08b2514ecb1b12fd980 1100w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-reordering.png?w=1650&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=080bd08e442813ee5f2553dcc8d307b8 1650w, https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/message-queue-reordering.png?w=2500&fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=2170d3db1f8c56bf3f7f42e2ce09a3bc 2500w" />
+</Frame>
+
+### Immediate interruption
+
+If you need to interrupt Agent and send a message immediately, you can use the **Pause** button
+in the status bar. This will stop the current Agent work loop and allow you to send an immediate
+message, bypassing any queued messages (if any exist).
+
+<Frame>
+  <img src="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-pause-button.png?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=046cd3cfd894d4341eafe6d022201305" alt="Agent status bar showing the Pause button for immediate interruption" data-og-width="994" width="994" data-og-height="236" height="236" data-path="images/replitai/agent-pause-button.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-pause-button.png?w=280&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=20a44d576a5bdf0986498e7a5006a838 280w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-pause-button.png?w=560&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=8f9723ae540142ffd591bfec225bb046 560w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-pause-button.png?w=840&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=48f293811960b2426a19d76d6120f5e3 840w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-pause-button.png?w=1100&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=3813757792eee0fd3cb1ebcd5053ef49 1100w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-pause-button.png?w=1650&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=26d4976c9e3edfab74954bc880990b66 1650w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-pause-button.png?w=2500&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=c9ebc6534d9cc5e47c29e4394f1b3a7d 2500w" />
+</Frame>
+
+## Best practices
+
+### When to use the Message Queue
+
+* **Multi-step workflows**: Queue a series of related tasks that build upon each other
+* **Batch operations**: Group similar requests together for efficient processing
+* **Follow-up requests**: Add clarifications or additional requirements after the initial task
+* **Non-urgent tasks**: Queue lower-priority requests while Agent works on critical tasks
+
+### When to use immediate interruption
+
+* **Urgent changes**: When you need to stop current work immediately
+* **Critical errors**: If you notice an issue that needs immediate attention
+* **Change of direction**: When you want to completely change what Agent is working on
+
+## Queue behavior
+
+* **Ordered execution**: Messages are processed in the order they were added to the queue
+* **Work loop completion**: Each queued message is processed after Agent completes its current work loop
+* **Context preservation**: Agent maintains context between queued messages in the same conversation
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

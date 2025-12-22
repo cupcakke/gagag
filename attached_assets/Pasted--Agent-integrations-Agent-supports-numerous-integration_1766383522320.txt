@@ -1,0 +1,253 @@
+# Agent integrations
+
+> Agent supports numerous integrations enabled automatically when your prompt contains specific keywords.
+
+export const AiPrompt = ({children}) => {
+  return <CodeBlock className="relative block font-sans whitespace-pre-wrap break-words">
+      <div className="pr-7">
+        {children}
+      </div>
+    </CodeBlock>;
+};
+
+<Frame>
+  <img src="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-logo.png?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=d98e494833cceffef3c48d9abcdf047f" alt="Agent logo with integration connections illustrated around it" data-og-width="1280" width="1280" data-og-height="720" height="720" data-path="images/replitai/agent-logo.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-logo.png?w=280&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=6fb21064203dfefe200f04d8ae904240 280w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-logo.png?w=560&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=a74edbd65ec1a9607ba8d4e63e4155ba 560w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-logo.png?w=840&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=7729f87fe2b932eb7e988fd83aa5ea4c 840w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-logo.png?w=1100&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=b1e377a10e6c51a5d017a4b9d12c1d77 1100w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-logo.png?w=1650&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=cfcb43143d10d7e6de1c69dd3196f86d 1650w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-logo.png?w=2500&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=2246ca457c164c03119a596f2a48be47 2500w" />
+</Frame>
+
+Agent supports three types of integrations so you can go from idea to app, fast:
+
+* **Replit managed**: Built-in integrations that work automatically. Create an app and your Agent can start using these right away.
+* **Connectors**: First-party integrations Replit supports. Sign in once, then build with them across your apps.
+* **External integrations**: Trusted third-party services you can build with. Ask Agent to set them up; you'll provide API keys.
+
+<Note>
+  **Core and Teams only**: Third-party connectors require a Core or Teams subscription. Starter plan users can use Replit-managed integrations like databases, authentication, etc.
+</Note>
+
+## Getting started
+
+To use an integration, mention the service or functionality you need. For example:
+
+<AiPrompt>
+  Create a web app that uses Stripe to accept payments and SendGrid to send confirmation emails
+</AiPrompt>
+
+Agent automatically detects these keywords and implements the necessary code and configuration.
+
+## Replit managed integrations
+
+These built-ins require no setup. Just ask Agent to use them.
+
+<AccordionGroup>
+  <Accordion title="Replit Database">
+    A simple built-in database for storing app data quickly.
+    <AiPrompt>Add Replit Database to my app</AiPrompt>
+  </Accordion>
+
+  <Accordion title="PostgreSQL">
+    Managed PostgreSQL for relational data and SQL queries.
+    <AiPrompt>Use PostgreSQL in my app for relational data</AiPrompt>
+  </Accordion>
+
+  <Accordion title="Replit App Storage">
+    Built-in storage for app files and assets.
+    <AiPrompt>Use Replit App Storage to save files</AiPrompt>
+  </Accordion>
+
+  <Accordion title="App Storage">
+    Cloud-based storage for images, videos, and other files.
+    <AiPrompt>Add App Storage to my app to store files</AiPrompt>
+  </Accordion>
+
+  <Accordion title="Replit Auth">
+    Native authentication so people can sign in with Replit.
+    <AiPrompt>Add Replit Auth to my app</AiPrompt>
+  </Accordion>
+
+  <Accordion title="Replit Domains">
+    Configure and manage custom domains for your app.
+    <AiPrompt>Set up a custom domain for my app</AiPrompt>
+  </Accordion>
+</AccordionGroup>
+
+## Connectors
+
+Connectors let Agent build with your real data. They are first-party integrations supported by Replit. Sign in once on the Connectors page in your Workspace, then reuse those connections across apps.
+
+<Note>
+  Connections are tied to your Replit account and persist across all your apps. Connect a service once and use it in any app you create.
+</Note>
+
+### Available connectors
+
+<AccordionGroup>
+  <Accordion title="Google Workspace" icon="google">
+    * **Google Drive**: Access and manage files and folders
+    * **Google Docs**: Create, read, and edit documents
+    * **Google Sheets**: Read and write spreadsheet data
+    * **Google Calendar**: Read and write events and settings
+    * **Gmail**: Send, receive, and manage emails
+  </Accordion>
+
+  <Accordion title="Microsoft 365" icon="microsoft">
+    * **OneDrive**: Access and manage files and folders
+    * **Outlook**: Send, receive emails and manage calendar events
+    * **SharePoint**: Read, write, and manage sites and documents
+  </Accordion>
+
+  <Accordion title="Developer tools" icon="code">
+    * **GitHub**: Access repositories, users, and organizations
+    * **Linear**: Create and manage issues, comments, and schedules
+    * **Jira**: Read users and manage work items and issues
+    * **Asana**: Read tasks and project data
+    * **Confluence**: Read users and groups, write content to spaces
+  </Accordion>
+
+  <Accordion title="Cloud storage" icon="cloud">
+    * **Dropbox**: Read files, content, and metadata
+    * **Box**: Read and access files and folders
+  </Accordion>
+
+  <Accordion title="Communication" icon="comments">
+    * **Discord**: Access guild information and user profiles
+    * **Twilio**: Send SMS messages and make voice calls
+    * **SendGrid**: Send transactional emails
+    * **Resend**: Send transactional emails
+  </Accordion>
+
+  <Accordion title="CRM and sales" icon="building">
+    * **Salesforce**: Access CRM data and perform operations via REST API
+    * **HubSpot**: Read CRM objects, contacts, and deals
+    * **Zendesk**: Read and write access to Ticket API for support workflows
+  </Accordion>
+
+  <Accordion title="Productivity" icon="list-check">
+    * **Notion**: Read and write to workspaces and pages
+    * **Spotify**: Access and manage playlists and library
+    * **YouTube**: Upload, manage videos, channels, and access analytics
+  </Accordion>
+</AccordionGroup>
+
+### Accessing Connectors
+
+You can access Connectors from the sidebar in your Workspace:
+
+<Steps>
+  <Step title="Navigate to your Workspace">
+    Open the Workspace for your app.
+  </Step>
+
+  <Step title="Select Connectors">
+    Select **Connectors** from the sidebar.
+  </Step>
+
+  <Step title="Add new integration">
+    Choose **Add new integration** to browse available connectors.
+  </Step>
+
+  <Step title="Connect">
+    Select **Connect** next to the service you want to integrate.
+  </Step>
+</Steps>
+
+<Tip>
+  To disconnect a service, return to the Connectors panel and select **Manage** next to the connected service.
+</Tip>
+
+<Frame>
+  <img src="https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-overview.png?fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=44fc5899e21e5b11318ab41887ff86b5" alt="App connectors interface showing available integrations including GitHub, OneDrive, Outlook, Spotify, Linear, Dropbox, Monday.com, Google Docs, and YouTube with their connection status and manage options" data-og-width="3456" width="3456" data-og-height="1688" height="1688" data-path="images/replitai/connectors-overview.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-overview.png?w=280&fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=a29a9a200192b7bb1d38c965c02ee2e7 280w, https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-overview.png?w=560&fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=c4439e6d64eb334e36788c4f4fe0b82d 560w, https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-overview.png?w=840&fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=b37a91a43d6f777067065c5205a78ac2 840w, https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-overview.png?w=1100&fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=14f7b62cbd8d547982041e5fc6664bd8 1100w, https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-overview.png?w=1650&fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=e81016cf278b65d14ec90d4d083947c6 1650w, https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-overview.png?w=2500&fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=59c7ef34d36cbbc84b83d3449d333dc0 2500w" />
+</Frame>
+
+When you select Connect for a service, Replit redirects you to authenticate with that service and grant permissions for Replit to access your data:
+
+<Frame>
+  <img src="https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-oauth-flow.png?fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=16716e418094fdc09882d1e6e2d0103f" alt="OAuth authentication flow showing the Linear connection dialog with privacy and security information, explaining data usage and user control" data-og-width="1345" width="1345" data-og-height="1213" height="1213" data-path="images/replitai/connectors-oauth-flow.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-oauth-flow.png?w=280&fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=bb6ecf98d2fd81153d03086ad03a972c 280w, https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-oauth-flow.png?w=560&fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=15048c0020083fda0099f28a1510df9c 560w, https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-oauth-flow.png?w=840&fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=228e6341e950c45b5e0d5d21066e0269 840w, https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-oauth-flow.png?w=1100&fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=d2b886cf0baaf0362482010d636001f3 1100w, https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-oauth-flow.png?w=1650&fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=301fe8dba8258a85a84546028c25e738 1650w, https://mintcdn.com/replit/azgaw651Z-a6J23V/images/replitai/connectors-oauth-flow.png?w=2500&fit=max&auto=format&n=azgaw651Z-a6J23V&q=85&s=ae488cc2cdfb5c9ed034f3750774f731 2500w" />
+</Frame>
+
+### Example prompts
+
+* "Integrate with Outlook to create an email dashboard"
+* "Build a GitHub repository manager using my connected GitHub account"
+* "Create a Linear task tracker for my team"
+* "Build a Notion-powered website using my connected Workspace"
+* "Create a Monday.com project dashboard"
+
+<Note>
+  Connectors provide authenticated access to your external services, eliminating the need to manage API keys or authentication tokens manually.
+</Note>
+
+<Tip>
+  Looking for organization-wide connectors? See [Connectors for Organizations](/replitai/connectors-for-organizations).
+</Tip>
+
+## External integrations
+
+Trusted third-party services. Ask Agent to set them up; you'll provide API keys.
+
+<Note>
+  API keys are stored securely in your app's [Secrets](/replit-workspace/workspace-features/secrets). Agent will prompt you to add the key when needed.
+</Note>
+
+### AI providers
+
+<AccordionGroup>
+  <Accordion title="OpenAI">
+    Access GPT models for text generation, analysis, and assistants.
+    <AiPrompt>Create a web app that uses OpenAI to summarize text</AiPrompt>
+  </Accordion>
+
+  <Accordion title="Google AI (Gemini)">
+    Use Gemini models for multimodal understanding and generation.
+    <AiPrompt>Use Google Gemini to analyze and summarize documents</AiPrompt>
+  </Accordion>
+
+  <Accordion title="Anthropic (Claude)">
+    Access Claude models for reasoning, writing, and coding.
+    <AiPrompt>Create a web app that uses Anthropic to generate content</AiPrompt>
+  </Accordion>
+
+  <Accordion title="Perplexity">
+    AI-powered search and answer generation with citations.
+    <AiPrompt>Create a web app that uses Perplexity to answer questions</AiPrompt>
+  </Accordion>
+
+  <Accordion title="Mistral AI">
+    Fast, efficient language models for NLP tasks.
+    <AiPrompt>Use Mistral to extract key facts from text</AiPrompt>
+  </Accordion>
+</AccordionGroup>
+
+### Business and automation
+
+<AccordionGroup>
+  <Accordion title="Workato">
+    Trigger automation recipes and call APIs from your apps.
+    <AiPrompt>Connect my app to a Workato recipe that syncs leads</AiPrompt>
+  </Accordion>
+
+  <Accordion title="Stripe">
+    Process payments and manage subscriptions.
+    <AiPrompt>Add Stripe to my app for payments</AiPrompt>
+
+    See the [Stripe payments guide](/replitai/stripe-payments) for end-to-end setup, testing, and go-live steps.
+  </Accordion>
+
+  <Accordion title="HubSpot">
+    Access CRM data and manage contacts.
+    <AiPrompt>Connect my app to HubSpot to manage contacts</AiPrompt>
+  </Accordion>
+</AccordionGroup>
+
+### Communication and community
+
+<AccordionGroup>
+  <Accordion title="Discord">
+    Send messages and manage servers from your apps.
+    <AiPrompt>Send a message to my Discord channel when a new signup happens</AiPrompt>
+  </Accordion>
+</AccordionGroup>
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

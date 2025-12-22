@@ -1,0 +1,166 @@
+# Replit Apps
+
+> Replit Apps help you transform your ideas into apps anyone can access, anywhere.
+
+export const YouTubeEmbed = ({videoId, title = "YouTube video", startAt}) => {
+  if (!videoId) {
+    return null;
+  }
+  let url = "https://www.youtube.com/embed/" + videoId;
+  if (startAt) {
+    url = url + "?start=" + startAt;
+  }
+  return <Frame>
+      <iframe src={url} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+    </Frame>;
+};
+
+export const EnterpriseWorkspaceStorage = 'Custom';
+
+export const TeamsWorkspaceStorage = '256GB';
+
+export const CoreWorkspaceStorage = '50GB';
+
+export const StarterWorkspaceStorage = '2GB';
+
+## What is a Replit App?
+
+Replit Apps are cloud-hosted projects that contain code, data, and assets.
+You can create, run, and publish them from a secure, isolated environment.
+
+Replit Apps integrate with the following tools in your Replit workspace to provide
+a seamless development experience:
+
+* **AI-powered tools**: Use Agent and Assistant to create, debug, and explain your code.
+* **Collaboration**: Work with others in real time on the same app.
+* **Publishing**: Publish your app to the cloud with a single click.
+* **Templates**: Start your app quickly using preset configurations for various use cases.
+
+## Getting started
+
+<Tip>
+  For step-by-step instructions on creating Replit Apps, see the following Quickstart guides:
+
+  * [Remix an App](getting-started/quickstarts/remix-an-app)
+  * [Create with AI](/getting-started/quickstarts/ask-ai)
+  * [Build from Scratch](/getting-started/quickstarts/from-scratch)
+</Tip>
+
+To open a Replit App, log into Replit and open it in your workspace using one
+of the following methods.
+
+<Accordion title="Create a new Replit App">
+  1. Select <img class="icon-svg" src="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/create-app-icon.svg?fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=a6613ac9b303fa6dea65e5cf08ddca06" alt="plus icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/create-app-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/create-app-icon.svg?w=280&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=0f0aa42a2a63cca6629fe393ffb100e4 280w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/create-app-icon.svg?w=560&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=e6cce9e17a54ec2279d57d255e5233ba 560w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/create-app-icon.svg?w=840&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=6a6f30d08c7ab4811ba927af66ca7311 840w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/create-app-icon.svg?w=1100&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=f7249d48a50a7db0713ea3f92f4c422f 1100w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/create-app-icon.svg?w=1650&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=f2a12316d646b72674a837cbe70a10f8 1650w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/icons/create-app-icon.svg?w=2500&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=6cc3b1f288cf5086a84aadaa9b1d4fba 2500w" /> **Create App**.
+     You should see the following screen:
+
+     <Frame>
+       <img src="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/create-new-app.png?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=2352edcc0ba788cbc369edc1844e23f9" alt="Create a new App tabs" data-og-width="1068" width="1068" data-og-height="220" height="220" data-path="images/replit-apps/create-new-app.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/create-new-app.png?w=280&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=3758b98f2b72aca76d5c4faf25689c5a 280w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/create-new-app.png?w=560&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=702a11eabf3e7a977fac3e497461b321 560w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/create-new-app.png?w=840&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=bd6a0fba54e297c0b2f790ea8db2af80 840w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/create-new-app.png?w=1100&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=d93a176412dd0e3523171d6de485fbd4 1100w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/create-new-app.png?w=1650&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=45ec28933ba190317e8d9e4d64c2d03c 1650w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/create-new-app.png?w=2500&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=90140f1a40e5bf9282f6336925af2454 2500w" />
+     </Frame>
+
+  2. Select one of the following options:
+
+     * **Create with Replit Agent**: Use AI-powered tools to create a new Replit App.
+     * **Choose a Template**: Create a new Replit App based on an existing one.
+     * **Import from GitHub**: Create a new Replit App from a GitHub repository.
+
+  3. Complete the dialog prompts to start a new Replit App.
+</Accordion>
+
+<Accordion title="Open an existing Replit App">
+  To access a Replit App you created previously, select <img class="icon-svg" src="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/folder-icon.svg?fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=0607a84751fc5ffc0fc46142171b8947" alt="folder icon" data-og-width="16" width="16" data-og-height="16" height="16" data-path="images/icons/folder-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/folder-icon.svg?w=280&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=ba50d5834fd4bfe60f2f2a9c19f4c459 280w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/folder-icon.svg?w=560&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=fa827e7a62d7af693f18abeccfeae988 560w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/folder-icon.svg?w=840&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=fd9cb73c791f00c040c19cb247d29dba 840w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/folder-icon.svg?w=1100&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=f8376ab32d50ccf94de838fcf7376ffb 1100w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/folder-icon.svg?w=1650&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=9e93ee6dceb4b5b341442e2b1d7fecfc 1650w, https://mintcdn.com/replit/7jcTEkTXPQwUz2BL/images/icons/folder-icon.svg?w=2500&fit=max&auto=format&n=7jcTEkTXPQwUz2BL&q=85&s=538789545abbbfbb0b7ec63a75529646 2500w" /> **Apps** from the left sidebar.
+</Accordion>
+
+## Key features
+
+Replit Apps offer the following features:
+
+* **Zero-setup:** Create apps or write code directly on Replit.com without any installs or configuration.
+* **Auto-save:** Your project continuously saves changes to the cloud and lets you resume coding from any web browser
+* **Version Control:** Track changes, explore file history, and sync your files without any configuration, through Replit's version control systems
+* **Public/Private Visibility Controls:** Control who can view, run, or create a Remix of your app with privacy settings
+* **Publishing:** Publish your code to the cloud without making any complex configuration changes
+* **Custom App URLs:** Get a unique URL for your app or assign a custom domain for a professional presence
+
+<Info>
+  Files uploaded to your Workspace are only available during development and
+  aren't accessible to your published app or other builders. Use [Object
+  Storage](/cloud-services/storage-and-databases/object-storage) to handle
+  builder uploads and serve files and [Replit
+  Database](/cloud-services/storage-and-databases/sql-database) to store and
+  retrieve data for your app and users.
+</Info>
+
+To learn more about Workspace tools that streamline Replit App creation, see [Workspace Overview](/category/replit-workspace/).
+
+## How it works
+
+When you create a Replit App, Replit sets up a private space for your project in the cloud.
+As you add features and modifications to your app, Replit saves your changes
+automatically so you can resume editing from any web browser.
+
+Replit provides pre-configured environments with all the necessary components.
+This lets you start creating your app immediately without worrying about
+server configuration, database setup, or environment management.
+
+Replit automatically assigns each Replit App a unique web address where you
+can preview your app while you're working on it. When you're ready to share your
+creation, you can publish it with just a few clicks to make it available 24/7.
+
+## Storage Overview
+
+Replit offers four primary types of storage to meet your application's data needs. Each storage type serves different use cases and has specific limits based on your plan.
+
+<Info>
+  Storage limits include all data stored by your app, including installed
+  packages and dependencies.
+</Info>
+
+| Storage Type                                                             | Description                 | Use Cases                                            | Persistence                                | Plan Limits                                                                                                                                            |
+| ------------------------------------------------------------------------ | --------------------------- | ---------------------------------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **File Storage**                                                         | Files within your workspace | Application code, static assets, configuration files | Persisted on publishing, resets on restart | Starter: {StarterWorkspaceStorage}<br />Core: {CoreWorkspaceStorage}<br />Teams: {TeamsWorkspaceStorage}<br />Enterprise: {EnterpriseWorkspaceStorage} |
+| **[Database](/cloud-services/storage-and-databases/sql-database/)**      | Structured data storage     | User profiles, game scores, product catalogs         | Fully persistent across sessions           | 10GB per database<br />Billed by compute time and storage                                                                                              |
+| **[App Storage](/cloud-services/storage-and-databases/object-storage/)** | Unstructured data and media | Images, videos, PDFs, documents                      | Fully persistent across sessions           | Pay-per-use model<br />Billed by storage and bandwidth                                                                                                 |
+| **[Secrets](/replit-workspace/workspace-features/secrets/)**             | Encrypted sensitive data    | API keys, credentials, connection strings            | Fully persistent and encrypted             | No specific limits<br />Included with all plans                                                                                                        |
+
+<YouTubeEmbed videoId="Tme4GfpdWvE" />
+
+<Note>
+  For detailed pricing and usage-based billing information, see the [Billing
+  documentation](/category/billing/) and [Storage and Databases
+  overview](/category/storage-and-databases/).
+</Note>
+
+## Use cases
+
+The following examples showcase how you can use Replit Apps to accelerate your
+app creation process.
+
+### Explore something new
+
+Select a template to start coding in a specific programming language or software stack.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/template-use-case.png?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=87e1b6bc29fe9b188e84a67a14cf66eb" alt="screenshot of a template description" data-og-width="2937" width="2937" data-og-height="1530" height="1530" data-path="images/replit-apps/template-use-case.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/template-use-case.png?w=280&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=c73018bc575fc494c3b8362f2b4a36b6 280w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/template-use-case.png?w=560&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=17957a9f85afbdee858b915a54955c66 560w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/template-use-case.png?w=840&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=96eb671694bad3f106a8dd57eaa43585 840w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/template-use-case.png?w=1100&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=72819e145748af059e19344fb0beb703 1100w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/template-use-case.png?w=1650&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=bda2a903572a938cb0c44aead3e28633 1650w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/template-use-case.png?w=2500&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=4be2c9c552068197db2ecd722a58ed4b 2500w" />
+</Frame>
+
+### Create and test APIs
+
+Build an API with RESTful endpoints and use workspace tools to test them before going live.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/api-use-case.png?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=a2cfcb002e1a4716ca5cfa7214ae88dd" alt="screenshot of code from an API and the API Request Tester" data-og-width="4960" width="4960" data-og-height="2440" height="2440" data-path="images/replit-apps/api-use-case.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/api-use-case.png?w=280&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=7f1a8db55c62a959a523d711ba5e0f66 280w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/api-use-case.png?w=560&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=e1d785119808ab9351d124a4135154a1 560w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/api-use-case.png?w=840&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=ba87a1d1c3c7ced08e3285b991a83f0e 840w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/api-use-case.png?w=1100&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=cdf03dcb3fca39ca14d759e64c6d8f7c 1100w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/api-use-case.png?w=1650&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=f988f62aa436394237dd5dbc8d26f095 1650w, https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replit-apps/api-use-case.png?w=2500&fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=a65cb15451c93fec0493fd7fe6937eb5 2500w" />
+</Frame>
+
+## Next steps
+
+To learn more about Replit Apps, see the following resources:
+
+* [Templates](https://www.replit.com/templates/): explore starter project setups to give you a head start
+* [Publishing](/category/replit-deployments): learn which publishing option works best for your Replit App
+* [Custom Domains](cloud-services/deployments/custom-domains#custom-domains-with-published-apps): Set your domain to link to your Replit App
+* [Storage and Databases](/category/storage-and-databases): Discover your storage options
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

@@ -1,0 +1,109 @@
+# App Themes
+
+> Customize your app's visual appearance with color schemes and themes. Create, manage, and apply themes to new and existing apps.
+
+App Themes allows you to customize your app's visual appearance with personalized or preset color schemes. Whether you're starting a new app or updating an existing one, you can create, manage, and apply themes to match your vision.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=515103f3a7923b50da0430c3060ac412" alt="Theme manager with options to create, edit, and delete custom themes" data-og-width="1772" width="1772" data-og-height="1062" height="1062" data-path="images/replitai/app-themes/manage-custom-themes.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?w=280&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=d01cc3df09aaeb492116f32c6ab4f31c 280w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?w=560&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=e83e3d5bfe592ee2e2934fac7e98624b 560w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?w=840&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=f984de16163f4859c03a8f5a1cf54d29 840w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?w=1100&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=a0ab3f526c0901207295493ab9df22df 1100w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?w=1650&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=b0ccbcdf0c67c2b816052f4dc7a770f8 1650w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?w=2500&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=cf9b69da0912cff4145279f6a905dad5 2500w" />
+</Frame>
+
+*Certain preview elements were inspired by [tweakcn](https://github.com/jnsahaj/tweakcn). Check out the public open-source software repository [here](https://github.com/jnsahaj/tweakcn) from Sahaj Jain.*
+
+## Features
+
+App Themes provides flexible customization options for your app's appearance:
+
+* **Preset themes**: Choose from Replit's collection of professionally designed color schemes available to all users
+* **Custom themes**: Create and save your own unique color combinations for future use
+* **Real-time preview**: See color changes applied instantly as you customize your app
+* **Theme management**: Organize, edit, and delete your saved themes in one central location
+
+## Usage
+
+### Starting a new app with themes
+
+You can start a new app with a theme by selecting a theme from the dropdown on the new prompt page
+
+<Frame>
+  <img src="https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/change-theme-from-home.png?fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=974c8d8ddc41e4cac0fb75f1ae270ea4" alt="Selecting a theme when creating a new app" data-og-width="1170" width="1170" data-og-height="788" height="788" data-path="images/replitai/app-themes/change-theme-from-home.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/change-theme-from-home.png?w=280&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=f4cbbf4e998145318414e8761ec369e9 280w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/change-theme-from-home.png?w=560&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=ee7510f83d9730755fb769bf3e96a618 560w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/change-theme-from-home.png?w=840&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=c6acd3a17b00f3e6c0427e8632c4213a 840w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/change-theme-from-home.png?w=1100&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=464bbc91cddba07eda9fc3794f8334d3 1100w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/change-theme-from-home.png?w=1650&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=07b40c946024184e4814edad2c40c775 1650w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/change-theme-from-home.png?w=2500&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=01755b26629e07d30e30fb62d43af74e 2500w" />
+</Frame>
+
+<Accordion title="How to choose a theme when creating an app">
+  When creating a new app, you'll see theme options in the setup process. You can:
+
+  1. Select from preset Replit themes
+  2. Choose from themes you've previously created
+  3. Start with the default theme and customize later
+</Accordion>
+
+**Available theme options**:
+
+* **Replit presets**: Professional color schemes designed by Replit, available to all users
+* **Your saved themes**: Custom color combinations you've created and saved in previous projects
+
+### Managing existing themes
+
+<Accordion title="How to access the theme manager">
+  1. When selecting themes for a new app, choose **Manage themes** from the theme list
+  2. The theme manager opens, showing all your saved themes and preset options
+</Accordion>
+
+In the theme manager, you can:
+
+* **Edit existing themes**: Modify colors in any of your saved themes
+* **Create new themes**: Design and save new color schemes for future apps
+* **Delete themes**: Remove themes you no longer need (preset themes cannot be deleted)
+* **Preview changes**: See how theme modifications look before saving
+
+<Frame>
+  <img src="https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=515103f3a7923b50da0430c3060ac412" alt="Theme manager with options to create, edit, and delete custom themes" data-og-width="1772" width="1772" data-og-height="1062" height="1062" data-path="images/replitai/app-themes/manage-custom-themes.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?w=280&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=d01cc3df09aaeb492116f32c6ab4f31c 280w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?w=560&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=e83e3d5bfe592ee2e2934fac7e98624b 560w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?w=840&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=f984de16163f4859c03a8f5a1cf54d29 840w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?w=1100&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=a0ab3f526c0901207295493ab9df22df 1100w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?w=1650&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=b0ccbcdf0c67c2b816052f4dc7a770f8 1650w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/manage-custom-themes.png?w=2500&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=cf9b69da0912cff4145279f6a905dad5 2500w" />
+</Frame>
+
+### Customizing themes in existing apps
+
+<Accordion title="How to change themes in a running app">
+  1. Click the **Theme** button on the URL bar while your app is running
+  2. The theme panel opens on the side of your workspace
+  3. Select a different theme or customize colors directly
+</Accordion>
+
+<Frame>
+  <img src="https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/edit-in-preview.png?fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=b03a7218c846d81ceed6f45e3823d6e9" alt="Editing theme colors from the preview panel in a running app" data-og-width="1358" width="1358" data-og-height="1012" height="1012" data-path="images/replitai/app-themes/edit-in-preview.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/edit-in-preview.png?w=280&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=2c03d8e5e052ecfcb0afd444b2118ab3 280w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/edit-in-preview.png?w=560&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=5a2489c1a0233dd57e809542b4ac3911 560w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/edit-in-preview.png?w=840&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=f77ba6841e0f8cbabdba6e07ee98e7e9 840w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/edit-in-preview.png?w=1100&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=628e0a93af01bcd7ed299c92cdefef81 1100w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/edit-in-preview.png?w=1650&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=35aaf2ce619f30466266b179ffa1bf46 1650w, https://mintcdn.com/replit/b4JK_dCgKrHMTLMf/images/replitai/app-themes/edit-in-preview.png?w=2500&fit=max&auto=format&n=b4JK_dCgKrHMTLMf&q=85&s=87b5986371fb96d1dbb77fd2305c5c07 2500w" />
+</Frame>
+
+Once the theme panel is open, you can:
+
+* **Switch themes**: Choose from your saved themes or Replit presets
+* **Live color editing**: Modify individual colors and see changes instantly in your app
+* **Save changes**: Apply your color adjustments to the current app
+* **Publish themes**: Make your custom theme available for use in future apps
+
+<Info>
+  Changes made to themes are applied in real-time, allowing you to experiment and find the perfect look for your app.
+</Info>
+
+## Team and Organization Themes
+
+App Themes work differently depending on whether you're using a personal account or working within an organization.
+
+### Personal themes
+
+When using App Themes on a personal account, all themes you create are private to your account. You have full control over creating, editing, and deleting your custom themes.
+
+### Organization themes
+
+App Themes in organizations enable collaborative design across your team:
+
+* **Shared access**: Themes created by any organization member are available to everyone in the organization
+* **Collaborative editing**: All users with edit permissions can create and modify organization themes
+* **Admin controls**: Only organization administrators can delete themes to prevent accidental removal of shared resources
+
+<Note>
+  Organization themes help maintain consistent branding and design standards across all apps built by your team.
+</Note>
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt

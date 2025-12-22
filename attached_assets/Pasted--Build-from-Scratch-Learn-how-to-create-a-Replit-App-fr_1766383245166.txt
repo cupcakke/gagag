@@ -1,0 +1,272 @@
+# Build from Scratch
+
+> Learn how to create a Replit App from scratch. Choose your language, frameworks, and databases.
+
+## Create your app from a Template
+
+⏰ *Estimated time: 15 minutes*
+
+Learn how to create your Replit App from a **Template** in this guide. A Template is a set of ready-made
+setup and configuration files that get you coding faster.
+
+This tutorial demonstrates how to build a web app using a Replit Template for Express.js, a popular
+backend JavaScript framework. Templates provide ready-made project configuration files to get you
+coding faster, but exclude application logic to let you build your own ideas from scratch.
+
+For tutorials on building apps in other ways, see [Quickstart Guides](/getting-started/intro-replit#quickstart-guides).
+
+When you complete the tutorial, your app should resemble the following image:
+
+<Frame>
+  <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=f361798d7adde0187c233a3ee4e977f5" alt="image of the Preview tool showing the finished app" data-og-width="551" width="551" data-og-height="370" height="370" data-path="images/getting-started/quickstart_scratch_aloha.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=617323e7d277f2e0353eaf0f5ec13e7c 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=e5d42c56e3532c49815989335f904596 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=35eb2b1258840760c187ab4ce67e7001 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=e6e01cb545908de853b628fb9332fa9c 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=ad5095b3e9827cebda7ec1d0fe7f7292 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=c6c09213083d25ae5e1f7c0f5a9a3585 2500w" />
+</Frame>
+
+<Steps>
+  <Step title="Create an App">
+    Navigate to the Home screen and select **Create App**:
+
+    <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_create_app_button.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=2a49e7e011d640d210cb993637f6d148" width="250" alt="image of the Create App button" data-og-width="448" data-og-height="66" data-path="images/getting-started/quickstart_scratch_create_app_button.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_create_app_button.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=9a3ed601363c8961038d5446f9dab801 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_create_app_button.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=c0edd0f6aab85734958598d4f6de290e 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_create_app_button.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=bd6bb6ae0611e3105736eee6c3d2e42f 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_create_app_button.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=344516bc63fe9a3ee2e8bea962070aa9 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_create_app_button.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=041b8a77cc50e72e3aac02ca70fe27dc 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_create_app_button.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=4744f5aa1c4539a3461b7b1e64060294 2500w" />
+  </Step>
+
+  <Step title="Choose a Template">
+    Select the **Choose a Template** tab and enter "Express.js" in the search field to locate the corresponding Template as shown in the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_express_template.png?fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=ffc58dbee0c4416ff9399164adc8e897" alt="image of the Template selection in the Create App dialog" data-og-width="889" width="889" data-og-height="438" height="438" data-path="images/getting-started/quickstart_scratch_express_template.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_express_template.png?w=280&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=c17d38d2b2ad4165b3e549b4ad91e107 280w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_express_template.png?w=560&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=5c4bec5f8cd9aa327ebe7e71d3634b15 560w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_express_template.png?w=840&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=4b309cf3a763a06b72bb283e527b4ab0 840w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_express_template.png?w=1100&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=6636ea80cc21aad56cd0c1e7b15d4fc0 1100w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_express_template.png?w=1650&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=ec2727bc3b2f32ac00c29a5ffb25bab4 1650w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_express_template.png?w=2500&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=1951319317a27cb3a6cc5239c91d98d0 2500w" />
+    </Frame>
+
+    Set the App's title in the **Title** field and make sure **Private** is selected. You can modify these values later.
+
+    Select **Create App** to proceed.
+  </Step>
+
+  <Step title="Modify the app using Assistant">
+    Navigate to the **Assistant** tab.
+
+    Assistant is Replit's AI-powered tool that specializes in building smaller changes to your app.
+
+    Enter the following prompt in the text area and submit it to modify a specific file:
+
+    ```text  theme={null}
+    Update the endpoint in index.js to say "Hello, Replit!" followed by a random cheerful emoji.
+    ```
+
+    <Tip>You can optionally refer to a specific filename by preceding it with the `@` character.</Tip>
+
+    Select **Apply all** to accept changes or **Preview code changes** to view them.
+
+    After applying the changes, you should see the updated message in the **Preview** tab as shown in the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_hello.png?fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=dde7eb7688f83f10abfd3c2c55ab5684" alt="image of the Preview tool showing the default endpoint" data-og-width="662" width="662" data-og-height="371" height="371" data-path="images/getting-started/quickstart_scratch_hello.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_hello.png?w=280&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=dab65d4ad80791143f0c12a7791742cd 280w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_hello.png?w=560&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=a46475c14d9d95411960d93d89d2378e 560w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_hello.png?w=840&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=245613593dd5fa41b228370271d6544d 840w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_hello.png?w=1100&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=f980c81abb65cf1e37425065a89fcc14 1100w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_hello.png?w=1650&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=484ec5248a3d5afc2c1f0578d79c2c30 1650w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_hello.png?w=2500&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=2ba7a39c5b8f8b76089354b50ec867f8 2500w" />
+    </Frame>
+  </Step>
+
+  <Step title="Modify the code directly">
+    Navigate to the **Files** tab to access your Replit App's files.
+
+    Select `index.js` to open a file editor tab.
+
+    Locate the endpoint and change the message from "Hello, Replit!" to "Aloha, Replit!"
+
+    If you're unsure where to edit, replace the endpoint with the following code:
+
+    ```js  theme={null}
+        app.get('/', (req, res) => {
+            const emojis = ['😊', '🎉', '✨', '🌟', '💫', '🌈', '🎨', '🚀'];
+            const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+            res.send(`<h1>Aloha, Replit! ${randomEmoji}</h1>`);
+        });
+    ```
+
+    Switch to the **Preview** tab and select the refresh button <Icon icon="rotate-right" iconType="regular" />.
+
+    After the browser reloads, the page should resemble the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=f361798d7adde0187c233a3ee4e977f5" alt="image of the Preview tool showing the new message" data-og-width="551" width="551" data-og-height="370" height="370" data-path="images/getting-started/quickstart_scratch_aloha.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=617323e7d277f2e0353eaf0f5ec13e7c 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=e5d42c56e3532c49815989335f904596 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=35eb2b1258840760c187ab4ce67e7001 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=e6e01cb545908de853b628fb9332fa9c 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=ad5095b3e9827cebda7ec1d0fe7f7292 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_aloha.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=c6c09213083d25ae5e1f7c0f5a9a3585 2500w" />
+    </Frame>
+  </Step>
+</Steps>
+
+## Explore
+
+Try the tasks in the following sections to build your knowledge of Replit.
+
+### Add a dependency using Assistant
+
+Follow these steps to add the `morgan` package, which lets you configure request logging for your Express.js server:
+
+<Steps>
+  <Step title="Craft a prompt">
+    From the **All Tools** tab or search box, locate and select **Assistant**.
+    Assistant is an AI chatbot that can modify your code to add new features or fix errors.
+
+    Enter the following prompt in the text area and submit it:
+
+    ```text  theme={null}
+    Add the morgan HTTP request logger
+    ```
+
+    After analyzing the request and existing code, Assistant prompts you to view or accept its changes as shown in the following dialog:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_morgan.png?fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=bb0a2599addfca5a3e5b9aabbba277aa" alt="image of Assistant recommending installation of the morgan npm package" data-og-width="878" width="878" data-og-height="498" height="498" data-path="images/getting-started/quickstart_scratch_morgan.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_morgan.png?w=280&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=bd9b17585938fe3b45943b762762c78b 280w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_morgan.png?w=560&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=d92d1c16e10c9c18f6bb43fef0f79aac 560w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_morgan.png?w=840&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=b4ee4d8a89ac05aa1515697bcbbd9b7b 840w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_morgan.png?w=1100&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=89948b7ce0f60e203ab0a0bc8c398959 1100w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_morgan.png?w=1650&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=58b1e657032b21cd2122105114652f7c 1650w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_morgan.png?w=2500&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=66b265ea80a241171f36d68415e45b61 2500w" />
+    </Frame>
+
+    Select **Apply All** to add the dependency and update the configuration.
+  </Step>
+
+  <Step title="Verify the installation">
+    Navigate to the **Dependencies** tab.
+
+    The dependencies list should include the `morgan` package as shown in the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_morgan.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=6c80f72c83a1978cd4375617c3d60fc5" alt="image of the Dependencies list including morgan" data-og-width="818" width="818" data-og-height="444" height="444" data-path="images/getting-started/quickstart_scratch_dependency_morgan.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_morgan.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=c6359899e0cdc7f125fc779f0d72aa3d 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_morgan.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=04f3404e137f8af408da29a95dee407b 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_morgan.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=765c57d74dfaf283a9ccd41212d71f9e 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_morgan.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=d0ea0589216e6900c75447f89fd87b92 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_morgan.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=eae909ae97689ae9b08e9ffacbadbe2f 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_morgan.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=d0fa913f50e03877375f9baa7b724070 2500w" />
+    </Frame>
+  </Step>
+</Steps>
+
+### Add a dependency manually
+
+You can edit the package manager configuration files or use the **Dependencies** tool to manage the frameworks and libraries your app uses.
+
+<Steps>
+  <Step title="Open the Dependencies tab">
+    To access the tool, open the **All Tools** tab or search box, locate and select the **Dependencies** tab as shown in the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependencies_tab.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=ce0d51ea0fbe412affbc4135866b77b1" alt="image of the Dependencies tab" data-og-width="929" width="929" data-og-height="508" height="508" data-path="images/getting-started/quickstart_scratch_dependencies_tab.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependencies_tab.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=806bbfe33f9ed03dc7b191b762a6466b 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependencies_tab.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=1d081f9beb20b392e182e7712390a423 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependencies_tab.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=d6c5ad886cb730eb12a84765627ea8dd 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependencies_tab.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=8342afd36950cac6dd4534441a3fd32d 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependencies_tab.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=627a6f471f239aa860d2e5dbcd365d4e 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependencies_tab.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=71eaa69d9eae92c43f610fba16a2f51d 2500w" />
+    </Frame>
+  </Step>
+
+  <Step title="Add a package">
+    In the **Imports** tab, select **Add new package** to open a dialog. Search for and add the "express-rate-limit" package as shown in the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_search.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=f38e8fee97680d7a856a076cff79f59e" alt="image of adding the express-rate-limit dependency" data-og-width="769" width="769" data-og-height="485" height="485" data-path="images/getting-started/quickstart_scratch_dependency_search.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_search.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=e236725a8636831efc37b5336ab06fc7 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_search.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=3a398c65ee20183810dc1bfa776ea34e 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_search.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=f171a9f8fdb3e726aa874a3e669599c7 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_search.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=de9e4c1046d50c169c14acbbba82065a 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_search.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=9a174f4cdfd694738baaf5bc2f696942 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_dependency_search.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=4b2f3942fd360e14e377bcacc9cbdd0d 2500w" />
+    </Frame>
+
+    Alternatively, select **Open package.json** to open `package.json` in an editor tab, where you can add or edit dependencies.
+  </Step>
+</Steps>
+
+### Try Assistant's recommendations
+
+In addition to adding or modifying features in your app, Assistant can provide suggestions or ideas to extend its functionality.
+Follow these steps to request a feature recommendation and implement it using Assistant:
+
+<Steps>
+  <Step title="Ask Assistant for recommendations">
+    Navigate to the **Assistant** tab.
+
+    Enter the following prompt in the text area and submit it:
+
+    ```text  theme={null}
+    What features should I consider next?
+    ```
+
+    Assistant might respond with the options shown in the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_recommendations.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=ff1f9ecd3c29dcd69456b7611f0266d5" alt="image of Assistant recommendations" data-og-width="562" width="562" data-og-height="557" height="557" data-path="images/getting-started/quickstart_scratch_assistant_recommendations.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_recommendations.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=24092cf522e27b6746b119c2ec38ede8 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_recommendations.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=09e3fde60e35c5d05d00dd36ae686b19 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_recommendations.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=a294f52d71f634d410348dc2d10a98e1 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_recommendations.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=772924010e7e33cdc948d2eb13d50001 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_recommendations.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=599737d95f3210de3aa0f01478d97c8e 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_recommendations.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=7e30b54ba5271c8c61aa95982a358ea6 2500w" />
+    </Frame>
+  </Step>
+
+  <Step title="Request a feature">
+    Enter the following prompt in the text area and submit it:
+
+    ```text  theme={null}
+    Add API endpoints that let me modify the message
+    ```
+
+    Assistant might respond with the implementation described in the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=6614f13fccb9e6a568dfb168640fe45d" alt="image of Assistant implementing API endpoints" data-og-width="808" width="808" data-og-height="548" height="548" data-path="images/getting-started/quickstart_scratch_assistant_api.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=bbf2019799d359359446ec20838e861a 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=f1d67db1fb248b50ea0919aa4facf7f8 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=a5c0b95f9d8b006722c49cf1b98abb7f 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=827bbf47c55c1efc77a99cd5f5e30fef 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=b473200f5391eeaa77e1d88602fbb502 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=5b2e55a053ffbc5a87836f719e8b76fb 2500w" />
+    </Frame>
+
+    Select **Apply all** to make the code changes.
+  </Step>
+
+  <Step title="Test the changes">
+    Test the API endpoints by navigating to the **Shell** tab and running the shell commands recommended by Assistant.
+
+    Alternatively, ask Assistant to test the endpoints. In the response, you should see action buttons such as **Run** and **Run in Shell**
+    as shown in the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api_test.png?fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=56c3bcdbf9e0861a96efdf894592614a" alt="image of Assistant implementing API endpoints" data-og-width="707" width="707" data-og-height="467" height="467" data-path="images/getting-started/quickstart_scratch_assistant_api_test.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api_test.png?w=280&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=d249a9059298011c86054651071e9bc1 280w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api_test.png?w=560&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=cc396c2e5003c621bc133a9953528740 560w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api_test.png?w=840&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=119bb803f869959e6b6ddacb89a2101c 840w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api_test.png?w=1100&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=87c5ea2a0b82a8b751d112dfbf8a2533 1100w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api_test.png?w=1650&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=2fee54a87f9a445199157c30959216e1 1650w, https://mintcdn.com/replit/h9U_mFqw8XzNXJwv/images/getting-started/quickstart_scratch_assistant_api_test.png?w=2500&fit=max&auto=format&n=h9U_mFqw8XzNXJwv&q=85&s=9741bf82c582ae0329fe762ce2673187 2500w" />
+    </Frame>
+
+    Select these to execute the commands to retrieve the current message and update it.
+
+    Verify changes to the message by navigating to the **Preview** tab and selecting **Refresh** in the address toolbar.
+  </Step>
+</Steps>
+
+### Customize the workflow
+
+Replit Apps include a **workflow**, a customizable sequence of steps that execute when you select **Run**.
+Follow these steps to set up a new workflow using Assistant.
+
+<Steps>
+  <Step title="Customize the workflow">
+    The Express.js Template includes a workflow that runs a command to start the Express.js server.
+    However, the server requires a restart to view the latest changes to the files it serves which can
+    inconvenience development.
+
+    To avoid this repetitive task, you can ask Assistant to perform the following tasks:
+
+    * Install the <a href="https://www.npmjs.com/package/nodemon" target="_blank">nodemon</a> package which automatically restarts the Express.js server when it detects file changes
+    * Update the workflow to manage the Express.js server using `nodemon`.
+
+    To request this change, navigate to the **Assistant** tab and enter the following prompt:
+
+    ```text  theme={null}
+    Install nodemon and configure the app to automatically restart the Express server whenever I make changes
+    ```
+
+    Assistant's response should resemble the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_nodemon.png?fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=3d81b0664303610e22c1982679adf2a8" alt="image of Assistant recommending installation of the nodemon package" data-og-width="867" width="867" data-og-height="526" height="526" data-path="images/getting-started/quickstart_scratch_nodemon.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_nodemon.png?w=280&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=d71a7960b3770e5be5065e5012862515 280w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_nodemon.png?w=560&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=549969f518f00b692a9b8733034a3dbc 560w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_nodemon.png?w=840&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=6d4f7f0edede78a96ac8064482aac9f9 840w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_nodemon.png?w=1100&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=ef1eaa2f3ffd3122e6521eb01a42513a 1100w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_nodemon.png?w=1650&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=0d6077d6a2d20592c88c664e904730e1 1650w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_nodemon.png?w=2500&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=17d16fc6f9ec3b2a85d7d2af1bfc66eb 2500w" />
+    </Frame>
+
+    Select **Install** to add the dependencies, and **Apply All** to update the configuration.
+  </Step>
+
+  <Step title="Test the changes">
+    To confirm the workflow updates, select the downward arrow next to the **Run** or **Stop** button and select **Manage Workflows** as shown in the following image:
+
+    <img src="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows.png?fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=53b7bad7d5612bdd74616d996157529c" width="250" alt="image of the Manage Workflows button in the menu" data-og-width="482" data-og-height="340" data-path="images/getting-started/quickstart_scratch_workflows.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows.png?w=280&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=bdc53e41e753a5075fd0468f0927981d 280w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows.png?w=560&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=b5dfcf6f612821538a3f86c7f42e4015 560w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows.png?w=840&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=b47ce41918193211735e7c46b46f5d12 840w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows.png?w=1100&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=69a356dec39a2ad8e6e2617d269bf393 1100w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows.png?w=1650&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=e2e3562cb93a2da7d3b67eb28b46409f 1650w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows.png?w=2500&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=7ebf841fe37edb3787d3e840a143694b 2500w" />
+
+    <Note>The name of the workflow generated by the Assistant might vary.</Note>
+
+    Select the **Dev** workflow to view the details, which should resemble the following image:
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows_dev.png?fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=8c9c17b437b16daa3afe8c45b81a6a5c" alt="image of the Dev workflow that uses nodemon" data-og-width="2688" width="2688" data-og-height="866" height="866" data-path="images/getting-started/quickstart_scratch_workflows_dev.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows_dev.png?w=280&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=36a3499ad398c60c44964cd44a83f37c 280w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows_dev.png?w=560&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=b3e881e192b75e521f9f5a832552e704 560w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows_dev.png?w=840&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=a2f3e5d1430e8b9bfba0e4927b285b07 840w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows_dev.png?w=1100&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=b479c7c8b5898900ebf44639030d715e 1100w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows_dev.png?w=1650&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=ae98a8e31b5201ffb8d49797db4ba09a 1650w, https://mintcdn.com/replit/rBzGsKp9NcWJ7sib/images/getting-started/quickstart_scratch_workflows_dev.png?w=2500&fit=max&auto=format&n=rBzGsKp9NcWJ7sib&q=85&s=d7304d742a44e2ef9d20931dfbae58b9 2500w" />
+    </Frame>
+
+    To ensure your App runs using the selected workflow, select **Stop** and then **Run**.
+
+    Try making a change to the message returned by the endpoint. After your update, you should see the updated message in the **Preview** tab.
+  </Step>
+</Steps>
+
+## Continue your journey
+
+Now that you've completed this tutorial, you're ready to explore more possibilities with your Replit App.
+Try the following next steps to enhance your skills:
+
+* Browse the Replit Templates on the <a href="https://replit.com/templates" target="_blank">Templates</a> page.
+* Start a Replit App using the <a href="https://replit.com/@replit/Blank-Repl?v=1#README.md" target="_blank">Blank Repl Template</a> which omits language and framework setup.
+* Share your completed Replit App as a Template by following the steps in the [Make your Replit App Public](/replit-app/collaborate#make-your-replit-app-public) guide.
+* Learn more about Assistant's capabilities from the [Replit Assistant](/replitai/assistant) documentation.
+
+
+---
+
+> To find navigation and other pages in this documentation, fetch the llms.txt file at: https://docs.replit.com/llms.txt
