@@ -165,6 +165,7 @@ LOCK_PATH = pathlib.Path(os.environ.get("APP_LOCK_PATH", str(ROOT / "agent.lock"
 README_PATH = ROOT / "README.md"
 SEMANTIC_INDEX_PATH = pathlib.Path(os.environ.get("APP_SEMANTIC_INDEX_PATH", str(ROOT / "semantic.idx")))
 PDF_UPLOAD_PATH = pathlib.Path(os.environ.get("APP_PDF_UPLOAD_PATH", str(ROOT / "uploads" / "pdf")))
+DEFAULT_REQUESTY_MODEL = "openai/gpt-4o-mini"
 def _environment_int(name: str, default: int, minimum: int = 1, maximum: int = 65535) -> int:
     raw = os.environ.get(name)
     if raw is None:
@@ -245,12 +246,12 @@ if _HAS_PYDANTIC:
 
     class ModelConfig(BaseModel):
         model_config: typing.ClassVar[dict] = _mc()
-        name: str = os.environ.get("REQUESTY_MODEL", "")
-        controller: str = os.environ.get("REQUESTY_CONTROLLER_MODEL", os.environ.get("REQUESTY_MODEL", ""))
-        code: str = os.environ.get("REQUESTY_CODE_MODEL", os.environ.get("REQUESTY_MODEL", ""))
-        multimodal: str = os.environ.get("REQUESTY_MULTIMODAL_MODEL", os.environ.get("REQUESTY_MODEL", ""))
-        sensitive: str = os.environ.get("REQUESTY_SENSITIVE_MODEL", os.environ.get("REQUESTY_MODEL", ""))
-        long_context: str = os.environ.get("REQUESTY_LONG_CONTEXT_MODEL", os.environ.get("REQUESTY_MODEL", ""))
+        name: str = os.environ.get("REQUESTY_MODEL", DEFAULT_REQUESTY_MODEL)
+        controller: str = os.environ.get("REQUESTY_CONTROLLER_MODEL", os.environ.get("REQUESTY_MODEL", DEFAULT_REQUESTY_MODEL))
+        code: str = os.environ.get("REQUESTY_CODE_MODEL", os.environ.get("REQUESTY_MODEL", DEFAULT_REQUESTY_MODEL))
+        multimodal: str = os.environ.get("REQUESTY_MULTIMODAL_MODEL", os.environ.get("REQUESTY_MODEL", DEFAULT_REQUESTY_MODEL))
+        sensitive: str = os.environ.get("REQUESTY_SENSITIVE_MODEL", os.environ.get("REQUESTY_MODEL", DEFAULT_REQUESTY_MODEL))
+        long_context: str = os.environ.get("REQUESTY_LONG_CONTEXT_MODEL", os.environ.get("REQUESTY_MODEL", DEFAULT_REQUESTY_MODEL))
         request_timeout_s: float = 180.0
         max_completion_tokens: int = 8192
 
@@ -347,12 +348,12 @@ else:
 
     @dataclasses.dataclass(frozen=True)
     class ModelConfig:
-        name: str = os.environ.get("REQUESTY_MODEL", "")
-        controller: str = os.environ.get("REQUESTY_CONTROLLER_MODEL", os.environ.get("REQUESTY_MODEL", ""))
-        code: str = os.environ.get("REQUESTY_CODE_MODEL", os.environ.get("REQUESTY_MODEL", ""))
-        multimodal: str = os.environ.get("REQUESTY_MULTIMODAL_MODEL", os.environ.get("REQUESTY_MODEL", ""))
-        sensitive: str = os.environ.get("REQUESTY_SENSITIVE_MODEL", os.environ.get("REQUESTY_MODEL", ""))
-        long_context: str = os.environ.get("REQUESTY_LONG_CONTEXT_MODEL", os.environ.get("REQUESTY_MODEL", ""))
+        name: str = os.environ.get("REQUESTY_MODEL", DEFAULT_REQUESTY_MODEL)
+        controller: str = os.environ.get("REQUESTY_CONTROLLER_MODEL", os.environ.get("REQUESTY_MODEL", DEFAULT_REQUESTY_MODEL))
+        code: str = os.environ.get("REQUESTY_CODE_MODEL", os.environ.get("REQUESTY_MODEL", DEFAULT_REQUESTY_MODEL))
+        multimodal: str = os.environ.get("REQUESTY_MULTIMODAL_MODEL", os.environ.get("REQUESTY_MODEL", DEFAULT_REQUESTY_MODEL))
+        sensitive: str = os.environ.get("REQUESTY_SENSITIVE_MODEL", os.environ.get("REQUESTY_MODEL", DEFAULT_REQUESTY_MODEL))
+        long_context: str = os.environ.get("REQUESTY_LONG_CONTEXT_MODEL", os.environ.get("REQUESTY_MODEL", DEFAULT_REQUESTY_MODEL))
         request_timeout_s: float = 180.0
         max_completion_tokens: int = 8192
 
