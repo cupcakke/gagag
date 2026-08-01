@@ -19,18 +19,26 @@ class CheckpointManager:
         started = time.perf_counter()
         with self._lock:
             data = _plain(state)
+            if not isinstance(data, dict):
+                raise TypeError("checkpoint state must serialize to an object")
+            data = dict(data)
             data["crc32"] = 0
             data["crc32"] = crc32(stable_json_dumps(data).encode("utf-8"))
+            validated_state = model_validate(CheckpointState, data)
             atomic_write(self.path, stable_json_dumps(data).encode("utf-8"))
-            self.latest = model_validate(CheckpointState, data)
+            self.latest = validated_state
         checkpoints_total.inc()
         record_event(
             EventType.CHECKPOINT,
             uuid.UUID(int=0),
-            {"path": str(self.path), "step": int(data.get("step_counter", 0)), "version": int(data.get("version", 1))},
+            {
+                "path": str(self.path),
+                "step": int(data.get("step_counter", 0)),
+                "version": int(data.get("version", 1)),
+            },
         )
         observe_latency("checkpoint", time.perf_counter() - started)
-        return self.latest
+        return validated_state
 
     async def checkpoint_now(self, state: typing.Any) -> typing.Any:
         return await asyncio.to_thread(self._checkpoint_sync, state)
@@ -50,20 +58,33 @@ class CheckpointManager:
             existing = self.latest
             if existing is None and self.path.exists():
                 existing = self.load_latest()
-            queue_state = dict(getattr(existing, "queue_state", {}) or {}) if existing is not None else {}
-            tasks = dict(queue_state.get("tasks", {}) or {})
-            active = {str(item) for item in in_flight_tasks}
-            tasks = {key: value for key, value in tasks.items() if key in active}
-            tasks[str(task_id)] = {
+            queue_state_value = getattr(existing, "queue_state", {}) if existing is not None else {}
+            queue_state = dict(queue_state_value) if isinstance(queue_state_value, dict) else {}
+            tasks_value = queue_state.get("tasks", {})
+            tasks = dict(tasks_value) if isinstance(tasks_value, dict) else {}
+            active = {str(uuid.UUID(str(item))) for item in in_flight_tasks}
+            normalized_task_id = str(uuid.UUID(str(task_id)))
+            active.add(normalized_task_id)
+            tasks = {
+                str(key): dict(value)
+                for key, value in tasks.items()
+                if str(key) in active and isinstance(value, dict)
+            }
+            tasks[normalized_task_id] = {
                 "step": int(step),
                 "working_memory": [dict(item) for item in working_memory],
             }
+            step_values = [
+                int(value.get("step", 0))
+                for value in tasks.values()
+                if isinstance(value, dict)
+            ]
             state = CheckpointState(
                 working_memory_ptr=len(working_memory),
                 episodic_cursor=int(episodic_cursor),
-                in_flight_tasks=[uuid.UUID(str(item)) for item in sorted(active)],
+                in_flight_tasks=[uuid.UUID(item) for item in sorted(active)],
                 queue_state={"tasks": tasks},
-                step_counter=max([int(step), *[int(value.get("step", 0)) for value in tasks.values() if isinstance(value, dict)]]),
+                step_counter=max([int(step), *step_values]),
                 version=2,
             )
             return self._checkpoint_sync(state)
@@ -86,24 +107,28 @@ class CheckpointManager:
         )
 
     def load_latest(self) -> typing.Optional[typing.Any]:
-        if not self.path.exists():
-            return None
-        try:
-            data = json.loads(self.path.read_text(encoding="utf-8"))
-            if not isinstance(data, dict):
-                raise ValueError("checkpoint root must be an object")
-            received_crc = int(data.get("crc32", -1))
-            unsigned = dict(data)
-            unsigned["crc32"] = 0
-            expected_crc = crc32(stable_json_dumps(unsigned).encode("utf-8"))
-            if expected_crc != received_crc:
-                raise ValueError("checkpoint CRC mismatch")
-            state = model_validate(CheckpointState, data)
-            self.latest = state
-            return state
-        except Exception as exc:
-            LOGGER.warning(f"checkpoint load failed: {exc}", extra={"component": "checkpoint"})
-            return None
+        with self._lock:
+            if not self.path.exists():
+                return None
+            try:
+                data = json.loads(self.path.read_text(encoding="utf-8"))
+                if not isinstance(data, dict):
+                    raise ValueError("checkpoint root must be an object")
+                received_crc = int(data.get("crc32", -1))
+                unsigned = dict(data)
+                unsigned["crc32"] = 0
+                expected_crc = crc32(stable_json_dumps(unsigned).encode("utf-8"))
+                if expected_crc != received_crc:
+                    raise ValueError("checkpoint CRC mismatch")
+                state = model_validate(CheckpointState, data)
+                self.latest = state
+                return state
+            except Exception as exc:
+                LOGGER.warning(
+                    f"checkpoint load failed: {exc}",
+                    extra={"component": "checkpoint"},
+                )
+                return None
 
     def _read_lock(self) -> typing.Optional[dict]:
         try:
@@ -111,6 +136,15 @@ class CheckpointManager:
             return value if isinstance(value, dict) else None
         except Exception:
             return None
+
+    @staticmethod
+    def _lock_pid(data: typing.Optional[dict]) -> int:
+        if not data:
+            return 0
+        try:
+            return int(data.get("pid", 0) or 0)
+        except (TypeError, ValueError, OverflowError):
+            return 0
 
     @staticmethod
     def _pid_alive(pid: int) -> bool:
@@ -134,7 +168,7 @@ class CheckpointManager:
         data = self._read_lock()
         if not data:
             return True
-        pid = int(data.get("pid", 0) or 0)
+        pid = self._lock_pid(data)
         token = str(data.get("token", ""))
         if pid == os.getpid() and token == self._owner_token:
             return False
@@ -151,16 +185,31 @@ class CheckpointManager:
         ).encode("utf-8")
         for _ in range(2):
             try:
-                fd = os.open(str(self.lock_path), os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+                fd = os.open(
+                    str(self.lock_path),
+                    os.O_WRONLY | os.O_CREAT | os.O_EXCL,
+                    0o600,
+                )
                 try:
-                    os.write(fd, payload)
+                    view = memoryview(payload)
+                    while view:
+                        written = os.write(fd, view)
+                        if written <= 0:
+                            raise OSError("failed to write runtime lock")
+                        view = view[written:]
                     os.fsync(fd)
-                finally:
+                except Exception:
+                    with contextlib.suppress(OSError):
+                        os.close(fd)
+                    with contextlib.suppress(FileNotFoundError):
+                        self.lock_path.unlink()
+                    raise
+                else:
                     os.close(fd)
                 return
             except FileExistsError:
                 data = self._read_lock()
-                pid = int((data or {}).get("pid", 0) or 0)
+                pid = self._lock_pid(data)
                 token = str((data or {}).get("token", ""))
                 if pid == os.getpid() and token == self._owner_token:
                     return
@@ -172,7 +221,11 @@ class CheckpointManager:
 
     def remove_lock(self) -> None:
         data = self._read_lock()
-        if data and str(data.get("token", "")) != self._owner_token:
+        if not data:
+            return
+        if str(data.get("token", "")) != self._owner_token:
+            return
+        if self._lock_pid(data) != os.getpid():
             return
         with contextlib.suppress(FileNotFoundError):
             self.lock_path.unlink()
@@ -185,9 +238,13 @@ class CheckpointManager:
                 continue
             try:
                 await self.checkpoint_now(state)
+            except asyncio.CancelledError:
+                raise
             except Exception as exc:
                 errors_total.labels(type=type(exc).__name__).inc()
-                LOGGER.error(f"checkpoint flush failed: {exc}", extra={"component": "checkpoint"})
+                LOGGER.error(
+                    f"checkpoint flush failed: {exc}",
+                    extra={"component": "checkpoint"},
+                )
             finally:
                 self.pending.task_done()
-
