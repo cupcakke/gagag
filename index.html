@@ -1367,6 +1367,124 @@
       height: 14px;
       border-radius: 3px;
     }
+    .ana-panel {
+      border: .5px solid var(--sep);
+      border-radius: 14px;
+      background: var(--liquid);
+      overflow: hidden;
+    }
+    .ana-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      padding: 9px 12px;
+      background: none;
+      border: 0;
+      font: inherit;
+      font-size: 12.5px;
+      color: var(--fg2);
+      text-align: left;
+      cursor: pointer;
+    }
+    .ana-head svg {
+      width: 13px;
+      height: 13px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+    .ana-title {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .ana-meta {
+      font-size: 11.5px;
+      color: var(--fg3);
+      flex-shrink: 0;
+    }
+    .ana-caret {
+      transition: transform .18s ease;
+    }
+    .ana-panel.open .ana-caret {
+      transform: rotate(90deg);
+    }
+    .ana-body {
+      display: none;
+      padding: 2px 12px 10px;
+      border-top: .5px solid var(--sep);
+    }
+    .ana-panel.open .ana-body {
+      display: block;
+    }
+    .ana-sec {
+      margin-top: 9px;
+    }
+    .ana-sec h4 {
+      margin: 0 0 4px;
+      font-size: 11.5px;
+      font-weight: 600;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+      color: var(--fg3);
+    }
+    .ana-sec ul {
+      margin: 0;
+      padding-left: 16px;
+    }
+    .ana-sec li {
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: var(--fg2);
+      margin: 2px 0;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+    .ana-plaus {
+      display: inline-block;
+      margin-left: 6px;
+      padding: 1px 7px;
+      border-radius: 9px;
+      border: .5px solid var(--sep);
+      font-size: 10.5px;
+      color: var(--fg3);
+      white-space: nowrap;
+    }
+    .ana-plaus.high {
+      color: var(--fg);
+      border-color: var(--liquid-border-strong);
+    }
+    .ev-list {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 5px 0;
+    }
+    .ev-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding: 8px 11px;
+      border: .5px solid var(--sep);
+      border-radius: 13px;
+      background: var(--hover);
+      color: var(--fg);
+      text-decoration: none;
+    }
+    .ev-item .ev-title {
+      font-size: 12.5px;
+      line-height: 1.4;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+    .ev-item .ev-src {
+      font-size: 11px;
+      color: var(--fg3);
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
     @keyframes spin {
       from {
         transform: rotate(0);
@@ -3402,6 +3520,221 @@
         e.textContent = m;
         g.appendChild(e);
       }
+      function renderSrcChips(wrap, data) {
+        if (!wrap) return;
+        var chips = wrap.querySelector(".src-chips");
+        var cnt = wrap.querySelector(".srch-count");
+        if (!chips) return;
+        var rs = data.sources || data.results || [];
+        if (!rs.length || typeof rs[0] !== "object") {
+          if (cnt && data.results != null && !rs.length) cnt.textContent = "0 forrás";
+          return;
+        }
+        chips.style.display = "flex";
+        if (cnt) cnt.textContent = rs.length + " forrás";
+        chips.innerHTML = "";
+        rs.forEach(function (r) {
+          var url = safeUrl(r.url || r.link || r.href || "#") || "#";
+          var host;
+          try {
+            host = new URL(url, location.origin).hostname.replace(/^www\./, "");
+          } catch (e) {
+            host = r.source || r.title || url;
+          }
+          var a = document.createElement("a");
+          a.className = "src-chip";
+          a.href = url;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
+          a.innerHTML = '<img alt="" loading="lazy"><span></span>';
+          a.querySelector("img").src = "https://www.google.com/s2/favicons?domain=" + encodeURIComponent(host) + "&sz=16";
+          a.querySelector("span").textContent = host;
+          chips.appendChild(a);
+        });
+      }
+      var ANA_MODE_HU = {
+        analytical: "elemző",
+        evidentiary: "bizonyítékalapú",
+        explanatory: "magyarázó",
+        scenario: "forgatókönyves",
+        direct: "közvetlen"
+      };
+      var ANA_INTENT_HU = {
+        interpretation_request: "értelmezés",
+        mechanism_explanation: "mechanizmus",
+        scenario_analysis: "forgatókönyvek",
+        open_secret_analysis: "nyílt titok",
+        evidence_check: "bizonyíték-ellenőrzés",
+        source_request: "forráskérés",
+        legal_validation: "jogi keret",
+        risk_assessment: "kockázat",
+        actor_mapping: "szereplők",
+        timeline_reconstruction: "időrend",
+        terminology_clarification: "fogalomtisztázás",
+        decision_support: "döntéstámogatás",
+        emotional_context: "érzelmi kontextus",
+        general_question: "általános kérdés"
+      };
+      var ANA_PLAUS_HU = {
+        low: "alacsony",
+        moderate: "mérsékelt",
+        high: "magas",
+        insufficient_information: "elégtelen információ"
+      };
+      var ANA_STATUS_HU = {
+        pass: "megfelelt",
+        revise: "átírva",
+        block: "szűkítve"
+      };
+      function anaList(items) {
+        var ul = document.createElement("ul");
+        items.forEach(function (item) {
+          var li = document.createElement("li");
+          if (item && typeof item === "object") {
+            li.textContent = item.text || "";
+            if (item.badge) {
+              var badge = document.createElement("span");
+              badge.className = "ana-plaus" + (item.badgeKind ? " " + item.badgeKind : "");
+              badge.textContent = item.badge;
+              li.appendChild(badge);
+            }
+          } else {
+            li.textContent = String(item == null ? "" : item);
+          }
+          ul.appendChild(li);
+        });
+        return ul;
+      }
+      function anaSection(body, title, items) {
+        if (!items || !items.length) return;
+        var sec = document.createElement("div");
+        sec.className = "ana-sec";
+        var h = document.createElement("h4");
+        h.textContent = title;
+        sec.appendChild(h);
+        sec.appendChild(anaList(items));
+        body.appendChild(sec);
+      }
+      function anaPanel(g, data) {
+        if (!g) return null;
+        var panel = document.createElement("div");
+        panel.className = "srch-wrap";
+        var box = document.createElement("div");
+        box.className = "ana-panel";
+        var head = document.createElement("button");
+        head.type = "button";
+        head.className = "ana-head";
+        head.setAttribute("aria-expanded", "false");
+        head.innerHTML = '<svg class="ana-caret" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6z"/></svg><span class="ana-title"></span><span class="ana-meta"></span>';
+        var body = document.createElement("div");
+        body.className = "ana-body";
+        var intents = (data.intents || []).map(function (item) {
+          return ANA_INTENT_HU[item] || item;
+        });
+        var mode = ANA_MODE_HU[data.response_mode] || data.response_mode || "";
+        head.querySelector(".ana-title").textContent = "Elemzés" + (intents.length ? ": " + intents.join(", ") : "");
+        head.querySelector(".ana-meta").textContent = mode ? mode + " mód" : "";
+        head.addEventListener("click", function () {
+          var open = box.classList.toggle("open");
+          head.setAttribute("aria-expanded", open ? "true" : "false");
+          if (open && nearBot()) goBot();
+        });
+        if (data.open_secret) {
+          anaSection(body, "Szerkezet", ["A leírás nyílt titok mintázatát mutatja: a tudás megoszlik, a kimondás költsége aszimmetrikus."]);
+        }
+        anaSection(body, "Mechanizmusok", (data.mechanisms || []).map(function (item) {
+          return {
+            text: (item.name || "") + (item.description ? " — " + item.description : "")
+          };
+        }));
+        anaSection(body, "Lehetséges forgatókönyvek", (data.scenarios || []).map(function (item) {
+          var plaus = ANA_PLAUS_HU[item.plausibility] || item.plausibility || "";
+          return {
+            text: (item.title || "") + (item.description ? " — " + item.description : ""),
+            badge: plaus,
+            badgeKind: item.plausibility === "high" ? "high" : ""
+          };
+        }));
+        anaSection(body, "Megfigyelhető jelek", data.indicators || []);
+        anaSection(body, "Hiányzó információk", data.unknowns || []);
+        anaSection(body, "Megjegyzések", data.warnings || []);
+        if (!body.childNodes.length) {
+          anaSection(body, "Megjegyzések", ["Az elemzés nem talált külön kiemelhető elemet ehhez az üzenethez."]);
+        }
+        box.appendChild(head);
+        box.appendChild(body);
+        panel.appendChild(box);
+        g.appendChild(panel);
+        return panel;
+      }
+      function anaStatusBar(g, text, count) {
+        if (!g) return null;
+        var wrap = document.createElement("div");
+        wrap.className = "srch-wrap";
+        wrap.innerHTML = '<div class="srch-bar lg"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-2h2zm0-4h-2V7h2z"/></svg><span class="srch-q"></span><span class="srch-count"></span></div>';
+        wrap.querySelector(".srch-q").textContent = text;
+        wrap.querySelector(".srch-count").textContent = count || "";
+        g.appendChild(wrap);
+        return wrap;
+      }
+      function anaEvidence(g, data) {
+        if (!g) return null;
+        var items = data.items || data.sources || [];
+        if (!items.length) return null;
+        var wrap = document.createElement("div");
+        wrap.className = "srch-wrap";
+        var head = document.createElement("div");
+        head.className = "srch-bar lg done";
+        head.innerHTML = '<svg viewBox="0 0 24 24"><path d="M4 4h11l5 5v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm10 1.5V10h4.5z"/></svg><span class="srch-q"></span><span class="srch-count"></span>';
+        head.querySelector(".srch-q").textContent = "Források és bizonyítékok";
+        head.querySelector(".srch-count").textContent = items.length + " forrás";
+        wrap.appendChild(head);
+        var list = document.createElement("div");
+        list.className = "ev-list";
+        items.forEach(function (item) {
+          var url = safeUrl(item.url || item.link || "");
+          var node = document.createElement(url ? "a" : "div");
+          node.className = "ev-item";
+          if (url) {
+            node.href = url;
+            node.target = "_blank";
+            node.rel = "noopener noreferrer";
+          }
+          var title = document.createElement("span");
+          title.className = "ev-title";
+          title.textContent = item.title || url || "Forrás";
+          var meta = document.createElement("span");
+          meta.className = "ev-src";
+          var bits = [];
+          if (item.source) bits.push(item.source);
+          if (item.published_at) bits.push(item.published_at);
+          if (item.reliability != null) bits.push("megbízhatóság " + Math.round(Number(item.reliability) * 100) + "%");
+          if (item.stance === "supports") bits.push("alátámaszt");
+          else if (item.stance === "contradicts") bits.push("cáfol");
+          meta.textContent = bits.join(" · ");
+          node.appendChild(title);
+          if (bits.length) node.appendChild(meta);
+          list.appendChild(node);
+        });
+        wrap.appendChild(list);
+        g.appendChild(wrap);
+        return wrap;
+      }
+      function anaPolicySummary(data) {
+        var parts = [];
+        ["defensiveness", "factuality", "safety"].forEach(function (key) {
+          var value = data[key + "_status"];
+          if (value && value !== "pass") {
+            parts.push({
+              defensiveness: "elhárítás",
+              factuality: "megalapozottság",
+              safety: "biztonság"
+            }[key] + ": " + (ANA_STATUS_HU[value] || value));
+          }
+        });
+        if (!parts.length) return "ellenőrizve";
+        return parts.join(" · ");
+      }
       function setStream(v) {
         streaming = !!v;
         if (v) {
@@ -4036,7 +4369,7 @@
             var bar = document.createElement("div");
             bar.className = "srch-wrap";
             bar.innerHTML = '<div class="srch-bar lg"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.49 4.49 0 0 1 9.5 14z"/></svg><span class="srch-q"></span><span class="srch-count"></span></div><div class="src-chips" style="display:none"></div>';
-            bar.querySelector(".srch-q").textContent = "Keresés: " + (data.query || "");
+            bar.querySelector(".srch-q").textContent = "Keresés: " + (data.query || (data.queries || []).join(", "));
             g.appendChild(bar);
             g._srch = bar;
           } else if (type === "sources" || type === "search_results") {
@@ -4068,7 +4401,35 @@
             });
           } else if (type === "search_done") {
             var ss = curr && curr._srch;
-            if (ss) ss.querySelector(".srch-bar").classList.add("done");
+            if (ss) {
+              ss.querySelector(".srch-bar").classList.add("done");
+              renderSrcChips(ss, data);
+            }
+          } else if (type === "analysis_start") {
+            var g = ensure();
+            g._ana = anaStatusBar(g, "Elemzés fut", (data.language || "").toUpperCase());
+          } else if (type === "analysis_done") {
+            var ab = curr && curr._ana;
+            if (ab) {
+              var abar = ab.querySelector(".srch-bar");
+              if (abar) abar.classList.add("done");
+              ab.querySelector(".srch-q").textContent = "Elemzés kész";
+              ab.querySelector(".srch-count").textContent = (data.scenarios || 0) + " forgatókönyv · " + (data.unknowns || 0) + " nyitott kérdés";
+            }
+          } else if (type === "analysis_payload") {
+            anaPanel(ensure(), data);
+          } else if (type === "policy_revise") {
+            var g = ensure();
+            g._policy = anaStatusBar(g, "Válasz átírása a minőségi szabályok szerint", "#" + ((data.attempt || 0) + 1));
+          } else if (type === "policy_done") {
+            var pb = curr && curr._policy;
+            if (!pb) pb = anaStatusBar(ensure(), "Válasz ellenőrizve", "");
+            var pbar = pb.querySelector(".srch-bar");
+            if (pbar) pbar.classList.add("done");
+            pb.querySelector(".srch-q").textContent = "Válasz ellenőrizve";
+            pb.querySelector(".srch-count").textContent = anaPolicySummary(data);
+          } else if (type === "evidence") {
+            anaEvidence(ensure(), data);
           } else if (type === "code_exec_start") {
             var g = ensure();
             var codeWrap = document.createElement("div");
@@ -4314,7 +4675,7 @@
             var bar = document.createElement("div");
             bar.className = "srch-wrap";
             bar.innerHTML = '<div class="srch-bar lg"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.49 4.49 0 0 1 9.5 14z"/></svg><span class="srch-q"></span><span class="srch-count"></span></div><div class="src-chips" style="display:none"></div>';
-            bar.querySelector(".srch-q").textContent = "Keresés: " + (data.query || "");
+            bar.querySelector(".srch-q").textContent = "Keresés: " + (data.query || (data.queries || []).join(", "));
             g.appendChild(bar);
             g._srch = bar;
           } else if (type === "sources" || type === "search_results") {
@@ -4346,7 +4707,35 @@
             });
           } else if (type === "search_done") {
             var ss = curr && curr._srch;
-            if (ss) ss.querySelector(".srch-bar").classList.add("done");
+            if (ss) {
+              ss.querySelector(".srch-bar").classList.add("done");
+              renderSrcChips(ss, data);
+            }
+          } else if (type === "analysis_start") {
+            var g = ensure();
+            g._ana = anaStatusBar(g, "Elemzés fut", (data.language || "").toUpperCase());
+          } else if (type === "analysis_done") {
+            var ab = curr && curr._ana;
+            if (ab) {
+              var abar = ab.querySelector(".srch-bar");
+              if (abar) abar.classList.add("done");
+              ab.querySelector(".srch-q").textContent = "Elemzés kész";
+              ab.querySelector(".srch-count").textContent = (data.scenarios || 0) + " forgatókönyv · " + (data.unknowns || 0) + " nyitott kérdés";
+            }
+          } else if (type === "analysis_payload") {
+            anaPanel(ensure(), data);
+          } else if (type === "policy_revise") {
+            var g = ensure();
+            g._policy = anaStatusBar(g, "Válasz átírása a minőségi szabályok szerint", "#" + ((data.attempt || 0) + 1));
+          } else if (type === "policy_done") {
+            var pb = curr && curr._policy;
+            if (!pb) pb = anaStatusBar(ensure(), "Válasz ellenőrizve", "");
+            var pbar = pb.querySelector(".srch-bar");
+            if (pbar) pbar.classList.add("done");
+            pb.querySelector(".srch-q").textContent = "Válasz ellenőrizve";
+            pb.querySelector(".srch-count").textContent = anaPolicySummary(data);
+          } else if (type === "evidence") {
+            anaEvidence(ensure(), data);
           } else if (type === "error" || type === "warning") {
             errBubble(ensure(), data.message || "Hiba");
           } else if (type === "done") {
